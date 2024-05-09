@@ -20,16 +20,30 @@
     </insert>
     <select id="getFeed">
         SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
-        B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location
+               B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
+               IF(C.feed_id IS NULL, 0, 1) AS isFav
         FROM feed A
         INNER JOIN user B
         ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = #{signedUserId}
         ORDER BY A.feed_id DESC
-        LIMIT #{startIdx}, #{len}
+        LIMIT #{startIdx}, #{size}
     </select>
     <select id="getFeedPicsByFeedId">
         SELECT pic
         FROM feed_pics
         WHERE feed_id = #{feedId}
     </select>
+    <select id="getFeedCommentTopBy4ByFeedId">
+        SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = #{feedId}
+        LIMIT 4
+    </select>
+
 </mapper>
