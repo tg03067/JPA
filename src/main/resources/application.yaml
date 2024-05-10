@@ -20,9 +20,9 @@ springdoc:
     path: /swagger
     operations-sorter: method
     default-model-expand-depth: 10
-    cache:
-      disabled: true
     display-request-duration: true
+  cache:
+    disabled: true
 
 server:
   port: 8080
