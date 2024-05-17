@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.green.greengram.user.UserMapper">
+
     <insert id="postUser" keyProperty="userId" useGeneratedKeys="true">
         INSERT INTO user
         SET uid = #{uid}
@@ -13,7 +14,7 @@
 
     <select id="getUserById">
         SELECT user_id as userId, uid, upw, nm, pic,
-        created_at AS createdAt,updated_at AS updatedAt
+               created_at AS createdAt, updated_at AS updatedAt
         FROM user
         WHERE uid = #{uid}
     </select>
@@ -23,6 +24,5 @@
         SET upw = #{newPw}
         WHERE user_id = #{userId}
     </update>
-
 
 </mapper>

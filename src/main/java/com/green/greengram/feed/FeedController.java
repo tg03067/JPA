@@ -34,6 +34,7 @@ public class FeedController {
                 resultData(result).
                 build();
     }
+
     @GetMapping
     @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 PK")
     public ResultDto<List<FeedGetRes>> getFeed(@ParameterObject @ModelAttribute FeedGetReq p){

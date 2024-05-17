@@ -34,7 +34,7 @@ public class UserService {
         }
         try {
             String path = String.format("user/%d", p.getUserId());
-            customFileUtils.makeRandomFileName(path);
+            customFileUtils.makeFolders(path);
             String target = String.format("%s/%s",path,saveFileName);
             customFileUtils.transferTo(pic,target);
         } catch (Exception e){

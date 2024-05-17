@@ -11,7 +11,9 @@ import java.util.List;
 public interface FeedMapper {
     int postFeed(FeedPostReq p);
     int postFeedPics(FeedPicPostDto p);
-    List<FeedGetRes> getFeed(FeedGetReq p);
-    List<String> getFeedPicsByFeedId(long feedId);
-    List<FeedCommentGetRes> getFeedCommentTopBy4ByFeedId(long feedId);
+
+    List<FeedGetRes> selFeed(FeedGetReq p);
+    List<String> selFeedPicsByFeedId(long feedId);
+
+    List<FeedCommentGetRes> selFeedCommentTopBy4ByFeedId(long feedId);
 }

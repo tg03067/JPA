@@ -1,6 +1,6 @@
 spring:
   application:
-    name: GreengramVer1
+    name: GreengramVer2
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
     url: jdbc:log4jdbc:mariadb://localhost:3306/greengram2024_v2

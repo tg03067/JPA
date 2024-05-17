@@ -28,7 +28,7 @@ public class UserController {
 
     @PostMapping("sign-up")
     @Operation(summary = "회원가입", description = "프로필 사진은 필수가 아닙니다.")
-    private ResultDto<Integer> postUser(@RequestPart(required = false) MultipartFile pic,
+    public ResultDto<Integer> postUser(@RequestPart(required = false) MultipartFile pic,
                                         @RequestPart SignUpPostReq p){
         log.info("pic: {}",pic);
         log.info("p: {}",p);
@@ -52,6 +52,4 @@ public class UserController {
                 resultData(result).
                 build();
     }
-
-
 }

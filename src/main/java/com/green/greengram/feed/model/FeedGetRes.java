@@ -15,9 +15,9 @@ public class FeedGetRes {
     private String contents;
     private String location;
     private String createdAt;
-    private int isFav;
-
     private List<String> pics;
+
+    private int isFav;
     private List<FeedCommentGetRes> comments;
     private int isMoreComment;
 }

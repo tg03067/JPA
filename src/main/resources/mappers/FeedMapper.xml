@@ -10,6 +10,7 @@
         , contents = #{contents}
         , location = #{location}
     </insert>
+
     <insert id="postFeedPics">
         INSERT INTO feed_pics
         ( feed_id, pic )
@@ -18,7 +19,8 @@
             ( #{feedId}, #{item} )
         </foreach>
     </insert>
-    <select id="getFeed">
+
+    <select id="selFeed">
         SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
                B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
                IF(C.feed_id IS NULL, 0, 1) AS isFav
@@ -31,12 +33,14 @@
         ORDER BY A.feed_id DESC
         LIMIT #{startIdx}, #{size}
     </select>
-    <select id="getFeedPicsByFeedId">
+
+    <select id="selFeedPicsByFeedId">
         SELECT pic
         FROM feed_pics
         WHERE feed_id = #{feedId}
     </select>
-    <select id="getFeedCommentTopBy4ByFeedId">
+
+    <select id="selFeedCommentTopBy4ByFeedId">
         SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
                B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
         FROM feed_comment A

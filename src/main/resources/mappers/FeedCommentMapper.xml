@@ -20,8 +20,9 @@
     </delete>
 
     <select id="selFeedComment">
-        SELECT A.feed_comment_id AS feedCommentId, A.comment AS `comment`, A.created_at AS createdAt,
-        B.nm AS writerNm, B.user_id AS writerId, B.pic AS writerPic
+        SELECT A.feed_comment_id AS feedCommentId, A.comment AS `comment`,
+               A.created_at AS createdAt, B.nm AS writerNm, B.user_id AS writerId,
+               B.pic AS writerPic
         FROM feed_comment A
         INNER JOIN user B
         ON A.user_id = B.user_id
