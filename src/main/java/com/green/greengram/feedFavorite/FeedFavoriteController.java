@@ -29,7 +29,7 @@ public class FeedFavoriteController {
         //result == 1 > 좋아요 (비좋아요 > 좋아요) : 좋아요 처리
 
         return ResultDto.<Integer>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(result == 1 ? "좋아요 처리" : "좋아요 취소").
                 resultData(result).
                 build();

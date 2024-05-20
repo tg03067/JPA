@@ -1,7 +1,6 @@
 package com.green.greengram.feedComment;
 
 import com.green.greengram.common.model.ResultDto;
-import com.green.greengram.feed.model.FeedGetRes;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +26,7 @@ public class FeedCommentController {
         long feedCommentId = service.postFeedComment(p);
 
         return ResultDto.<Long>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(feedCommentId).
                 build();
@@ -39,7 +38,7 @@ public class FeedCommentController {
         int result = service.delFeedComment(p) ; //0은 삭제 실패, 1은 삭제 성공
 
         return ResultDto.<Integer>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(result == 0 ? "댓글 삭제를 할 수 없습니다." : "댓글을 삭제하였습니다.").
                 resultData(result).
                 build();
@@ -51,7 +50,7 @@ public class FeedCommentController {
         List<FeedCommentGetRes> list = service.getFeedComment(feedId);
 
         return ResultDto.<List<FeedCommentGetRes>>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(String.format("rows: %,d", list.size())).
                 resultData(list).
                 build();

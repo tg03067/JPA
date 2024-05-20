@@ -4,7 +4,6 @@ import com.green.greengram.common.model.*;
 import com.green.greengram.feed.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -29,7 +28,7 @@ public class FeedController {
         FeedPostRes result = service.postFeed(pics, p);
 
         return ResultDto.<FeedPostRes>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
                 build();
@@ -41,7 +40,7 @@ public class FeedController {
         List<FeedGetRes> list = service.getFeed(p);
 
         return ResultDto.<List<FeedGetRes>>builder().
-                httpStatus(HttpStatus.OK).
+                statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(list).
                 build();

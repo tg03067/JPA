@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 @Builder
 @Data
 public class ResultDto<T> {
-    private HttpStatus httpStatus;
+    private HttpStatus statusCode;
     private String resultMsg;
     private T resultData;
 }
