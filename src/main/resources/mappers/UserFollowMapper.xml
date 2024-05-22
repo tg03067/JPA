@@ -14,5 +14,4 @@
         AND to_user_id = #{toUserId}
     </delete>
 
-
 </mapper>

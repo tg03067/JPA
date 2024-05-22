@@ -11,10 +11,15 @@ import org.springframework.web.bind.annotation.BindParam;
 @Setter
 public class FeedGetReq extends Paging {
     @Schema(name = "signed_user_id")
-    private Long signedUserId;
+    private long signedUserId;
+    @Schema(name = "profile_user_id", description = "프로필 사용자 ID (Not Required), 프로필 화면에서 사용")
+    private Long profileUserId;
 
-    public FeedGetReq(Integer page, Integer size,@BindParam("signed_user_id") Long signedUserId){
-        super(page, size == null || size == 0? GlobalConst.FEED_PAGING_SIZE : size );
+    public FeedGetReq(Integer page, Integer size,
+                      @BindParam("signed_user_id") long signedUserId,
+                      @BindParam("profile_user_id") Long profileUserId){
+        super(page, size == null || size == 0 ? GlobalConst.FEED_PAGING_SIZE : size );
         this.signedUserId = signedUserId;
+        this.profileUserId = profileUserId;
     }
 }

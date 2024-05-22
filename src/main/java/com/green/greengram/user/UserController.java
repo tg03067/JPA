@@ -34,7 +34,7 @@ public class UserController {
     }
 
     @PostMapping("sign-in")
-    @Operation(summary = "로그인", description = "")
+    @Operation(summary = "로그인")
     public ResultDto<SignInRes> postSignIn(@RequestBody SignInPostReq p){
         log.info("p; {}", p);
         SignInRes result = service.getUserById(p);
@@ -47,10 +47,21 @@ public class UserController {
     }
     @GetMapping
     @Operation(summary = "팔로워 확인", description = "팔로우, 팔로워, 상태 확인 가능.")
-    private ResultDto<UserInfoGetRes> getUserInfo(@ParameterObject @ModelAttribute UserInfoGetReq p){
+    public ResultDto<UserInfoGetRes> getUserInfo(@ParameterObject @ModelAttribute UserInfoGetReq p){
         UserInfoGetRes result = service.getUserInfo(p);
 
         return ResultDto.<UserInfoGetRes>builder().
+                statusCode(HttpStatus.OK).
+                resultMsg(HttpStatus.OK.toString()).
+                resultData(result).
+                build();
+    }
+    @PatchMapping("pic")
+    @Operation(summary = "프로필 사진 변경", description = "프로필 사진 변경 가능")
+    public ResultDto<String> patchProfilePic(@RequestPart UserProfilePatchReq p) {
+        String result = service.patchProfilePic(p);
+
+        return ResultDto.<String>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
