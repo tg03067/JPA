@@ -2,7 +2,7 @@ package com.green.greengram.feed;
 
 import com.green.greengram.feed.model.*;
 import com.green.greengram.feed.model.FeedPostReq;
-import com.green.greengram.feedComment.model.FeedCommentGetRes;
+import com.green.greengram.feedcomment.model.FeedCommentGetRes;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

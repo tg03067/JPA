@@ -64,16 +64,16 @@ public class UserService {
     public String patchProfilePic(UserProfilePatchReq p){
         String fileNm = customFileUtils.makeRandomFileName(p.getPic());
         p.setPicName(fileNm);
-        mapper.updProfilePic(p);
+        mapper.updProfilePic(p); //DB수정
 
         //기존 폴더 삭제
         try {
-            String folderPath = String.format("%s/user/%d",
-                    customFileUtils.uploadPath, p.getSignedUserId());
-            customFileUtils.deleteFolder(folderPath);
+            String midPath = String.format("user/%d",p.getSignedUserId());
+            String delAbsoluteFolderPath = String.format("%s%s", customFileUtils.uploadPath, midPath);
+            customFileUtils.deleteFolder(delAbsoluteFolderPath);
 
-            customFileUtils.makeFolders(folderPath);
-            String filePath = String.format("%s/%s", folderPath, fileNm);
+            customFileUtils.makeFolders(midPath);
+            String filePath = String.format("%s/%s", midPath, fileNm);
             customFileUtils.transferTo(p.getPic(), filePath);
         } catch (Exception e) {
             throw new RuntimeException(e);

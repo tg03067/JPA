@@ -1,8 +1,8 @@
-package com.green.greengram.feedComment;
+package com.green.greengram.feedcomment;
 
-import com.green.greengram.feedComment.model.FeedCommentDeleteReq;
-import com.green.greengram.feedComment.model.FeedCommentGetRes;
-import com.green.greengram.feedComment.model.FeedCommentPostReq;
+import com.green.greengram.feedcomment.model.FeedCommentDeleteReq;
+import com.green.greengram.feedcomment.model.FeedCommentGetRes;
+import com.green.greengram.feedcomment.model.FeedCommentPostReq;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

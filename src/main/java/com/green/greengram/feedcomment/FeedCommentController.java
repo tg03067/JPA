@@ -1,4 +1,4 @@
-package com.green.greengram.feedComment;
+package com.green.greengram.feedcomment;
 
 import com.green.greengram.common.model.ResultDto;
 import io.swagger.v3.oas.annotations.Operation;
@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import com.green.greengram.feedComment.model.*;
+import com.green.greengram.feedcomment.model.*;
 import java.util.List;
 
 @Slf4j

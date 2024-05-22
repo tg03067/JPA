@@ -1,11 +1,9 @@
-package com.green.greengram.feedFavorite;
+package com.green.greengram.feedfavorite;
 
-import com.green.greengram.feedFavorite.model.FeedFavoriteToggleReq;
+import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Slf4j
 @Service

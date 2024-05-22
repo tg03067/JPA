@@ -56,9 +56,9 @@ public class UserController {
                 resultData(result).
                 build();
     }
-    @PatchMapping("pic")
+    @PatchMapping(value = "pic")
     @Operation(summary = "프로필 사진 변경", description = "프로필 사진 변경 가능")
-    public ResultDto<String> patchProfilePic(@RequestPart UserProfilePatchReq p) {
+    public ResultDto<String> patchProfilePic(@ModelAttribute UserProfilePatchReq p) {
         String result = service.patchProfilePic(p);
 
         return ResultDto.<String>builder().

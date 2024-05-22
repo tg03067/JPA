@@ -1,7 +1,7 @@
-package com.green.greengram.feedFavorite;
+package com.green.greengram.feedfavorite;
 
 import com.green.greengram.common.model.ResultDto;
-import com.green.greengram.feedFavorite.model.FeedFavoriteToggleReq;
+import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

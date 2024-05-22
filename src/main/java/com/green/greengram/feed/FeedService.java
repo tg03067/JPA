@@ -3,7 +3,7 @@ package com.green.greengram.feed;
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.common.GlobalConst;
 import com.green.greengram.feed.model.*;
-import com.green.greengram.feedComment.model.FeedCommentGetRes;
+import com.green.greengram.feedcomment.model.FeedCommentGetRes;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

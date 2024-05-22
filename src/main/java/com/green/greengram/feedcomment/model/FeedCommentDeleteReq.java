@@ -1,7 +1,6 @@
-package com.green.greengram.feedComment.model;
+package com.green.greengram.feedcomment.model;
 
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.Data;
 import lombok.Getter;
 
 import java.beans.ConstructorProperties;

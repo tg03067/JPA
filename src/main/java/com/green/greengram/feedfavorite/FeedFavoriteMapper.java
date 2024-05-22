@@ -1,6 +1,6 @@
-package com.green.greengram.feedFavorite;
+package com.green.greengram.feedfavorite;
 
-import com.green.greengram.feedFavorite.model.FeedFavoriteToggleReq;
+import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
