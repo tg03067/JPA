@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class GreengramVer2Application {
+public class GreengramTddApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GreengramVer2Application.class, args);
+        SpringApplication.run(GreengramTddApplication.class, args);
     }
 
 }

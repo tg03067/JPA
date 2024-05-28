@@ -16,7 +16,7 @@ import java.util.List;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class FeedService {
+public class FeedServiceImpl {
     private final FeedMapper mapper;
     private final CustomFileUtils customFileUtils ;
 

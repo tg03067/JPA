@@ -42,7 +42,8 @@ public class CustomFileUtils {
         mf.transferTo(saveFile);
     }
     //폴더 삭제
-    public void deleteFolder(String absoluteFolderPath){File folder = new File(absoluteFolderPath); //D:\download\greengram_ver2\\user\?
+    public void deleteFolder(String absoluteFolderPath){
+        File folder = new File(absoluteFolderPath); //D:\download\greengram_ver2\\user\?
         if(folder.exists() && folder.isDirectory()){ //폴더인지아닌지
             File[] files = folder.listFiles(); //해당하는 폴더에 해당하는 폴더 파일을 배열형태로 리턴
 

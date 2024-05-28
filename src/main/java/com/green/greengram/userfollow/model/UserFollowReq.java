@@ -7,11 +7,21 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.web.bind.annotation.BindParam;
 
+import java.beans.ConstructorProperties;
+
 @Getter
 @Setter
 public class UserFollowReq {
-    @Schema(example = "7", description = "팔로워 아이디", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @Schema(name = "from_user_id", example = "7", description = "팔로워 아이디",
+            requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private long fromUserId;
-    @Schema(example = "8", description = "팔로잉 아이디", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
+    @Schema(name = "to_user_id", example = "8", description = "팔로잉 아이디",
+            requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private long toUserId;
+
+    @ConstructorProperties({"from_user_id", "to_user_id"})
+    public UserFollowReq(long fromUserId, long toUserId) {
+        this.fromUserId = fromUserId;
+        this.toUserId = toUserId;
+    }
 }

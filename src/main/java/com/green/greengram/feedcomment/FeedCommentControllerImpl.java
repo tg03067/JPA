@@ -16,8 +16,8 @@ import java.util.List;
 @RestController
 @RequestMapping("api/feed/comment")
 @Tag(name = "Feed 댓글", description = "댓글관련")
-public class FeedCommentController {
-    private final FeedCommentService service ;
+public class FeedCommentControllerImpl {
+    private final FeedCommentServiceImpl service ;
 
 
     @PostMapping

@@ -16,8 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 @RestController
 @RequestMapping("/api/user")
 @Tag(name = "유저 컨트롤러", description = "유저 CRUD, sign-up, sign-out")
-public class UserController {
-    private final UserService service;
+public class UserControllerImpl {
+    private final UserServiceImpl service;
 
     @PostMapping("sign-up")
     @Operation(summary = "회원가입", description = "프로필 사진은 필수가 아닙니다.")
@@ -56,6 +56,7 @@ public class UserController {
                 resultData(result).
                 build();
     }
+
     @PatchMapping(value = "pic")
     @Operation(summary = "프로필 사진 변경", description = "프로필 사진 변경 가능")
     public ResultDto<String> patchProfilePic(@ModelAttribute UserProfilePatchReq p) {

@@ -14,7 +14,7 @@ import java.util.Objects;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class UserService {
+public class UserServiceImpl {
     private final UserMapper mapper;
     private final CustomFileUtils customFileUtils;
 
@@ -78,7 +78,6 @@ public class UserService {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
-
         return fileNm;
     }
 }

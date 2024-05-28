@@ -18,8 +18,8 @@ import java.util.List;
 @RequestMapping("api/feed")
 @Slf4j
 @Tag(name = "Feed 피드", description = "Feed CRUD")
-public class FeedController {
-    private final FeedService service;
+public class FeedControllerImpl {
+    private final FeedServiceImpl service;
 
     @PostMapping
     @Operation(summary = "Feed 등록", description = "")
