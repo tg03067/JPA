@@ -42,7 +42,7 @@ public class UserServiceImpl {
     }
 
     public SignInRes getUserById(SignInPostReq p){
-        User user = mapper.getUserById(p.getUid());
+        User user = mapper.signInPost(p.getUid());
         if(Objects.isNull(user)){
             throw new RuntimeException("아이디를 확인해 주세요.");
         } else if(!BCrypt.checkpw(p.getUpw(), user.getUpw())){

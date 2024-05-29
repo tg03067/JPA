@@ -8,9 +8,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 @RequiredArgsConstructor
-public class FeedFavoriteServiceImpl {
+public class FeedFavoriteServiceImpl implements FeedFavoriteService{
     private final FeedFavoriteMapper mapper ;
 
+    @Override
     public int insFeedFavorite(FeedFavoriteToggleReq p){
         return mapper.insFeedFavorite(p);
     }
@@ -26,7 +27,8 @@ public class FeedFavoriteServiceImpl {
     //방법론 (3)
     //delete > 1 > return 0;
     //delete > 0 > insert > return 1;
-    public int toggleFavorit(FeedFavoriteToggleReq p){
+    @Override
+    public int toggleFavorite(FeedFavoriteToggleReq p){
         int delAffectedRows = mapper.delFeedFavorite(p);
         if(delAffectedRows == 1){
             return 0;

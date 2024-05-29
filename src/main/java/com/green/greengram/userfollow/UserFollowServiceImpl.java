@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class UserFollowServiceImpl implements UserFollowService{
     private final UserFollowMapper mapper;
+
     @Override
     public int postUserFollow(UserFollowReq p){
         return mapper.insUserFollow(p);

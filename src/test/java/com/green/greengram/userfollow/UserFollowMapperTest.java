@@ -33,7 +33,6 @@ class UserFollowMapperTest {
         UserFollowReq p2 = new UserFollowReq(4, 5);
         int affectedRow1 = mapper.insUserFollow(p2);
         assertEquals(1, affectedRow1);
-
         List<UserFollowEntity> list2 = mapper.selUserFollowListForTest(p1);
         assertEquals(1, list2.size() - list1.size(), "1. 실제 INSERT되지 않음!!");
 

@@ -1,4 +1,4 @@
-package com.green.greengram.user.model;
+package com.green.greengram.feedfavorite.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,12 +7,8 @@ import lombok.EqualsAndHashCode;
 @Data
 @AllArgsConstructor
 @EqualsAndHashCode
-public class User {
+public class FeedFavoriteEntity {
+    private long feedId;
     private long userId;
-    private String uid;
-    private String upw;
-    private String nm;
-    private String pic;
     private String createdAt;
-    private String updatedAt;
 }
