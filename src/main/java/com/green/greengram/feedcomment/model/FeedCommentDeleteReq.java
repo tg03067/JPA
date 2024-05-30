@@ -8,12 +8,12 @@ import java.beans.ConstructorProperties;
 @Getter
 public class FeedCommentDeleteReq {
     @Schema(name = "feed_comment_id")
-    private Long feedCommentId;
+    private long feedCommentId;
     @Schema(name = "signed_user_id")
-    private Long signedUserId;
+    private long signedUserId;
 
     @ConstructorProperties({"feed_comment_id", "signed_user_id"})
-    public FeedCommentDeleteReq(Long feedCommentId, Long signedUserId) {
+    public FeedCommentDeleteReq(long feedCommentId, long signedUserId) {
         this.feedCommentId = feedCommentId;
         this.signedUserId = signedUserId;
     }

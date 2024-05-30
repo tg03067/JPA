@@ -17,7 +17,7 @@ import static org.mockito.Mockito.verify;
 class UserFollowServiceTest {
     @MockBean
     private UserFollowMapper mapper;
-    // 가짜 mapper값을 지정해줌 = null 없으면 그냥 mapper를 호출을 못함
+    // 가짜 mapper값을 지정해줌 = null조차 넣어주지않음. 없으면 그냥 mapper를 호출을 못함
     @Autowired
     private UserFollowService service;
 
