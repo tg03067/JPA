@@ -14,10 +14,11 @@ import java.util.Objects;
 @Service
 @RequiredArgsConstructor
 @Slf4j
-public class UserServiceImpl {
+public class UserServiceImpl implements UserService {
     private final UserMapper mapper;
     private final CustomFileUtils customFileUtils;
 
+    @Override
     @Transactional
     public int postUser(MultipartFile pic, SignUpPostReq p){
         String saveFileName = customFileUtils.makeRandomFileName(pic);
@@ -41,6 +42,7 @@ public class UserServiceImpl {
         return result ;
     }
 
+    @Override
     public SignInRes getUserById(SignInPostReq p){
         User user = mapper.signInPost(p.getUid());
         if(Objects.isNull(user)){
@@ -55,11 +57,12 @@ public class UserServiceImpl {
                 pic(user.getPic()).
                 build();
     }
-
+    @Override
     public UserInfoGetRes getUserInfo(UserInfoGetReq p){
         return mapper.selProfileUserInfo(p);
     }
 
+    @Override
     @Transactional
     public String patchProfilePic(UserProfilePatchReq p){
         String fileNm = customFileUtils.makeRandomFileName(p.getPic());

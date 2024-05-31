@@ -40,12 +40,12 @@ class FeedCommentServiceTest {
         assertEquals(p1.getFeedCommentId(), result1);
 
         FeedCommentPostReq p2 = new FeedCommentPostReq();
-        p1.setFeedCommentId(1);
+        p1.setFeedCommentId(19);
         long result2 = service.postFeedComment(p2);
         assertEquals(p2.getFeedCommentId(), result2);
 
-        verify(mapper).postFeedComment(p1);
-        verify(mapper).postFeedComment(p2);
+        verify(mapper, times(1)).postFeedComment(p1);
+        verify(mapper, times(1)).postFeedComment(p2);
     }
 
     @Test
@@ -85,11 +85,11 @@ class FeedCommentServiceTest {
                 "24-12-12", 2, "2길동", "test2.png");
         FeedCommentGetRes res3 = new FeedCommentGetRes(3,"3",
                 "24-12-12", 3, "3길동", "test3.png");
-        List<FeedCommentGetRes> listZero = Arrays.asList();
         List<FeedCommentGetRes> list = new ArrayList<>();
         list.add(res1);
         list.add(res2);
         list.add(res3);
+        List<FeedCommentGetRes> listZero = Arrays.asList();
 
         given(mapper.selFeedComment(feedId)).willReturn(list);
         given(mapper.selFeedComment(feedIdZero)).willReturn(listZero);
