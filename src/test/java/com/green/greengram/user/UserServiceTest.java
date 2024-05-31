@@ -1,10 +1,7 @@
 package com.green.greengram.user;
 
 import com.green.greengram.common.CustomFileUtils;
-import com.green.greengram.user.model.SignInPostReq;
-import com.green.greengram.user.model.SignInRes;
-import com.green.greengram.user.model.SignUpPostReq;
-import com.green.greengram.user.model.User;
+import com.green.greengram.user.model.*;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mindrot.jbcrypt.BCrypt;
@@ -109,6 +106,22 @@ class UserServiceTest {
             assertEquals(user2.getPic(), res2.getPic(), "6. Pic먼가이상");
             mockedStatic.verify(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw()));
         }
+
+        SignInPostReq p3 = new SignInPostReq();
+        p3.setUid("id3");
+        given(mapper.signInPost(p3.getUid())).willReturn(null);
+        Throwable ex1 = assertThrows(RuntimeException.class, () -> service.getUserById(p3), "아이디 없음 예외처리 안함.");
+        assertEquals("아이디를 확인해 주세요.", ex1.getMessage(), "아이디 없음, 에러메시지 다름.");
+
+        SignInPostReq p4 = new SignInPostReq();
+        p4.setUid("id4");
+        p4.setUpw("6666");
+        String hashUpw4 = BCrypt.hashpw("7777", BCrypt.gensalt());
+        User user4 = new User(10, p4.getUid(), hashUpw4, "길동4", "pic4.jpg", "1111-11-11", null);
+        given(mapper.signInPost(p4.getUid())).willReturn(user4);
+        Throwable ex2 = assertThrows(RuntimeException.class, () -> service.getUserById(p4), "비밀번호 다름 예외처리 안함.");
+        assertEquals("비밀번호를 확인해 주세요", ex2.getMessage(), "비밀번호 다름, 에러메시지 다름.");
+
 //        SignInRes res1 = service.getUserById(p1);
 //        assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
 //        assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
@@ -126,10 +139,21 @@ class UserServiceTest {
     }
 
     @Test
-    void getUserInfo() {
-    }
+    void patchProfilePic() throws IOException {
+        String picName = "2372b92a-4933-47ec-9431-6489c1cb1239.png";
+        MultipartFile file1 =
+                new MockMultipartFile("pic", "2372b92a-4933-47ec-9431-6489c1cb1239.png","image/png",
+                        new FileInputStream(String.format("D:/download/greengram_tdd/user/2/%s", picName)));
+        UserProfilePatchReq p1 = new UserProfilePatchReq();
+        p1.setSignedUserId(1);
+        p1.setPicName(picName);
+        p1.setPic(file1);
+        given(mapper.updProfilePic(p1)).willReturn(1);
+        File saveFile1 = new File(uploadPath, String.format("%s/%d/%s", "user", p1.getSignedUserId(), p1.getPicName()));
+        String result = service.patchProfilePic(p1);
 
-    @Test
-    void patchProfilePic() {
+        assertEquals(1, mapper.updProfilePic(p1));
+        assertFalse(saveFile1.exists(), "1. 먼가이상");
+        assertNotEquals(p1.getPicName(), picName);
     }
 }
