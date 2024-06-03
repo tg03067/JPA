@@ -2,9 +2,11 @@ package com.green.greengram.user;
 
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.user.model.*;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mindrot.jbcrypt.BCrypt;
+import org.mockito.ArgumentCaptor;
 import org.mockito.MockedStatic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,11 +15,13 @@ import org.springframework.context.annotation.Import;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
@@ -34,6 +38,7 @@ class UserServiceTest {
     @Value("${file.dir}") String uploadPath;
     @MockBean UserMapper mapper;
     @Autowired UserService service;
+    @Autowired CustomFileUtils customFileUtils;
 
     @Test
     void postUser() throws IOException {
@@ -139,21 +144,89 @@ class UserServiceTest {
     }
 
     @Test
+    void getUserInfo() {
+        UserInfoGetReq p1 = new UserInfoGetReq(2, 1);
+        UserInfoGetRes result1 = new UserInfoGetRes("test1", "test.jpg", "2000-11-11",
+                4, 4,3, 3, 1);
+        given(mapper.selProfileUserInfo(p1)).willReturn(result1);
+
+        UserInfoGetReq p2 = new UserInfoGetReq(3, 1);
+        UserInfoGetRes result2 = new UserInfoGetRes("test2", "test2.jpg", "2002-12-12",
+                6, 6,1, 1, 3);
+        given(mapper.selProfileUserInfo(p2)).willReturn(result2);
+
+        UserInfoGetRes res1 = mapper.selProfileUserInfo(p1);
+        assertEquals(result1, res1);
+        verify(mapper).selProfileUserInfo(p1);
+        UserInfoGetRes res2 = mapper.selProfileUserInfo(p2);
+        assertEquals(result2, res2);
+        verify(mapper).selProfileUserInfo(p2);
+    }
+
+    @Test
     void patchProfilePic() throws IOException {
         String picName = "2372b92a-4933-47ec-9431-6489c1cb1239.png";
         MultipartFile file1 =
                 new MockMultipartFile("pic", "2372b92a-4933-47ec-9431-6489c1cb1239.png","image/png",
                         new FileInputStream(String.format("D:/download/greengram_tdd/user/2/%s", picName)));
         UserProfilePatchReq p1 = new UserProfilePatchReq();
-        p1.setSignedUserId(1);
+        p1.setSignedUserId(500);
         p1.setPicName(picName);
         p1.setPic(file1);
         given(mapper.updProfilePic(p1)).willReturn(1);
         File saveFile1 = new File(uploadPath, String.format("%s/%d/%s", "user", p1.getSignedUserId(), p1.getPicName()));
-        String result = service.patchProfilePic(p1);
+        String result1 = service.patchProfilePic(p1);
 
-        assertEquals(1, mapper.updProfilePic(p1));
         assertFalse(saveFile1.exists(), "1. 먼가이상");
         assertNotEquals(p1.getPicName(), picName);
+        verify(mapper, times(1)).updProfilePic(p1);
+    }
+
+    @Test
+    void patchProfilePic2() throws IOException {
+        long signedUserId1 = 500;
+        String fileName = "a.png";
+        String midPath = String.format("%s/user/%d", uploadPath, signedUserId1);
+        File dic = new File(midPath);
+        File a = new File("D:/download/greengram_tdd/test/a.png"); // 옮길려고하는 파일경로
+
+        if (!dic.exists()) {
+            dic.mkdirs();
+        }
+        File b = new File(dic + "/" + a.getName()); // 옮긴 후 파일경로
+        Files.copy(a.toPath(), b.toPath(), StandardCopyOption.REPLACE_EXISTING);
+
+        UserProfilePatchReq p1 = new UserProfilePatchReq();
+        p1.setSignedUserId(signedUserId1);
+    }
+
+    @Test
+    void patchProfilePic3() throws IOException {
+        long signedUserId1 = 500;
+        final String ORIGIN_FILE_PATH = String.format("%stest/%s", uploadPath, "a.png");
+        String midPath1 = String.format("%s/user/%d", uploadPath, signedUserId1);
+        File originFile = new File(ORIGIN_FILE_PATH);
+        File copyFile1 = new File(midPath1, "a.png");
+
+        customFileUtils.deleteFolder(midPath1);
+        customFileUtils.makeFolders("user/" + signedUserId1);
+        Files.copy(originFile.toPath(), copyFile1.toPath(), StandardCopyOption.REPLACE_EXISTING);
+
+        UserProfilePatchReq p1 = new UserProfilePatchReq();
+        p1.setSignedUserId(signedUserId1);
+        MultipartFile fm1 = new MockMultipartFile("pic", "b.png","image/png",
+                new FileInputStream(String.format("%stest/b.png", uploadPath)));
+        p1.setPic(fm1);
+        String fileName1 = service.patchProfilePic(p1);
+        assertNotNull(fileName1, "1. 파일명이 null이 넘어옴.");
+        // 1. midPath1 폴더가 존재해야함
+        // 2. 해당 폴더에 파일은 1개만 존재
+        // 3. 그 파일의 파일명이 fileName1과 같아야한다.
+        File file = new File(midPath1);
+        File[] files = file.listFiles();
+
+        assertNotNull(midPath1);
+        assertEquals(1, files.length);
+        assertEquals(fileName1, p1.getPicName());
     }
 }
