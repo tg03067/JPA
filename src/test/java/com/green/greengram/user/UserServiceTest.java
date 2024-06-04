@@ -219,14 +219,24 @@ class UserServiceTest {
         p1.setPic(fm1);
         String fileName1 = service.patchProfilePic(p1);
         assertNotNull(fileName1, "1. 파일명이 null이 넘어옴.");
-        // 1. midPath1 폴더가 존재해야함
-        // 2. 해당 폴더에 파일은 1개만 존재
-        // 3. 그 파일의 파일명이 fileName1과 같아야한다.
-        File file = new File(midPath1);
-        File[] files = file.listFiles();
 
-        assertNotNull(midPath1);
-        assertEquals(1, files.length);
-        assertEquals(fileName1, p1.getPicName());
+        // 1. midPath1 폴더가 존재해야함
+        File midPath1Folder = new File(midPath1);
+        assertEquals(true, midPath1Folder.exists());
+        // 2. 해당 폴더에 파일은 1개만 존재
+        assertEquals(1, midPath1Folder.listFiles().length);
+        // 3. 그 파일의 파일명이 fileName1과 같아야한다.
+        File file1 = midPath1Folder.listFiles()[0];
+        assertEquals(fileName1, file1.getName());
+
+        verify(mapper, times(1)).updProfilePic(p1);
+//        // 1. midPath1 폴더가 존재해야함
+//        File file = new File(midPath1);
+//        File[] files = file.listFiles(); //문자열 비교라서 결과가 다름.
+//        assertNotNull(midPath1);
+//        // 2. 해당 폴더에 파일은 1개만 존재
+//        assertEquals(1, files.length);
+//        // 3. 그 파일의 파일명이 fileName1과 같아야한다.
+//        assertEquals(fileName1, p1.getPicName()); // 기존 코드가 같은이름을 반환하도록 만들어야되서 문제가있음.
     }
 }
