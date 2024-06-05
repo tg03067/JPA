@@ -2,8 +2,10 @@ package com.green.greengram.feed.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 @Data
+@EqualsAndHashCode
 public class FeedPostReq {
     @JsonIgnore
     private long feedId;

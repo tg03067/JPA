@@ -16,13 +16,19 @@ import java.util.List;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class FeedServiceImpl {
+public class FeedServiceImpl implements FeedService {
     private final FeedMapper mapper;
     private final CustomFileUtils customFileUtils ;
 
+    @Override
     @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){ //feed pk 값 리턴.
         int result = mapper.postFeed(p);
+        if(pics == null){
+            return FeedPostRes.builder()
+                    .feedId(p.getFeedId())
+                    .build();
+        }
         log.info(String.format("%d",result));
         FeedPicPostDto picDto = FeedPicPostDto.builder().feedId(p.getFeedId()).build();
         try {
@@ -46,13 +52,13 @@ public class FeedServiceImpl {
                 .build();
     }
 
+    @Override
     public List<FeedGetRes> getFeed(FeedGetReq p){
         List<FeedGetRes> list = mapper.selFeed(p);
 
         if(list == null){
             return Collections.emptyList();
         }
-
         for(FeedGetRes res : list){
             //피드 하나당 포함된
             //사진 리스트
@@ -70,10 +76,28 @@ public class FeedServiceImpl {
         }
         return list;
     }
+
+//    @Override
+//    public List<FeedGetRes> getFeed(FeedGetReq p){
+//        List<FeedGetRes> list = mapper.selFeed(p);
+//        if(list == null){
+//            return Collections.emptyList();
+//        }
+//        for (FeedGetRes res : list){
+//            List<String> pics = mapper.selFeedPicsByFeedId(res.getFeedId());
+//            res.setPics(pics);
+//            List<FeedCommentGetRes> com = mapper.selFeedCommentTopBy4ByFeedId(res.getFeedId());
+//            if(com.size() == GlobalConst.COMMENT_SIZE_PER_FEED){
+//                res.setIsMoreComment(1);
+//                com.remove(com.size()-1);
+//            }
+//            res.setComments(com);
+//        }
+//        return list;
+//    }
 }
 
 /*
-
     @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){
         int result = mapper.postFeed(p);
