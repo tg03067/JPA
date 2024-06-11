@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("api/user/follow")
 @Tag(name = "유저 Follow", description = "유저 Follow CRUD")
 public class UserFollowControllerImpl implements UserFollowController {
-    private final UserFollowServiceImpl service;
+    private final UserFollowService service;
     @Override
     @PostMapping
     @Operation(summary = "유저간 Follow", description = "Follow 처리")

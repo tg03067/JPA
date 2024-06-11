@@ -1,0 +1,58 @@
+[2024-05-31 09:42:36 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentServiceTest] Starting FeedCommentServiceTest using Java 17.0.10 with PID 6196 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 09:42:36 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 09:42:38 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 09:42:38 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@50b38342
+[2024-05-31 09:42:38 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 09:42:38 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 09:42:39 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 09:42:39 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentServiceTest] Started FeedCommentServiceTest in 3.251 seconds (process running for 4.208)
+[2024-05-31 09:42:39 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-05-31 09:42:39 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-05-31 10:44:52 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Starting UserServiceTest using Java 17.0.10 with PID 4948 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 10:44:52 INFO  Test worker] [com.green.greengram.user.UserServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 10:44:53 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 10:44:53 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@408d945b
+[2024-05-31 10:44:53 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 10:44:54 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 10:44:54 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 10:44:54 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Started UserServiceTest in 2.985 seconds (process running for 3.874)
+[2024-05-31 10:44:55 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-05-31 10:44:55 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-05-31 10:46:11 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Starting UserServiceTest using Java 17.0.10 with PID 1896 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 10:46:11 INFO  Test worker] [com.green.greengram.user.UserServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 10:46:13 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 10:46:13 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4d75c604
+[2024-05-31 10:46:13 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 10:46:13 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 10:46:14 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 10:46:14 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Started UserServiceTest in 2.937 seconds (process running for 4.067)
+[2024-05-31 10:46:55 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Starting UserServiceTest using Java 17.0.10 with PID 11728 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 10:46:55 INFO  Test worker] [com.green.greengram.user.UserServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 10:46:57 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 10:46:57 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@52d59507
+[2024-05-31 10:46:57 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 10:46:57 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 10:46:58 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 10:46:58 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Started UserServiceTest in 3.029 seconds (process running for 3.94)
+[2024-05-31 10:46:58 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-05-31 10:46:58 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-05-31 10:51:25 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Starting UserServiceTest using Java 17.0.10 with PID 5980 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 10:51:25 INFO  Test worker] [com.green.greengram.user.UserServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 10:51:26 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 10:51:26 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@408d945b
+[2024-05-31 10:51:26 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 10:51:27 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 10:51:27 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 10:51:27 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Started UserServiceTest in 2.977 seconds (process running for 3.917)
+[2024-05-31 10:51:27 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-05-31 10:51:27 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-05-31 10:54:55 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Starting UserServiceTest using Java 17.0.10 with PID 11820 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-05-31 10:54:55 INFO  Test worker] [com.green.greengram.user.UserServiceTest] No active profile set, falling back to 1 default profile: "default"
+[2024-05-31 10:54:56 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-05-31 10:54:56 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@52d59507
+[2024-05-31 10:54:56 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-05-31 10:54:57 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-05-31 10:54:57 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-05-31 10:54:57 INFO  Test worker] [com.green.greengram.user.UserServiceTest] Started UserServiceTest in 2.983 seconds (process running for 3.85)
+[2024-05-31 10:54:58 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-05-31 10:54:58 INFO  SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.

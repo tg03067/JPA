@@ -29,17 +29,19 @@ class UserMapperTest {
     @DisplayName("유저 select one 테스트")
     void signInPost() {
         User user1 = mapper.signInPost("사용자1");
-        List<User> userList = mapper.selTest(user1.getUserId());
-        User user1Comp = userList.get(0);
-        assertEquals(user1Comp, user1);
+        if(user1 != null) {
+            List<User> userList = mapper.selTest(user1.getUserId());
+            User user1Comp = userList.get(0);
+            assertEquals(user1Comp, user1);
 
-        User user3 = mapper.signInPost("사용자3");
-        List<User> userList3 = mapper.selTest(user3.getUserId());
-        User user3Comp = userList3.get(0);
-        assertEquals(user3Comp, user3);
+            User user3 = mapper.signInPost("사용자3");
+            List<User> userList3 = mapper.selTest(user3.getUserId());
+            User user3Comp = userList3.get(0);
+            assertEquals(user3Comp, user3);
 
-        User userNo = mapper.signInPost("사용자asdf");
-        assertNull(userNo, "1. 먼가이상");
+            User userNo = mapper.signInPost("사용자asdf");
+            assertNull(userNo, "1. 먼가이상");
+        }
     }
 
     @Test

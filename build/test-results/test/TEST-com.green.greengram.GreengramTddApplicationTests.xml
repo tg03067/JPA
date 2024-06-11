@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.green.greengram.GreengramTddApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-10T02:42:10" hostname="DESKTOP-JUSC5N8" time="0.584">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.green.greengram.GreengramTddApplicationTests" time="0.584"/>
+  <system-out><![CDATA[11:42:07.912 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.green.greengram.GreengramTddApplicationTests]: GreengramTddApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:42:07.982 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.green.greengram.GreengramTddApplication for test class com.green.greengram.GreengramTddApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+[2024-06-10 11:42:08 INFO  Test worker] [com.green.greengram.GreengramTddApplicationTests] Starting GreengramTddApplicationTests using Java 17.0.10 with PID 1980 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-10 11:42:08 INFO  Test worker] [com.green.greengram.GreengramTddApplicationTests] No active profile set, falling back to 1 default profile: "default"
+[2024-06-10 11:42:09 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-06-10 11:42:09 INFO  Test worker] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@106cd9c8
+[2024-06-10 11:42:09 INFO  Test worker] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-06-10 11:42:09 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-10 11:42:10 INFO  Test worker] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-06-10 11:42:10 INFO  Test worker] [com.green.greengram.GreengramTddApplicationTests] Started GreengramTddApplicationTests in 2.173 seconds (process running for 3.021)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

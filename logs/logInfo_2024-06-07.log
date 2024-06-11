@@ -1,0 +1,719 @@
+[2024-06-07 09:57:04 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 1380 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 09:57:04 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 09:57:05 WARN  Test worker] [org.springframework.web.context.support.GenericWebApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userFollowControllerImpl' defined in file [D:\2024-01\backEnd\GreengramTdd\build\classes\java\main\com\green\greengram\userfollow\UserFollowControllerImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.green.greengram.userfollow.UserFollowServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+[2024-06-07 09:57:05 INFO  Test worker] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-06-07 09:57:05 ERROR Test worker] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.green.greengram.userfollow.UserFollowControllerImpl required a bean of type 'com.green.greengram.userfollow.UserFollowServiceImpl' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.green.greengram.userfollow.UserFollowServiceImpl' in your configuration.
+
+[2024-06-07 09:57:05 WARN  Test worker] [org.springframework.test.context.TestContextManager] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener] to prepare test instance [com.green.greengram.userfollow.UserFollowControllerTest@27bb4dc5]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@7d3bf8db testClass = com.green.greengram.userfollow.UserFollowControllerTest, locations = [], classes = [com.green.greengram.GreengramTddApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@37ddb69a, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@e2066b63, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@33ac777b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@55342f40, [ImportsContextCustomizer@49e7e8f1 key = [org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, com.green.greengram.CharEncodingConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2313052e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@57fd91c9, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@afbc1020, org.springframework.boot.test.context.SpringBootTestAnnotation@8c241cc0], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:180)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:122)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:106)
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:63)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:163)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:378)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:383)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:378)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:290)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:289)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:279)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:278)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:119)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:94)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:89)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userFollowControllerImpl' defined in file [D:\2024-01\backEnd\GreengramTdd\build\classes\java\main\com\green\greengram\userfollow\UserFollowControllerImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.green.greengram.userfollow.UserFollowServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1454)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	... 87 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.green.greengram.userfollow.UserFollowServiceImpl' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1880)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1406)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 111 common frames omitted
+[2024-06-07 09:57:17 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 4400 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 09:57:17 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 09:57:19 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 09:57:19 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 09:57:19 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 09:57:19 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 09:57:19 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.772 seconds (process running for 2.668)
+[2024-06-07 10:07:46 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 3764 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:07:46 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:07:47 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:07:47 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:07:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:07:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 10:07:47 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.719 seconds (process running for 2.615)
+[2024-06-07 10:17:28 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 828 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:17:28 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:17:29 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:17:30 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:17:30 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:17:30 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 10:17:30 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.809 seconds (process running for 2.7)
+[2024-06-07 10:17:59 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 1268 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:17:59 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:18:00 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:18:00 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:18:00 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:18:00 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 10:18:00 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.734 seconds (process running for 2.612)
+[2024-06-07 10:39:08 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 6172 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:39:08 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:39:10 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:39:10 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:39:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:39:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 10:39:10 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.757 seconds (process running for 2.654)
+[2024-06-07 10:41:51 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 1836 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:41:51 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:41:52 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:41:52 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:41:52 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:41:52 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 10:41:52 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.736 seconds (process running for 2.629)
+[2024-06-07 10:50:00 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 1120 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:50:00 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:50:01 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:50:01 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:50:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:50:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 10:50:01 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.69 seconds (process running for 2.556)
+[2024-06-07 10:50:06 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 13740 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:50:06 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:50:07 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:50:07 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:50:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:50:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
+[2024-06-07 10:50:07 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.718 seconds (process running for 2.59)
+[2024-06-07 10:59:06 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 7708 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 10:59:06 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 10:59:07 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 10:59:07 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 10:59:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 10:59:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 10:59:08 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.789 seconds (process running for 2.683)
+[2024-06-07 11:06:03 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 6104 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:06:03 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:06:04 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:06:05 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:06:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:06:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 11:06:05 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.74 seconds (process running for 2.618)
+[2024-06-07 11:06:42 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 4548 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:06:42 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:06:44 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:06:44 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:06:44 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:06:44 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 11:06:44 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.743 seconds (process running for 2.628)
+[2024-06-07 11:08:22 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 9608 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:08:22 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:08:23 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:08:24 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:08:24 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:08:24 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:08:24 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.738 seconds (process running for 2.652)
+[2024-06-07 11:27:10 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 13860 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:27:10 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:27:12 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:27:12 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:27:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:27:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 11:27:12 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.74 seconds (process running for 2.651)
+[2024-06-07 11:28:14 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.10 with PID 8508 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-07 11:28:14 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-07 11:28:15 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-07 11:28:15 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1207 ms[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@22f367d[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-07 11:28:16 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.469 seconds (process running for 2.862)[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-07 11:28:17 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2024-06-07 11:28:18 [32mINFO [0;39m http-nio-8080-exec-10] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 279 ms[0;39m
+[2024-06-07 11:28:57 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.user.UserControllerImpl] [36mpic: org.springframework.web.multipart.support.StandardMultipartHttpServletRequest$StandardMultipartFile@27413587[0;39m
+[2024-06-07 11:28:57 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.user.UserControllerImpl] [36mp: SignUpPostReq(uid=min, upw=1212, nm=이종민, pic=null, userId=0)[0;39m
+[2024-06-07 11:28:57 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. INSERT INTO user
+        SET uid = 'min'
+        , upw = '$2a$10$OQZFNOUi4m9GrvimPq.lJOnCZTAqapQguxOFmdqBSsmKpEnT.cO6a'
+        , nm = '이종민'
+        , pic = '3edceb71-0e08-4e7e-a2bf-3f48e91d8532.png'
+ {executed in 6 msec}[0;39m
+[2024-06-07 11:28:57 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: INSERT INTO user
+        SET uid = 'min'
+        , upw = '$2a$10$OQZFNOUi4m9GrvimPq.lJOnCZTAqapQguxOFmdqBSsmKpEnT.cO6a'
+        , nm = '이종민'
+        , pic = '3edceb71-0e08-4e7e-a2bf-3f48e91d8532.png'
+ {executed in 0 msec}[0;39m
+[2024-06-07 11:28:57 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|21        |
+|----------|
+[0;39m
+[2024-06-07 11:29:04 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.user.UserControllerImpl] [36mp; SignInPostReq(uid=mic, upw=1212)[0;39m
+[2024-06-07 11:29:04 [32mDEBUG[0;39m http-nio-8080-exec-9] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id as userId, uid, upw, nm, pic,
+               created_at AS createdAt, updated_at AS updatedAt
+        FROM user
+        WHERE uid = 'mic'
+ {executed in 0 msec}[0;39m
+[2024-06-07 11:29:04 [32mINFO [0;39m http-nio-8080-exec-9] [jdbc.resultsettable] [36m
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+|user_id |uid |upw                                                          |nm  |pic                                      |created_at          |updated_at |
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+|9       |mic |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |홍길동 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |2024-05-03 18:00:47 |null       |
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+[0;39m
+[2024-06-07 11:29:05 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
+               B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
+               IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 20
+ {executed in 4 msec}[0;39m
+[2024-06-07 11:29:05 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|--------|--------|------|------------------------------------------|--------------------|-----------------------------------|---------|------|
+|feed_id |user_id |nm    |pic                                       |created_at          |contents                           |location |isfav |
+|--------|--------|------|------------------------------------------|--------------------|-----------------------------------|---------|------|
+|43      |18      |hi    |5bbd3848-326b-42e4-8746-ee160901df02.jpg  |2024-05-16 12:47:44 |ㅁㅁ                                 |ㅁㅁ       |0     |
+|38      |18      |hi    |5bbd3848-326b-42e4-8746-ee160901df02.jpg  |2024-05-14 13:25:45 |a                                  |a        |0     |
+|37      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-13 16:42:50 |a                                  |a        |0     |
+|32      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-10 12:11:37 |ㅁㄴㅇ                                |ㅁㄴㅇ      |0     |
+|30      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-09 18:10:10 |ㅁㅁ                                 |ㅁㅁ       |0     |
+|29      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-09 17:30:52 |히히                                 |대구시      |0     |
+|28      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-08 15:04:51 |a                                  |a        |0     |
+|27      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-08 14:54:46 |ㅁㄴㅇㄹ                               |ㄻㄴㅇ      |0     |
+|26      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-08 14:54:20 |그린                                 |컴퍼       |0     |
+|25      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-08 14:45:10 |aa                                 |aa       |0     |
+|24      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png  |2024-05-08 14:43:30 |aa                                 |aa       |0     |
+|19      |12      |재문    |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:53:53 |보보보..봇치는 씹덕이 아니라고 생각해요             |도쿄       |0     |
+|18      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg  |2024-05-07 16:52:47 |봇치 글쓰는 애 오타쿠임 ㅋㅋ                   |대구시      |0     |
+|17      |12      |재문    |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:51:10 |봇치더락 총집편 2024년 6월 7일 개봉
+많은사랑 부탁드려요 |도쿄       |0     |
+|16      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg  |2024-05-07 16:51:03 |ㅋㅋ                                 |ㅋㅋ       |0     |
+|15      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg  |2024-05-07 16:50:07 |ㅁㄴㅇ                                |ㅁㄴㅇ      |0     |
+|14      |12      |재문    |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:48:33 |온세상이 봇치다..                         |도쿄       |0     |
+|13      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg  |2024-05-07 16:45:58 |구하라                                |대구       |0     |
+|12      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg  |2024-05-07 16:44:22 |ㅁㄴㅇㄹ                               |ㅁㄴㅇㄹ     |0     |
+|11      |7       |유사한국인 |4d1b076e-0b28-4a39-b382-860ab04d5428.png  |2024-05-07 16:38:58 |대구시                                |대구시      |0     |
+|--------|--------|------|------------------------------------------|--------------------|-----------------------------------|---------|------|
+[0;39m
+[2024-06-07 11:29:05 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 43
+ {executed in 1 msec}[0;39m
+[2024-06-07 11:29:05 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|692ff94c-5302-4ea0-b6a4-bd9233e825ff.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-07 11:29:05 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 43
+        LIMIT 4
+ {executed in 1 msec}[0;39m
+[2024-06-07 11:29:05 [31mERROR[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m1. ResultSet.getLong(writerNm)[0;39m
+java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
+	at org.mariadb.jdbc.client.column.StringColumn.decodeLongText(StringColumn.java:232)
+	at org.mariadb.jdbc.client.result.rowdecoder.TextRowDecoder.decodeLong(TextRowDecoder.java:127)
+	at org.mariadb.jdbc.client.result.Result.getLong(Result.java:511)
+	at org.mariadb.jdbc.client.result.Result.getLong(Result.java:703)
+	at net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy.getLong(ResultSetSpy.java:2853)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java)
+	at org.apache.ibatis.type.LongTypeHandler.getNullableResult(LongTypeHandler.java:35)
+	at org.apache.ibatis.type.LongTypeHandler.getNullableResult(LongTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:86)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyColumnOrderBasedConstructorAutomapping(DefaultResultSetHandler.java:789)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyConstructorAutomapping(DefaultResultSetHandler.java:776)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:727)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:689)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:659)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:411)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy102.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy4/jdk.proxy4.$Proxy106.selFeedCommentTopBy4ByFeedId(Unknown Source)
+	at com.green.greengram.feed.FeedServiceImpl.getFeed(FeedServiceImpl.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.green.greengram.feed.FeedServiceImpl$$SpringCGLIB$$0.getFeed(<generated>)
+	at com.green.greengram.feed.FeedControllerImpl.getFeed(FeedControllerImpl.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-06-07 11:29:05 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|feed_comment_id |comment |created_at          |nm    |pic                                      |user_id |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|101             |gd      |2024-05-21 10:51:23 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+[0;39m
+[2024-06-07 11:29:05 [31mERROR[0;39m http-nio-8080-exec-10] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] [36mServlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DataIntegrityViolationException: Error attempting to get column 'writerNm' from result set.  Cause: java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
+; value '유사한국인' cannot be decoded as Long] with root cause[0;39m
+java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
+	at org.mariadb.jdbc.client.column.StringColumn.decodeLongText(StringColumn.java:232)
+	at org.mariadb.jdbc.client.result.rowdecoder.TextRowDecoder.decodeLong(TextRowDecoder.java:127)
+	at org.mariadb.jdbc.client.result.Result.getLong(Result.java:511)
+	at org.mariadb.jdbc.client.result.Result.getLong(Result.java:703)
+	at net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy.getLong(ResultSetSpy.java:2853)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.getLong(HikariProxyResultSet.java)
+	at org.apache.ibatis.type.LongTypeHandler.getNullableResult(LongTypeHandler.java:35)
+	at org.apache.ibatis.type.LongTypeHandler.getNullableResult(LongTypeHandler.java:26)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:86)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyColumnOrderBasedConstructorAutomapping(DefaultResultSetHandler.java:789)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyConstructorAutomapping(DefaultResultSetHandler.java:776)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createByConstructorSignature(DefaultResultSetHandler.java:727)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:689)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.createResultObject(DefaultResultSetHandler.java:659)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:411)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:366)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:337)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:310)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:202)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:66)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:80)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:65)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:158)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:110)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:90)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:154)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy102.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:141)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy4/jdk.proxy4.$Proxy106.selFeedCommentTopBy4ByFeedId(Unknown Source)
+	at com.green.greengram.feed.FeedServiceImpl.getFeed(FeedServiceImpl.java:69)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.green.greengram.feed.FeedServiceImpl$$SpringCGLIB$$0.getFeed(<generated>)
+	at com.green.greengram.feed.FeedControllerImpl.getFeed(FeedControllerImpl.java:40)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+[2024-06-07 11:30:35 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-07 11:30:35 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-07 11:31:01 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.10 with PID 14404 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-07 11:31:01 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-07 11:31:01 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-07 11:31:01 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1014 ms[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7a7afbfc[0;39m
+[2024-06-07 11:31:02 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-07 11:31:03 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.224 seconds (process running for 2.603)[0;39m
+[2024-06-07 11:31:04 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-07 11:31:04 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-07 11:31:04 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
+[2024-06-07 11:31:05 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-07 11:31:05 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-07 11:31:09 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 14256 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:31:09 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:31:10 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:31:10 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:31:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:31:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:31:10 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.734 seconds (process running for 2.631)
+[2024-06-07 11:38:09 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 14932 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:38:09 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:38:10 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:38:10 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:38:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:38:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 10 ms
+[2024-06-07 11:38:10 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.726 seconds (process running for 2.608)
+[2024-06-07 11:40:30 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 14800 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:40:30 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:40:31 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:40:31 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:40:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:40:31 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 11:40:31 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.73 seconds (process running for 2.604)
+[2024-06-07 11:41:16 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 14768 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:41:16 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:41:17 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:41:17 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:41:17 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:41:17 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:41:17 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.77 seconds (process running for 2.676)
+[2024-06-07 11:42:00 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 10976 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:42:00 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:42:01 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:42:01 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:42:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:42:01 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:42:01 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.812 seconds (process running for 2.685)
+[2024-06-07 11:42:34 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 6384 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:42:34 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:42:35 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:42:35 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:42:35 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:42:35 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:42:35 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.803 seconds (process running for 2.771)
+[2024-06-07 11:52:53 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 10164 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:52:53 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:52:54 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:52:55 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:52:55 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:52:55 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:52:55 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.793 seconds (process running for 2.681)
+[2024-06-07 11:55:03 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 13620 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:55:03 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:55:04 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:55:04 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:55:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:55:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:55:04 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.799 seconds (process running for 2.675)
+[2024-06-07 11:59:01 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.10 with PID 14596 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 11:59:01 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 11:59:02 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 11:59:02 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 11:59:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 11:59:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-07 11:59:02 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.79 seconds (process running for 2.64)
+[2024-06-07 12:18:50 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 11200 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:18:50 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:18:51 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:18:52 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.878 seconds (process running for 2.729)
+[2024-06-07 12:19:02 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 6620 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:19:02 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:19:04 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:19:04 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.907 seconds (process running for 2.769)
+[2024-06-07 12:19:48 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 13796 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:19:48 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:19:50 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:19:50 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.956 seconds (process running for 2.867)
+[2024-06-07 12:37:05 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 3528 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:37:05 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:37:06 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:37:07 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.983 seconds (process running for 2.845)
+[2024-06-07 12:38:16 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 16296 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:38:16 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:38:17 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:38:17 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 2.029 seconds (process running for 2.89)
+[2024-06-07 12:39:03 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 14608 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:39:03 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:39:04 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:39:04 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.934 seconds (process running for 2.802)
+[2024-06-07 12:41:46 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 11272 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:41:46 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:41:48 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:41:48 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 12:41:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 12:41:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 12:41:48 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.73 seconds (process running for 2.641)
+[2024-06-07 12:42:12 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 16284 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:42:12 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:42:14 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:42:14 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 12:42:14 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 12:42:14 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 12:42:14 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.701 seconds (process running for 2.579)
+[2024-06-07 12:42:32 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 1124 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 12:42:32 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 12:42:33 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 12:42:33 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 12:42:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 12:42:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 5 ms
+[2024-06-07 12:42:34 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.662 seconds (process running for 2.547)
+[2024-06-07 13:08:06 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 14092 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-07 13:08:06 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-07 13:08:07 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-07 13:08:07 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-07 13:08:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-07 13:08:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-07 13:08:07 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.669 seconds (process running for 2.527)

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - FeedFavoriteControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>FeedFavoriteControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.green.greengram.feedfavorite.html">com.green.greengram.feedfavorite</a> &gt; FeedFavoriteControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.131s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">toggleFavorite()</td>
+<td class="success">0.125s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">toggleFavorite2()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [com.green.greengram.feedfavorite.FeedFavoriteControllerTest]: FeedFavoriteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.boot.test.context.SpringBootTestContextBootstrapper] Found @SpringBootConfiguration com.green.greengram.GreengramTddApplication for test class com.green.greengram.feedfavorite.FeedFavoriteControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+[2024-06-10 11:42:12 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Starting FeedFavoriteControllerTest using Java 17.0.10 with PID 1980 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-10 11:42:12 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] No active profile set, falling back to 1 default profile: &quot;default&quot;
+[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-10 11:42:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-10 11:42:12 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 0.234 seconds (process running for 5.168)
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/feed/favorite
+       Parameters = {feedId=[1], userId=[2]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.green.greengram.feedfavorite.FeedFavoriteControllerImpl
+           Method = com.green.greengram.feedfavorite.FeedFavoriteControllerImpl#toggleFavorite(FeedFavoriteToggleReq)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;statusCode&quot;:&quot;OK&quot;,&quot;resultMsg&quot;:&quot;좋아요 처리&quot;,&quot;resultData&quot;:1}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/feed/favorite
+       Parameters = {feedId=[1], userId=[2]}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.green.greengram.feedfavorite.FeedFavoriteControllerImpl
+           Method = com.green.greengram.feedfavorite.FeedFavoriteControllerImpl#toggleFavorite(FeedFavoriteToggleReq)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;]
+     Content type = application/json;charset=UTF-8
+             Body = {&quot;statusCode&quot;:&quot;OK&quot;,&quot;resultMsg&quot;:&quot;좋아요 취소&quot;,&quot;resultData&quot;:0}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at 2024. 6. 10. 오전 11:42:14</p>
+</div>
+</div>
+</body>
+</html>

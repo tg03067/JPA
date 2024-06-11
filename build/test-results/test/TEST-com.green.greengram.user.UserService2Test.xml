@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.green.greengram.user.UserService2Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-10T02:42:13" hostname="DESKTOP-JUSC5N8" time="0.006">
+  <properties/>
+  <testcase name="patchProfilePic()" classname="com.green.greengram.user.UserService2Test" time="0.004"/>
+  <testcase name="patchProfilePic2()" classname="com.green.greengram.user.UserService2Test" time="0.002"/>
+  <system-out><![CDATA[[2024-06-10 11:42:13 INFO  Test worker] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [com.green.greengram.user.UserService2Test]: UserService2Test does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

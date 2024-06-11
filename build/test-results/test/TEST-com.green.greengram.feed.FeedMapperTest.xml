@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.green.greengram.feed.FeedMapperTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2024-06-10T02:42:10" hostname="DESKTOP-JUSC5N8" time="0.002">
+  <properties/>
+  <testcase name="selFeedCommentTopBy4ByFeedId()" classname="com.green.greengram.feed.FeedMapperTest" time="0.0"/>
+  <testcase name="postFeedPics()" classname="com.green.greengram.feed.FeedMapperTest" time="0.001"/>
+  <testcase name="postFeed()" classname="com.green.greengram.feed.FeedMapperTest" time="0.0"/>
+  <testcase name="selFeedPicsByFeedId()" classname="com.green.greengram.feed.FeedMapperTest" time="0.0"/>
+  <testcase name="selFeed()" classname="com.green.greengram.feed.FeedMapperTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

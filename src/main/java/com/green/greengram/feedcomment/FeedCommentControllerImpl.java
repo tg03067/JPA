@@ -1,6 +1,7 @@
 package com.green.greengram.feedcomment;
 
 import com.green.greengram.common.model.ResultDto;
+import com.green.greengram.feedfavorite.FeedFavoriteController;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
@@ -17,7 +18,7 @@ import java.util.List;
 @RequestMapping("api/feed/comment")
 @Tag(name = "Feed 댓글", description = "댓글관련")
 public class FeedCommentControllerImpl {
-    private final FeedCommentServiceImpl service ;
+    private final FeedCommentService service ;
 
 
     @PostMapping

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/feed/favorite")
 @Tag(name = "좋아요 표시", description = "좋아요를 하기위한 Swagger")
 public class FeedFavoriteControllerImpl implements FeedFavoriteController{
-    private final FeedFavoriteServiceImpl service;
+    private final FeedFavoriteService service;
     // post, del 방식말고 get으로 좋아요처리를 해도되는 이유
     // 전송 데이터 적음, 데이터 노출되면 안되는 것. (post로 처리)
     @Override
