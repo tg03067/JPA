@@ -20,14 +20,15 @@ import java.util.Map;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @Import(CharEncodingConfiguration.class)
 @WebMvcTest(UserFollowControllerImpl.class)
-class UserFollowControllerTest {
+class UserFollowControllerTest2 {
     @Autowired private ObjectMapper om;
     @Autowired private MockMvc mvc;
     @MockBean private UserFollowService service;
@@ -51,8 +52,8 @@ class UserFollowControllerTest {
         expectedResultMap.put("resultMsg", HttpStatus.OK.toString());
         expectedResultMap.put("resultData", result);
 
-        //String expectedJson = om.writeValueAsString(expectedResult);
-        String expectedJson = om.writeValueAsString(expectedResultMap);
+        String expectedJson = om.writeValueAsString(expectedResult);
+        //String expectedJson = om.writeValueAsString(expectedResultMap);
 
         mvc.perform(
                 post(BASE_URL).

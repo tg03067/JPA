@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.green.greengram.userfollow.UserFollowServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-10T02:42:14" hostname="DESKTOP-JUSC5N8" time="0.004">
-  <properties/>
-  <testcase name="유저 servicePost 확인" classname="com.green.greengram.userfollow.UserFollowServiceTest" time="0.002"/>
-  <testcase name="유저 serviceDelete 확인" classname="com.green.greengram.userfollow.UserFollowServiceTest" time="0.001"/>
-  <system-out><![CDATA[[2024-06-10 11:42:14 INFO  Test worker] [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils] Could not detect default configuration classes for test class [com.green.greengram.userfollow.UserFollowServiceTest]: UserFollowServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

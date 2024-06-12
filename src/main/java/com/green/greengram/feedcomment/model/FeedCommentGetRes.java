@@ -15,6 +15,4 @@ public class FeedCommentGetRes {
     private long writerId;
     private String writerNm;
     private String writerPic;
-
-
 }

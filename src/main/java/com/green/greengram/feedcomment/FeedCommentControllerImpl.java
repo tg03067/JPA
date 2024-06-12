@@ -17,13 +17,14 @@ import java.util.List;
 @RestController
 @RequestMapping("api/feed/comment")
 @Tag(name = "Feed 댓글", description = "댓글관련")
-public class FeedCommentControllerImpl {
+public class FeedCommentControllerImpl implements FeedCommentController {
     private final FeedCommentService service ;
 
-
+    @Override
     @PostMapping
     @Operation(summary = "댓글쓰기")
     public ResultDto<Long> postFeedComment(@RequestBody FeedCommentPostReq p){
+        log.info("p : {}", p);
         long feedCommentId = service.postFeedComment(p);
 
         return ResultDto.<Long>builder().
@@ -33,6 +34,20 @@ public class FeedCommentControllerImpl {
                 build();
     }
 
+    @Override
+    @GetMapping
+    @Operation(summary = "댓글 가져오기")
+    public ResultDto<List<FeedCommentGetRes>> getFeedCommentList(@RequestParam(name = "feed_id") Long feedId) {
+        List<FeedCommentGetRes> list = service.getFeedComment(feedId);
+
+        return ResultDto.<List<FeedCommentGetRes>>builder().
+                statusCode(HttpStatus.OK).
+                resultMsg(String.format("rows: %,d", list.size())).
+                resultData(list).
+                build();
+    }
+
+    @Override
     @DeleteMapping
     @Operation(summary = "댓글지우기")
     public ResultDto<Integer> deleteFeedComment(@ParameterObject @ModelAttribute FeedCommentDeleteReq p){
@@ -42,18 +57,6 @@ public class FeedCommentControllerImpl {
                 statusCode(HttpStatus.OK).
                 resultMsg(result == 0 ? "댓글 삭제를 할 수 없습니다." : "댓글을 삭제하였습니다.").
                 resultData(result).
-                build();
-    }
-
-    @GetMapping
-    @Operation(summary = "댓글 가져오기")
-    public ResultDto<List<FeedCommentGetRes>> getFeedComment(@RequestParam(name = "feed_id") Long feedId) {
-        List<FeedCommentGetRes> list = service.getFeedComment(feedId);
-
-        return ResultDto.<List<FeedCommentGetRes>>builder().
-                statusCode(HttpStatus.OK).
-                resultMsg(String.format("rows: %,d", list.size())).
-                resultData(list).
                 build();
     }
 }
