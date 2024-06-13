@@ -30,7 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 class FeedFavoriteControllerTest {
     @MockBean private FeedFavoriteService service;
     @Autowired private ObjectMapper om; // json을 객체, object로 변환, 반대도 가능.
-    @Autowired private MockMvc mvc; // postman 같은 역활
+    @Autowired private MockMvc mvc; // postman 같은 역활, 통신이 되는지 테스트해봄.
     private final String BASE_URL = "/api/feed/favorite";
 
     @Test

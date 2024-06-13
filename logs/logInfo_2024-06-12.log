@@ -1,0 +1,614 @@
+[2024-06-12 10:10:20 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9440 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:10:20 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:10:21 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:10:21 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:10:21 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:10:21 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 10:10:21 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 2.037 seconds (process running for 2.952)
+[2024-06-12 10:11:04 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9324 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:11:04 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:11:05 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:11:05 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:11:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:11:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:11:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.772 seconds (process running for 2.619)
+[2024-06-12 10:13:10 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 3372 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:13:10 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:13:12 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:13:12 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:13:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:13:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:13:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.739 seconds (process running for 2.578)
+[2024-06-12 10:14:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 3932 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:14:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:14:13 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:14:13 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:14:13 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:14:13 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:14:13 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.772 seconds (process running for 2.659)
+[2024-06-12 10:15:52 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 1700 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:15:52 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:15:53 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:15:54 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:15:54 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:15:54 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:15:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.718 seconds (process running for 2.59)
+[2024-06-12 10:16:18 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 6636 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:16:18 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:16:19 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:16:19 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:16:19 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:16:19 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:16:19 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.763 seconds (process running for 2.615)
+[2024-06-12 10:18:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 11320 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:18:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:18:06 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:18:07 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:18:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:18:07 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:18:07 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.826 seconds (process running for 2.716)
+[2024-06-12 10:20:13 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 7464 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:20:13 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:20:14 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:20:14 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:20:14 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:20:14 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 10:20:14 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.735 seconds (process running for 2.603)
+[2024-06-12 10:20:27 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 6788 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:20:27 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:20:28 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:20:29 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:20:29 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:20:29 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:20:29 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.735 seconds (process running for 2.587)
+[2024-06-12 10:20:53 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 6232 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:20:53 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:20:54 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:20:54 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:20:54 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:20:54 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:20:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.835 seconds (process running for 2.713)
+[2024-06-12 10:23:47 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Starting UserFollowControllerTest using Java 17.0.11 with PID 8812 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:23:47 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:23:48 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:23:49 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:23:49 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:23:49 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:23:49 INFO  Test worker] [com.green.greengram.userfollow.UserFollowControllerTest] Started UserFollowControllerTest in 1.818 seconds (process running for 2.723)
+[2024-06-12 10:25:34 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 6028 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:25:34 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:25:35 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:25:36 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:25:36 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:25:36 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:25:36 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.776 seconds (process running for 2.656)
+[2024-06-12 10:30:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14616 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:30:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:30:33 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:30:34 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:30:34 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:30:34 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:30:34 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.728 seconds (process running for 2.588)
+[2024-06-12 10:31:40 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14868 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:31:40 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:31:41 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:31:41 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:31:41 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:31:41 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 6 ms
+[2024-06-12 10:31:41 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.775 seconds (process running for 2.64)
+[2024-06-12 10:32:04 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 15268 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:32:04 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:32:05 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:32:05 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:32:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:32:05 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:32:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.773 seconds (process running for 2.631)
+[2024-06-12 10:32:37 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 13564 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:32:37 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:32:38 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:32:39 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:32:39 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:32:39 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 10:32:39 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.718 seconds (process running for 2.563)
+[2024-06-12 10:32:48 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 3944 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:32:49 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:32:50 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:32:50 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:32:50 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:32:50 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:32:50 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.855 seconds (process running for 2.721)
+[2024-06-12 10:33:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 7804 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:33:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:33:34 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:33:34 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:33:34 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:33:34 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:33:34 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.783 seconds (process running for 2.638)
+[2024-06-12 10:33:50 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 7220 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:33:50 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:33:51 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:33:51 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:33:51 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:33:51 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 14 ms
+[2024-06-12 10:33:51 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.736 seconds (process running for 2.611)
+[2024-06-12 10:34:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 6388 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:34:32 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:34:33 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:34:33 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:34:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:34:33 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:34:33 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.78 seconds (process running for 2.62)
+[2024-06-12 10:34:34 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 10:34:56 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9604 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:34:56 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:34:57 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:34:58 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:34:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:34:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 10:34:58 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.786 seconds (process running for 2.651)
+[2024-06-12 10:34:58 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 10:39:01 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14416 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:39:01 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:39:02 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:39:02 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:39:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:39:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 10:39:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.786 seconds (process running for 2.66)
+[2024-06-12 10:39:03 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 10:39:11 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 5072 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 10:39:11 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 10:39:12 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 10:39:12 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 10:39:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 10:39:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 10:39:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.715 seconds (process running for 2.6)
+[2024-06-12 10:39:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 11:15:17 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 3484 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:15:17 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:15:18 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:15:18 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:15:18 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:15:18 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 11:15:18 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.725 seconds (process running for 2.599)
+[2024-06-12 11:16:22 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 512 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:16:22 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:16:23 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:16:23 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:16:23 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:16:23 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:16:23 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.762 seconds (process running for 2.637)
+[2024-06-12 11:17:33 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14840 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:17:33 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:17:35 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:17:35 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:17:35 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:17:35 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 11:17:35 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.722 seconds (process running for 2.618)
+[2024-06-12 11:18:11 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9348 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:18:11 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:18:12 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:18:12 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:18:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:18:12 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 11:18:12 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.79 seconds (process running for 2.639)
+[2024-06-12 11:23:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 15068 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:23:05 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:23:06 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:23:06 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:23:06 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:23:06 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 16 ms
+[2024-06-12 11:23:06 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.751 seconds (process running for 2.634)
+[2024-06-12 11:23:06 WARN  Test worker] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.green.greengram.common.model.ResultDto<java.lang.Integer> com.green.greengram.feedcomment.FeedCommentControllerImpl.deleteFeedComment(com.green.greengram.feedcomment.model.FeedCommentDeleteReq): [Field error in object 'feedCommentDeleteReq' on field 'feed_comment_id': rejected value [null]; codes [typeMismatch.feedCommentDeleteReq.feed_comment_id,typeMismatch.feed_comment_id,typeMismatch.long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [feedCommentDeleteReq.feed_comment_id,feed_comment_id]; arguments []; default message [feed_comment_id]]; default message [Failed to convert value of type 'null' to required type 'long'; Failed to convert from type [null] to type [long] for value [null]]] ]
+[2024-06-12 11:25:49 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 13404 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:25:49 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:25:50 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:25:50 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:25:50 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:25:50 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 11:25:50 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.75 seconds (process running for 2.631)
+[2024-06-12 11:25:50 WARN  Test worker] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.green.greengram.common.model.ResultDto<java.lang.Integer> com.green.greengram.feedcomment.FeedCommentControllerImpl.deleteFeedComment(com.green.greengram.feedcomment.model.FeedCommentDeleteReq): [Field error in object 'feedCommentDeleteReq' on field 'feed_comment_id': rejected value [null]; codes [typeMismatch.feedCommentDeleteReq.feed_comment_id,typeMismatch.feed_comment_id,typeMismatch.long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [feedCommentDeleteReq.feed_comment_id,feed_comment_id]; arguments []; default message [feed_comment_id]]; default message [Failed to convert value of type 'null' to required type 'long'; Failed to convert from type [null] to type [long] for value [null]]] ]
+[2024-06-12 11:26:28 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 4488 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:26:28 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:26:29 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:26:29 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:26:29 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:26:29 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 11:26:29 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.784 seconds (process running for 2.667)
+[2024-06-12 11:26:57 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 5812 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:26:57 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:26:58 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:26:58 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:26:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:26:58 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:26:58 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.769 seconds (process running for 2.649)
+[2024-06-12 11:30:45 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14784 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:30:45 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:30:46 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:30:47 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:30:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:30:47 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 4 ms
+[2024-06-12 11:30:47 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.738 seconds (process running for 2.628)
+[2024-06-12 11:33:08 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14836 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:33:08 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:33:09 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:33:10 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:33:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:33:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:33:10 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.791 seconds (process running for 2.644)
+[2024-06-12 11:46:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9108 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:46:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:46:55 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:46:55 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:46:55 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:46:55 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:46:55 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.741 seconds (process running for 2.594)
+[2024-06-12 11:49:59 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 10404 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:49:59 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:50:00 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:50:00 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:50:00 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:50:00 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:50:00 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.747 seconds (process running for 2.579)
+[2024-06-12 11:50:09 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 5088 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:50:09 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:50:10 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:50:10 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:50:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:50:10 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 11:50:10 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.742 seconds (process running for 2.611)
+[2024-06-12 11:51:36 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 11576 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 11:51:36 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 11:51:37 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 11:51:37 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 11:51:37 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 11:51:37 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
+[2024-06-12 11:51:37 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.743 seconds (process running for 2.568)
+[2024-06-12 12:04:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 15108 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 12:04:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 12:04:03 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 12:04:03 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 12:04:03 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 12:04:03 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 12:04:03 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.759 seconds (process running for 2.605)
+[2024-06-12 12:06:08 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 4924 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 12:06:08 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 12:06:09 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 12:06:09 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 12:06:09 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 12:06:09 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 12:06:09 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.777 seconds (process running for 2.628)
+[2024-06-12 12:55:41 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 7252 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 12:55:41 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 12:55:42 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 12:55:43 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 12:55:43 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 12:55:43 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 12:55:43 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.754 seconds (process running for 2.632)
+[2024-06-12 12:55:43 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 12:55:43 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=3, userId=2, comment=반가워)
+[2024-06-12 12:56:47 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 14492 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 12:56:47 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 12:56:48 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 12:56:48 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 12:56:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 12:56:48 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 12:56:48 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.826 seconds (process running for 2.688)
+[2024-06-12 12:56:48 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 12:56:48 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=3, userId=2, comment=반가워)
+[2024-06-12 12:57:00 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 15068 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 12:57:00 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 12:57:01 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 12:57:02 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 12:57:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 12:57:02 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
+[2024-06-12 12:57:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.68 seconds (process running for 2.525)
+[2024-06-12 12:57:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 12:57:02 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=3, userId=2, comment=반가워)
+[2024-06-12 17:59:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Starting FeedCommentControllerTest using Java 17.0.11 with PID 9764 (started by Administrator in D:\2024-01\backEnd\GreengramTdd)
+[2024-06-12 17:59:54 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] No active profile set, falling back to 1 default profile: "default"
+[2024-06-12 17:59:56 INFO  Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-06-12 17:59:56 INFO  Test worker] [org.springframework.boot.test.mock.web.SpringBootMockServletContext] Initializing Spring TestDispatcherServlet ''
+[2024-06-12 17:59:56 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
+[2024-06-12 17:59:56 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 1 ms
+[2024-06-12 17:59:56 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerTest] Started FeedCommentControllerTest in 1.856 seconds (process running for 2.78)
+[2024-06-12 17:59:56 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=2, userId=1, comment=안녕)
+[2024-06-12 17:59:56 INFO  Test worker] [com.green.greengram.feedcomment.FeedCommentControllerImpl] p : FeedCommentPostReq(feedCommentId=0, feedId=3, userId=2, comment=반가워)
+[2024-06-12 18:00:03 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 1348 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-12 18:00:03 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-12 18:00:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-12 18:00:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-12 18:00:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1040 ms[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@6be6dfe1[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-12 18:00:05 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.267 seconds (process running for 2.676)[0;39m
+[2024-06-12 18:00:06 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-12 18:00:06 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-12 18:00:06 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-12 18:00:07 [32mINFO [0;39m http-nio-8080-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 279 ms[0;39m
+[2024-06-12 18:00:17 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
+               B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
+               IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 1
+
+            WHERE A.writer_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 16 msec}[0;39m
+[2024-06-12 18:00:17 [32mINFO [0;39m http-nio-8080-exec-5] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
+               B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
+               IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 7
+
+            WHERE A.writer_id = 8
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 2 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|--------|--------|------|-----------------------------------------|--------------------|-----------------|---------|------|
+|feed_id |user_id |nm    |pic                                      |created_at          |contents         |location |isfav |
+|--------|--------|------|-----------------------------------------|--------------------|-----------------|---------|------|
+|18      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 16:52:47 |봇치 글쓰는 애 오타쿠임 ㅋㅋ |대구시      |0     |
+|16      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 16:51:03 |ㅋㅋ               |ㅋㅋ       |0     |
+|15      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 16:50:07 |ㅁㄴㅇ              |ㅁㄴㅇ      |0     |
+|13      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 16:45:58 |구하라              |대구       |0     |
+|12      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 16:44:22 |ㅁㄴㅇㄹ             |ㅁㄴㅇㄹ     |0     |
+|9       |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 15:20:29 |축구 개 쉽네 ㅋㅋ       |영국 런던    |0     |
+|8       |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 13:20:14 |bbbb             |서울       |0     |
+|7       |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-05-07 13:20:11 |bbbb             |서울       |0     |
+|--------|--------|------|-----------------------------------------|--------------------|-----------------|---------|------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 18
+ {executed in 1 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|00051f19-457d-48f7-8cf1-661bcdde01fd.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 18
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 16
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|6b5753dc-bf33-4d70-81be-5a45942195fb.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 16
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 15
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|2c9bf7b3-8943-4e36-b0b4-deb34f43f202.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 15
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 13
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|20fdb351-94dc-4964-909a-526d6865ab26.gif |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 13
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 12
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|7026a0d3-807a-4ae1-a6e0-14aa9154dff3.gif |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 12
+        LIMIT 4
+ {executed in 1 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 9
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|e0656eb7-fb2c-44f3-90c9-620f816f3d98.png |
+|95ade40b-16c2-4b54-b3c1-37eff2e43ebc.jpg |
+|a92fc7c9-8c55-4b23-b369-913e630aa7cc.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 9
+        LIMIT 4
+ {executed in 1 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 8
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|92e908f2-4051-47a8-98d7-1983220b716d.jpg |
+|21272052-ab35-4488-9661-ea063aeda6e6.jpg |
+|7b1c53d2-05b5-41ea-b93b-a24998d16a3c.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 8
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 7
+ {executed in 0 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|23f1bba1-d269-48e6-a570-924879f8d465.jpg |
+|bc47496f-f60c-4eef-89b8-5066d3b47917.jpg |
+|f2833290-8183-4509-bd86-ab10f8f9352d.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-12 18:01:20 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 7
+        LIMIT 4
+ {executed in 1 msec}[0;39m
+[2024-06-12 18:01:20 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-12 18:01:34 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-12 18:01:34 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
