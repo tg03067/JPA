@@ -20,8 +20,8 @@
 [2024-06-11 10:35:22 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 0 ms
 [2024-06-11 10:35:23 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 2.244 seconds (process running for 3.152)
 [2024-06-11 10:35:23 WARN  Test worker] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.green.greengram.common.model.ResultDto<java.lang.Integer> com.green.greengram.feedfavorite.FeedFavoriteControllerImpl.toggleFavorite(com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq): [Field error in object 'feedFavoriteToggleReq' on field 'feed_id': rejected value [null]; codes [typeMismatch.feedFavoriteToggleReq.feed_id,typeMismatch.feed_id,typeMismatch.long,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [feedFavoriteToggleReq.feed_id,feed_id]; arguments []; default message [feed_id]]; default message [Failed to convert value of type 'null' to required type 'long'; Failed to convert from type [null] to type [long] for value [null]]] ]
-[2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 1268 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 1268 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:35:25 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:35:27 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -38,15 +38,15 @@
 [2024-06-11 10:35:28 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:35:28 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:35:28 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:35:28 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.876 seconds (process running for 3.331)[0;39m
+[2024-06-11 10:35:28 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 2.876 seconds (process running for 3.331)[0;39m
 [2024-06-11 10:35:28 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:35:28 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:35:28 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2024-06-11 10:35:33 [32mINFO [0;39m http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 231 ms[0;39m
 [2024-06-11 10:35:59 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
 [2024-06-11 10:35:59 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
-[2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7564 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7564 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:36:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:36:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -63,7 +63,7 @@
 [2024-06-11 10:36:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:36:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:36:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:36:04 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.484 seconds (process running for 2.871)[0;39m
+[2024-06-11 10:36:04 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 2.484 seconds (process running for 2.871)[0;39m
 [2024-06-11 10:36:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:36:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:36:04 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 3 ms[0;39m
@@ -111,8 +111,8 @@
 [2024-06-11 10:41:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Initializing Servlet ''
 [2024-06-11 10:41:04 INFO  Test worker] [org.springframework.test.web.servlet.TestDispatcherServlet] Completed initialization in 2 ms
 [2024-06-11 10:41:04 INFO  Test worker] [com.green.greengram.feedfavorite.FeedFavoriteControllerTest] Started FeedFavoriteControllerTest in 1.761 seconds (process running for 2.628)
-[2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:53:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:53:23 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -129,7 +129,7 @@
 [2024-06-11 10:53:24 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:53:24 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:53:24 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:53:24 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.453 seconds (process running for 2.848)[0;39m
+[2024-06-11 10:53:24 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 2.453 seconds (process running for 2.848)[0;39m
 [2024-06-11 10:53:25 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:53:25 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:53:25 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
@@ -1056,8 +1056,8 @@ java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
 [2024-06-11 10:56:18 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
-[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
@@ -1072,14 +1072,14 @@ java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 0.587 seconds (process running for 177.149)[0;39m
+[2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 0.587 seconds (process running for 177.149)[0;39m
 [2024-06-11 10:56:18 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 1 class path change (0 additions, 0 deletions, 1 modification)[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m Thread-7] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown initiated...[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown completed.[0;39m
-[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 7320 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
@@ -1094,12 +1094,12 @@ java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 0.51 seconds (process running for 206.164)[0;39m
+[2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 0.51 seconds (process running for 206.164)[0;39m
 [2024-06-11 10:56:47 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
 [2024-06-11 10:58:47 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown initiated...[0;39m
 [2024-06-11 10:58:47 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown completed.[0;39m
-[2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 3616 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 3616 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:58:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:58:51 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -1136,8 +1136,8 @@ Action:
 
 Fix this pattern in your application or switch to the legacy parser implementation with 'spring.mvc.pathmatch.matching-strategy=ant_path_matcher'.
 [0;39m
-[2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 13612 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 13612 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:59:02 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:59:03 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -1154,15 +1154,15 @@ Fix this pattern in your application or switch to the legacy parser implementati
 [2024-06-11 10:59:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:59:04 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:59:04 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:59:04 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.268 seconds (process running for 2.65)[0;39m
+[2024-06-11 10:59:04 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 2.268 seconds (process running for 2.65)[0;39m
 [2024-06-11 10:59:04 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:59:04 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:59:04 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
 [2024-06-11 10:59:05 [32mINFO [0;39m http-nio-8080-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 234 ms[0;39m
 [2024-06-11 10:59:27 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
 [2024-06-11 10:59:27 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
-[2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 10684 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
-[2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramTddApplication using Java 17.0.11 with PID 10684 (D:\2024-01\backEnd\GreengramTdd\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramTdd)[0;39m
+[2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
 [2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
 [2024-06-11 10:59:29 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
 [2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
@@ -1179,7 +1179,7 @@ Fix this pattern in your application or switch to the legacy parser implementati
 [2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 1 endpoint(s) beneath base path '/actuator'[0;39m
 [2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
 [2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
-[2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramTddApplication] [36mStarted GreengramTddApplication in 2.161 seconds (process running for 2.542)[0;39m
+[2024-06-11 10:59:30 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramTddApplication in 2.161 seconds (process running for 2.542)[0;39m
 [2024-06-11 10:59:31 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:59:31 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
 [2024-06-11 10:59:31 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
