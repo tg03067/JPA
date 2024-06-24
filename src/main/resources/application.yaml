@@ -30,6 +30,19 @@ server:
 file:
   dir: D:\download\greengram_tdd\
 
+# Custom 속성 지정
+app:
+  jwt:
+    # JWT 만들때 사용하는 열쇠 ( 암호화 ) > 나중에 복호화 할때도 사용
+    secret: DaeguGreenArtAcademyClass502RoomForJavaSpringBootFightingD23sdfsdf23FDSADFSDFDass502RoomForJavaSprinass502RoomForJavaSpring
+    #front-back 간 JWT 받는 헤더키이름 #프론트랑 이름 맞춰야됨.
+    header-schema-name: authorization
+    #토큰의 종류: Bearer 는 JWT or OAuth( 소셜로그인 때 사용 ) 를 의미
+    token-type: Bearer
+    #AT - 만료시간(ms) - 30분
+    access-token-expiry: 1_800_000
+    #RT - 만료시간(ms) - 15일
+    refresh-token-expiry: 1_296_000_000
 ---
 
 spring:

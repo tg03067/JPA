@@ -1,15 +1,21 @@
 package com.green.greengram.user;
 
 import com.green.greengram.common.CustomFileUtils;
+import com.green.greengram.security.JwtTokenProviderV2;
+import com.green.greengram.security.MyUserDetails;
 import com.green.greengram.user.model.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mindrot.jbcrypt.BCrypt;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Objects;
+
+import static org.mindrot.jbcrypt.BCrypt.gensalt;
 
 @Service
 @RequiredArgsConstructor
@@ -17,14 +23,17 @@ import java.util.Objects;
 public class UserServiceImpl implements UserService {
     private final UserMapper mapper;
     private final CustomFileUtils customFileUtils;
+    private final PasswordEncoder passwordEncoder;
+    private final JwtTokenProviderV2 jwtTokenProvider;
 
     @Override
     @Transactional
     public int postUser(MultipartFile pic, SignUpPostReq p){
         String saveFileName = customFileUtils.makeRandomFileName(pic);
         p.setPic(saveFileName);
-        String hashPassword = BCrypt.hashpw(p.getUpw(), BCrypt.gensalt());
-        p.setUpw(hashPassword);
+        String password = passwordEncoder.encode(p.getUpw());
+        //String hashPassword = BCrypt.hashpw(p.getUpw(), BCrypt.gensalt());
+        p.setUpw(password);
 
         int result = mapper.postUser(p);
         if(pic == null){
@@ -50,11 +59,20 @@ public class UserServiceImpl implements UserService {
         } else if(!BCrypt.checkpw(p.getUpw(), user.getUpw())){
             throw new RuntimeException("비밀번호를 확인해 주세요");
         }
+        //UserDetails userDetails = new MyUserDetails(user.getUserId(), "ROLE_USER");
+        UserDetails details = MyUserDetails.builder()
+                .userId(user.getUserId())
+                .role("ROLE_USER")
+                .build();
+        String accessToken = jwtTokenProvider.generateAccessToken(details);
+        String refreshToken = jwtTokenProvider.generateRefreshToken(details);
+        // refreshToken 은 보안 쿠키를 이용해서 처리
 
         return SignInRes.builder().
                 userId(user.getUserId()).
                 nm(user.getNm()).
                 pic(user.getPic()).
+                accessToken(accessToken).
                 build();
     }
     @Override
