@@ -1,5 +1,6 @@
 package com.green.greengram.user;
 
+import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.security.JwtTokenProviderV2;
 import com.green.greengram.security.MyUserDetails;
@@ -25,6 +26,7 @@ public class UserServiceImpl implements UserService {
     private final CustomFileUtils customFileUtils;
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenProviderV2 jwtTokenProvider;
+    private final CookieUtils cookieUtils;
 
     @Override
     @Transactional
@@ -75,6 +77,7 @@ public class UserServiceImpl implements UserService {
                 accessToken(accessToken).
                 build();
     }
+
     @Override
     public UserInfoGetRes getUserInfo(UserInfoGetReq p){
         return mapper.selProfileUserInfo(p);

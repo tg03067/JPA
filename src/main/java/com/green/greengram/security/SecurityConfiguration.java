@@ -111,6 +111,7 @@ public class SecurityConfiguration {
                 // 로그인이 되지않아도 사용할 수 있음을 세팅.
                 // permitAll : 나머지는 인증이 필요하다. 나 자신의 주소값 호출, 그러므로 { } 를 사용하지않고 작성가능
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
+
                 .build();
     }
 

@@ -6,9 +6,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
-import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.DefaultAuthenticationEventPublisher;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -25,15 +23,13 @@ public class JwtTokenProviderV2 {
     private final ObjectMapper om;
     private final AppProperties appProperties;
     private final SecretKey secretKey;
-    private final DefaultAuthenticationEventPublisher authenticationEventPublisher;
 
-    public JwtTokenProviderV2(ObjectMapper om, AppProperties appProperties, DefaultAuthenticationEventPublisher authenticationEventPublisher) {
+    public JwtTokenProviderV2(ObjectMapper om, AppProperties appProperties) {
         this.om = om;
         this.appProperties = appProperties;
         this.secretKey = Keys.hmacShaKeyFor(Decoders.BASE64URL.decode(appProperties.getJwt().getSecret()));
         // 암호화할때 사용하는 키 만드는 기법
         // 암호화, 복호화할 때 사용하는 키를 생성하는 부분, decode 메소드에 보내는 아규먼트값은 우리가 설정한 문자열
-        this.authenticationEventPublisher = authenticationEventPublisher;
     }
 
     public String generateAccessToken(UserDetails userDetails) {
@@ -107,8 +103,7 @@ public class JwtTokenProviderV2 {
                 // JWT Token 에 저장공간이 하나 할당되기를 원함.
                 // userDetails = 로그인한 사용자 pk값을 빼내기 위해서
                 : new UsernamePasswordAuthenticationToken(userDetails ,
-                null ,
-                userDetails.getAuthorities()
+                null ,userDetails.getAuthorities()
                 // 권한(인가) 확인 부분
         );
         // UserNamePasswordAuthenticationToken 객체를 SpringContextHolder 에 저장하는 자체만으로도 인증완료
@@ -127,48 +122,26 @@ public class JwtTokenProviderV2 {
         } catch (Exception e){
             return false;
         }
-
     }
 
     public String resolveToken(HttpServletRequest req) {
-        // 요청이 오면 JWT를 열어보는 부분 > 헤더에서 토큰(JWT) 을 꺼낸다.
-        // FE가 BE요청을 보낼 때 ( 로그인을 했다면 ) 항상 JWT를 보낼건데 Header에 저장해서 보낸다.
-        String auth = req.getHeader(appProperties.getJwt().getHeaderSchemaName());
-        // String auth = req.getHeader("authorization"); 이렇게 작성한 것과 같음. Key값은 변경가능.
-        if(auth == null) return null;
-        // 위 if를 지나쳤다면 FE가 Header에 authorization 키에 데이터를 담아서 보내왔다는 뜻.
-        // auth에는 "Bearer JWT" 문자열이 있을 것이다. 문자열이 'Bearer' 로 시작하는지 체크
+        // 요청이 오면 JWT 를 열어보는 부분 > 헤더에서 토큰(JWT) 을 꺼낸다.
+        // FE가 BE 요청을 보낼 때 ( 로그인을 했다면 ) 항상 JWT 를 보낼건데 Header 에
+        // 서로 약속한 Key 에 저장해서 보낸다.
+        String jwt = req.getHeader(appProperties.getJwt().getHeaderSchemaName());
+        // String auth = req.getHeader("authorization"); 이렇게 작성한 것과 같음. Key 값은 변경가능.
+        if(jwt == null) return null;
+        // 위 if를 지나쳤다면 FE가 Header 에 authorization 키에 데이터를 담아서 보내왔다는 뜻.
+        // auth 에는 "Bearer JWT" 문자열이 있을 것이다. 문자열이 'Bearer' 로 시작하는지 체크
 
-        // if(auth.startsWith("Bearer) { auth에 저장되어있는 문자열이 "Bearer"로 시작한다면 true, 아니면 false
-        if(!auth.startsWith(appProperties.getJwt().getTokenType())){
-            return null;
-        }
+        // if(auth.startsWith("Bearer)
+        // { auth 에 저장되어있는 문자열이 "Bearer"로 시작한다면 true, 아니면 false
+        // FE와 약속을 만들어야 함.
+        // authorization : Bearer JWT 문자열
+        if(!jwt.startsWith(appProperties.getJwt().getTokenType())) return null;
         // trim 은 앞뒤에 빈칸제거 ( 중간은 X )
+        // 순수한 JWT 문자열만 뽑아내기 위한 문자열 자르기
         // replace(' ', '') 중간에 까지 빈칸은 비지않은 칸으로 바꾸겠다.
-        return auth.substring(appProperties.getJwt().getTokenType().length()).trim();
+        return jwt.substring(appProperties.getJwt().getTokenType().length()).trim();
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
