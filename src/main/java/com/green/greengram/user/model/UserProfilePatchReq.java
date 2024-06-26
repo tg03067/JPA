@@ -13,6 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 @ToString
 @EqualsAndHashCode
 public class UserProfilePatchReq {
+    @JsonIgnore
     private long signedUserId;
     private MultipartFile pic;
 

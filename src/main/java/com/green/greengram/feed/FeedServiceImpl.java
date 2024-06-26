@@ -4,6 +4,7 @@ import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.common.GlobalConst;
 import com.green.greengram.feed.model.*;
 import com.green.greengram.feedcomment.model.FeedCommentGetRes;
+import com.green.greengram.security.AuthenticationFacade;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -19,10 +20,10 @@ import java.util.List;
 public class FeedServiceImpl implements FeedService {
     private final FeedMapper mapper;
     private final CustomFileUtils customFileUtils ;
-
-    @Override
-    @Transactional
+    private final AuthenticationFacade authenticationFacade;
+    @Override @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){ //feed pk 값 리턴.
+        p.setUserId(authenticationFacade.getLoginUserId());
         int result = mapper.postFeed(p);
         if(pics == null){
             return FeedPostRes.builder()
@@ -51,9 +52,9 @@ public class FeedServiceImpl implements FeedService {
                 .pics(picDto.getFileNames())
                 .build();
     }
-
     @Override
     public List<FeedGetRes> getFeed(FeedGetReq p){
+        p.setSignedUserId(authenticationFacade.getLoginUserId());
         List<FeedGetRes> list = mapper.selFeed(p);
 
         if(list == null){
@@ -76,7 +77,6 @@ public class FeedServiceImpl implements FeedService {
         }
         return list;
     }
-
 //    @Override
 //    public List<FeedGetRes> getFeed(FeedGetReq p){
 //        List<FeedGetRes> list = mapper.selFeed(p);
@@ -96,7 +96,6 @@ public class FeedServiceImpl implements FeedService {
 //        return list;
 //    }
 }
-
 /*
     @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){

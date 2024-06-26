@@ -6,6 +6,9 @@ plugins {
 
 group = 'com.green'
 version = '0.0.1-SNAPSHOT'
+ext {
+    jjwtVersion = '0.12.5'
+}
 
 java {
     sourceCompatibility = '17'
@@ -30,8 +33,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
-    implementation 'io.jsonwebtoken:jjwt-api:0.12.5'
     compileOnly 'org.projectlombok:lombok'
+    implementation "io.jsonwebtoken:jjwt-api:${jjwtVersion}"
+    implementation "io.jsonwebtoken:jjwt-impl:${jjwtVersion}"
+    implementation "io.jsonwebtoken:jjwt-jackson:${jjwtVersion}"
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

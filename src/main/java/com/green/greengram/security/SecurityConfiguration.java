@@ -1,19 +1,17 @@
 package com.green.greengram.security;
 
+import com.green.greengram.security.jwt.JwtAuthenticationAccessDeniedHandler;
+import com.green.greengram.security.jwt.JwtAuthenticationEntryPoint;
+import com.green.greengram.security.jwt.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configurers.SessionManagementConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
-
-import java.util.function.Function;
-import java.util.function.Supplier;
 
 @Configuration
 @RequiredArgsConstructor
@@ -89,6 +87,8 @@ public class SecurityConfiguration {
                         "/swagger",
                         "/swagger-ui/**",
                         "/v3/api-docs/**",
+                        // 사진
+                        "/pic/**",
                         //프론트 화면 보일수 있게 세팅
                         "/",
                         "/index.html",
@@ -111,7 +111,9 @@ public class SecurityConfiguration {
                 // 로그인이 되지않아도 사용할 수 있음을 세팅.
                 // permitAll : 나머지는 인증이 필요하다. 나 자신의 주소값 호출, 그러므로 { } 를 사용하지않고 작성가능
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-
+                .exceptionHandling(exception -> exception
+                        .authenticationEntryPoint(new JwtAuthenticationEntryPoint())
+                        .accessDeniedHandler(new JwtAuthenticationAccessDeniedHandler()))
                 .build();
     }
 

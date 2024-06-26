@@ -37,7 +37,6 @@ public class CookieUtils {
         }
         return null;
     }
-
     public void setCookie(HttpServletResponse res, String name, String value, int maxAge) {
         Cookie cookie = new Cookie(name, value) ;
         cookie.setPath("/") ; // Root URL ( 우리 백엔드 모든 요청에 해당하게 세팅 )
@@ -45,9 +44,7 @@ public class CookieUtils {
         cookie.setMaxAge(maxAge) ; // 만료시간
         res.addCookie(cookie) ;
     }
-
     public void deleteCookie(HttpServletResponse res, String name) {
         setCookie(res, name, null, 0);
     }
-
 }

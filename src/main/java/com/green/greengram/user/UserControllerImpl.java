@@ -4,12 +4,16 @@ import com.green.greengram.common.model.ResultDto;
 import com.green.greengram.user.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.Map;
 
 @Slf4j
 @RequiredArgsConstructor
@@ -35,9 +39,9 @@ public class UserControllerImpl {
 
     @PostMapping("sign-in")
     @Operation(summary = "로그인")
-    public ResultDto<SignInRes> postSignIn(@RequestBody SignInPostReq p){
+    public ResultDto<SignInRes> postSignIn(@RequestBody SignInPostReq p, HttpServletResponse res){
         log.info("p; {}", p);
-        SignInRes result = service.getUserById(p);
+        SignInRes result = service.getUserById(p, res);
 
         return ResultDto.<SignInRes>builder().
                 statusCode(HttpStatus.OK).
@@ -45,6 +49,17 @@ public class UserControllerImpl {
                 resultData(result).
                 build();
     }
+    @GetMapping("access-token")
+    public ResultDto<Map> getAccessToken(HttpServletRequest req) {
+        Map map = service.getAccessToken(req);
+
+        return ResultDto.<Map>builder().
+                statusCode(HttpStatus.OK).
+                resultMsg("Access Token 발급").
+                resultData(map).
+                build();
+    }
+
     @GetMapping
     @Operation(summary = "팔로워 확인", description = "팔로우, 팔로워, 상태 확인 가능.")
     public ResultDto<UserInfoGetRes> getUserInfo(@ParameterObject @ModelAttribute UserInfoGetReq p){

@@ -1,6 +1,7 @@
 package com.green.greengram.feedfavorite;
 
 import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
+import com.green.greengram.security.AuthenticationFacade;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -10,7 +11,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class FeedFavoriteServiceImpl implements FeedFavoriteService{
     private final FeedFavoriteMapper mapper ;
-
+    private final AuthenticationFacade authentication;
     @Override
     public int insFeedFavorite(FeedFavoriteToggleReq p){
         return mapper.insFeedFavorite(p);
@@ -29,6 +30,7 @@ public class FeedFavoriteServiceImpl implements FeedFavoriteService{
     //delete > 0 > insert > return 1;
     @Override
     public int toggleFavorite(FeedFavoriteToggleReq p){
+        p.setUserId(authentication.getLoginUserId());
         int delAffectedRows = mapper.delFeedFavorite(p);
         if(delAffectedRows == 1){
             return 0;
