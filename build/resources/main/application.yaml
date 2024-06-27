@@ -1,6 +1,10 @@
 spring:
   config:
     import: optional:file:.env
+    #optional : .env 파일이 없어도 컴파일 에러가 발생 X
+    #file : 파일을 import하겠다
+    #.env : 파일명
+    #.env 파일의 변수사용 : ${변수명}
   application:
     name: GreengramVer2
   datasource:
@@ -45,6 +49,25 @@ app:
     access-token-expiry: 1_800_000
     #RT - 만료시간(ms) - 15일
     refresh-token-expiry: 1_296_000_000
+
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    java:
+      enabled: true
+    os:
+      enabled: true
+    env:
+      enabled: true
+  server:
+    port: 8080 #8080으로 접근했을때만 접근가능
+
 ---
 
 spring:

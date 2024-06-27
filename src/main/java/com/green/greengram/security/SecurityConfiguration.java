@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -99,12 +100,17 @@ public class SecurityConfiguration {
                         "/fimg/**",
                         "/manifest.json",
                         "/favicon.ico",
-                        "logo192.png",
+                        "/logo192.png",
                         // 프론트에서 사용하는 라우터 주소
                         "/sign-in",
                         "/sign-up",
                         "/profile/*",
-                        "/feed" ).permitAll()
+                        "/feed" ,
+
+                        //actuator
+                        "/actuator",
+                        "/actuator/**"
+                                ).permitAll()
                         .anyRequest().authenticated()
                         // 어떤 요청이든 인증이 되어야함.
                         // 로그인이 되어 있어야만 허용.

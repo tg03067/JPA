@@ -28,7 +28,7 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
         registry.addResourceHandler("/pic/**")
                 .addResourceLocations("file:" + uploadPath);
         registry.addResourceHandler("/**") //를
-                .addResourceLocations("classpath:/static/**")//로 맵핑
+                .addResourceLocations("classpath:/static/")//로 맵핑
                 .resourceChain(true)
                 .addResolver(new PathResourceResolver(){
                     @Override
