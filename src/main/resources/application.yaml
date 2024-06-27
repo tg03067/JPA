@@ -1,11 +1,13 @@
 spring:
+  config:
+    import: optional:file:.env
   application:
     name: GreengramVer2
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:log4jdbc:mariadb://localhost:3306/greengram2024_tdd
-    username: root
-    password: green502
+    url: ${DEFAULT.DB_URL}
+    username: ${DEFAULT.DB_USERNAME}
+    password: ${DEFAULT.DB_PASSWORD}
   servlet:
     multipart:
       max-file-size: 5MB
@@ -28,13 +30,13 @@ server:
   port: 8080
 
 file:
-  dir: D:\download\greengram_tdd\
+  dir: ${DEFAULT.FILE_DIRECTORY}
 
 # Custom 속성 지정
 app:
   jwt:
     # JWT 만들때 사용하는 열쇠 ( 암호화 ) > 나중에 복호화 할때도 사용
-    secret: DaeguGreenArtAcademyClass502RoomForJavaSpringBootFightingD23sdfsdf23FDSADFSDFDass502RoomForJavaSprinass502RoomForJavaSpring
+    secret: ${JWT_SECRET}
     #front-back 간 JWT 받는 헤더키이름 #프론트랑 이름 맞춰야됨.
     header-schema-name: authorization
     #토큰의 종류: Bearer 는 JWT or OAuth( 소셜로그인 때 사용 ) 를 의미
@@ -50,7 +52,7 @@ spring:
     activate:
       on-profile: tdd
   datasource:
-      url: jdbc:log4jdbc:mariadb://localhost:3306/greengram2024_tdd_test
+      url: ${TDD.DB_URL}
   sql:
     init:
       mode: always
@@ -60,8 +62,8 @@ spring:
     activate:
       on-profile: prod
   datasource:
-    url: jdbc:log4jdbc:mariadb://192.168.0.144:3306/db_odd_first_1
-    username: odd_first_1
-    password: epson
+    url: ${PROD.DB_URL}
+    username: ${PROD.DB_USERNAME}
+    password: ${PROD.DB_PASSWORD}
 file:
-  dir: /home/download
+  dir: ${PROD.FILE_DIRECTORY}

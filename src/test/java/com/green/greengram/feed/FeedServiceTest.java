@@ -9,6 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringBootConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.mock.web.MockMultipartFile;
@@ -34,6 +35,7 @@ import static org.mockito.Mockito.verify;
 )
 @ExtendWith(SpringExtension.class)
 @Import({ FeedServiceImpl.class })
+@SpringBootTest
 class FeedServiceTest {
     @Value("${file.dir}") String uploadPath;
     @MockBean FeedMapper mapper;
@@ -84,7 +86,7 @@ class FeedServiceTest {
     @Test
     @DisplayName("피드 get 테스트")
     void getFeed() throws Exception {
-        FeedGetReq p = new FeedGetReq(1,10,1, 2L);
+        FeedGetReq p = new FeedGetReq(1,10, 2L);
         List<FeedGetRes> list = new ArrayList<>();
 
         FeedGetRes fgr1 = new FeedGetRes();
@@ -110,16 +112,16 @@ class FeedServiceTest {
         given(mapper.selFeedPicsByFeedId(fgr2.getFeedId())).willReturn(picsB);
 
         List<FeedCommentGetRes> commentA = new ArrayList<>();
-        FeedCommentGetRes fcgrA1 = new FeedCommentGetRes(0,"a1", null, 0, null, null);
-        FeedCommentGetRes fcgrA2 = new FeedCommentGetRes(0,"a2", null, 0, null, null);
+        FeedCommentGetRes fcgrA1 = new FeedCommentGetRes();
+        FeedCommentGetRes fcgrA2 = new FeedCommentGetRes();
         commentA.add(fcgrA1);
         commentA.add(fcgrA2);
 
         List<FeedCommentGetRes> commentB = new ArrayList<>();
-        FeedCommentGetRes fcgrB1 = new FeedCommentGetRes(0,"b1", null, 0, null, null);
-        FeedCommentGetRes fcgrB2 = new FeedCommentGetRes(0,"b2", null, 0, null, null);
-        FeedCommentGetRes fcgrB3 = new FeedCommentGetRes(0,"b3", null, 0, null, null);
-        FeedCommentGetRes fcgrB4 = new FeedCommentGetRes(0,"b4", null, 0, null, null);
+        FeedCommentGetRes fcgrB1 = new FeedCommentGetRes();
+        FeedCommentGetRes fcgrB2 = new FeedCommentGetRes();
+        FeedCommentGetRes fcgrB3 = new FeedCommentGetRes();
+        FeedCommentGetRes fcgrB4 = new FeedCommentGetRes();
         commentB.add(fcgrB1);
         commentB.add(fcgrB2);
         commentB.add(fcgrB3);

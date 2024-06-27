@@ -83,6 +83,7 @@ public class SecurityConfiguration {
                         // 회원가입, 로그인 인증이 안 되어 있어도 사용가능하게 세팅
                         "/api/user/sign-up",
                         "/api/user/sign-in",
+                        "/api/user/access-token",
                         // swagger 사용할 수 있게 세팅
                         "/swagger",
                         "/swagger-ui/**",
@@ -95,6 +96,10 @@ public class SecurityConfiguration {
                         "/css/**",
                         "/static/**",
                         "/js/**",
+                        "/fimg/**",
+                        "/manifest.json",
+                        "/favicon.ico",
+                        "logo192.png",
                         // 프론트에서 사용하는 라우터 주소
                         "/sign-in",
                         "/sign-up",

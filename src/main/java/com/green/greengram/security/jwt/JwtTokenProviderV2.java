@@ -8,6 +8,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -117,7 +118,8 @@ public class JwtTokenProviderV2 {
         // 서로 약속한 Key 에 저장해서 보낸다.
         String jwt = req.getHeader(appProperties.getJwt().getHeaderSchemaName());
         // String auth = req.getHeader("authorization"); 이렇게 작성한 것과 같음. Key 값은 변경가능.
-        if(jwt == null) return null;
+        log.debug("JWT from Header: {}", jwt);
+        if(jwt == null){ log.debug("JWT is Null"); return null; }
         // 위 if를 지나쳤다면 FE가 Header 에 authorization 키에 데이터를 담아서 보내왔다는 뜻.
         // auth 에는 "Bearer JWT" 문자열이 있을 것이다. 문자열이 'Bearer' 로 시작하는지 체크
 
@@ -125,10 +127,16 @@ public class JwtTokenProviderV2 {
         // { auth 에 저장되어있는 문자열이 "Bearer"로 시작한다면 true, 아니면 false
         // FE와 약속을 만들어야 함.
         // authorization : Bearer JWT 문자열
-        if(!jwt.startsWith(appProperties.getJwt().getTokenType())) return null;
+        if(!jwt.startsWith(appProperties.getJwt().getTokenType())) {
+            log.debug("JWT does not start with {}", appProperties.getJwt().getTokenType());
+            return null;
+        }
+
         // trim 은 앞뒤에 빈칸제거 ( 중간은 X )
         // 순수한 JWT 문자열만 뽑아내기 위한 문자열 자르기
         // replace(' ', '') 중간에 까지 빈칸은 비지않은 칸으로 바꾸겠다.
-        return jwt.substring(appProperties.getJwt().getTokenType().length()).trim();
+        String token = jwt.substring(appProperties.getJwt().getTokenType().length()).trim();
+        log.debug("Resolved JWT: {}", token);
+        return token;
     }
 }

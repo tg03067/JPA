@@ -487,7 +487,7 @@ java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
         WHERE A.feed_id = 43
         LIMIT 4
  {executed in 1 msec}[0;39m
-[2024-06-11 10:54:47 [31mERROR[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m1. ResultSet.getLong(writerNm)[0;39m
+[2024-06-11 10:54:47 [31mERROR[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m1. ResultSet.getResult(writerNm)[0;39m
 java.sql.SQLDataException: value '유사한국인' cannot be decoded as Long
 	at org.mariadb.jdbc.client.column.StringColumn.decodeLongText(StringColumn.java:232)
 	at org.mariadb.jdbc.client.result.rowdecoder.TextRowDecoder.decodeLong(TextRowDecoder.java:127)

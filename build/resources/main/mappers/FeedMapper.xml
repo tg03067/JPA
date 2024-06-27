@@ -23,9 +23,14 @@
 
 
     <select id="selFeed">
-        SELECT A.feed_id AS feedId, B.user_id AS writerId, B.nm AS writerNm,
-               B.pic AS writerPic, A.created_at AS createdAt, A.contents, A.location,
-               IF(C.feed_id IS NULL, 0, 1) AS isFav
+        SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
         FROM feed A
         INNER JOIN user B
         ON A.writer_id = B.user_id

@@ -8,15 +8,15 @@
     {
       "name": "app.jwt",
       "type": "com.green.greengram.common.AppProperties$Jwt",
-      "sourceType": "com.green.greengram.common.AppProperties",
-      "sourceMethod": "getJwt()"
+      "sourceType": "com.green.greengram.common.AppProperties"
     }
   ],
   "properties": [
     {
       "name": "app.jwt.access-token-expiry",
       "type": "java.lang.Long",
-      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt",
+      "defaultValue": 0
     },
     {
       "name": "app.jwt.header-schema-name",
@@ -25,13 +25,15 @@
     },
     {
       "name": "app.jwt.refresh-token-cookie-max-age",
-      "type": "java.lang.Long",
-      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+      "type": "java.lang.Integer",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt",
+      "defaultValue": 0
     },
     {
       "name": "app.jwt.refresh-token-expiry",
       "type": "java.lang.Long",
-      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt",
+      "defaultValue": 0
     },
     {
       "name": "app.jwt.secret",
