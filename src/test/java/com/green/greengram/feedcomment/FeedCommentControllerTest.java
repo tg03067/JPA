@@ -160,7 +160,7 @@ class FeedCommentControllerTest {
 
     @Test
     void deleteFeedComment() throws Exception {
-        FeedCommentDeleteReq req = new FeedCommentDeleteReq(1, 2);
+        FeedCommentDeleteReq req = new FeedCommentDeleteReq(1);
         int result = 1;
         given(service.delFeedComment(req)).willReturn(result);
 
@@ -185,7 +185,7 @@ class FeedCommentControllerTest {
 
     @Test
     void deleteFeedComment2() throws Exception {
-        FeedCommentDeleteReq req = new FeedCommentDeleteReq(2, 3);
+        FeedCommentDeleteReq req = new FeedCommentDeleteReq(2);
         int result = 0;
         given(service.delFeedComment(req)).willReturn(result);
 
