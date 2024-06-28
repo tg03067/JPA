@@ -2,6 +2,7 @@ package com.green.greengram.user;
 
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.user.model.*;
+import jakarta.servlet.http.HttpServletResponse;
 import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -79,6 +80,7 @@ class UserServiceTest {
 
     @Test
     void getUserById() {
+        HttpServletResponse res = null;
         SignInPostReq p1 = new SignInPostReq();
         p1.setUid("id1");
         p1.setUpw("1212");
@@ -99,13 +101,13 @@ class UserServiceTest {
             mockedStatic.when(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw())).thenReturn(true);
             mockedStatic.when(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw())).thenReturn(true);
 
-            SignInRes res1 = service.getUserById(p1);
+            SignInRes res1 = service.getUserById(p1, res);
             assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
             assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
             assertEquals(user1.getPic(), res1.getPic(), "3. Pic먼가이상");
             mockedStatic.verify(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw()));
 
-            SignInRes res2 = service.getUserById(p2);
+            SignInRes res2 = service.getUserById(p2, res);
             assertEquals(user2.getUserId(), res2.getUserId(), "4. Id먼가이상");
             assertEquals(user2.getNm(), res2.getNm(), "5. Nm먼가이상");
             assertEquals(user2.getPic(), res2.getPic(), "6. Pic먼가이상");
@@ -115,7 +117,7 @@ class UserServiceTest {
         SignInPostReq p3 = new SignInPostReq();
         p3.setUid("id3");
         given(mapper.signInPost(p3.getUid())).willReturn(null);
-        Throwable ex1 = assertThrows(RuntimeException.class, () -> service.getUserById(p3), "아이디 없음 예외처리 안함.");
+        Throwable ex1 = assertThrows(RuntimeException.class, () -> service.getUserById(p3, res), "아이디 없음 예외처리 안함.");
         assertEquals("아이디를 확인해 주세요.", ex1.getMessage(), "아이디 없음, 에러메시지 다름.");
 
         SignInPostReq p4 = new SignInPostReq();
@@ -124,7 +126,7 @@ class UserServiceTest {
         String hashUpw4 = BCrypt.hashpw("7777", BCrypt.gensalt());
         User user4 = new User(10, p4.getUid(), hashUpw4, "길동4", "pic4.jpg", "1111-11-11", null);
         given(mapper.signInPost(p4.getUid())).willReturn(user4);
-        Throwable ex2 = assertThrows(RuntimeException.class, () -> service.getUserById(p4), "비밀번호 다름 예외처리 안함.");
+        Throwable ex2 = assertThrows(RuntimeException.class, () -> service.getUserById(p4, res), "비밀번호 다름 예외처리 안함.");
         assertEquals("비밀번호를 확인해 주세요", ex2.getMessage(), "비밀번호 다름, 에러메시지 다름.");
 
 //        SignInRes res1 = service.getUserById(p1);
@@ -145,12 +147,12 @@ class UserServiceTest {
 
     @Test
     void getUserInfo() {
-        UserInfoGetReq p1 = new UserInfoGetReq(2, 1);
+        UserInfoGetReq p1 = new UserInfoGetReq(2);
         UserInfoGetRes result1 = new UserInfoGetRes("test1", "test.jpg", "2000-11-11",
                 4, 4,3, 3, 1);
         given(mapper.selProfileUserInfo(p1)).willReturn(result1);
 
-        UserInfoGetReq p2 = new UserInfoGetReq(3, 1);
+        UserInfoGetReq p2 = new UserInfoGetReq(3);
         UserInfoGetRes result2 = new UserInfoGetRes("test2", "test2.jpg", "2002-12-12",
                 6, 6,1, 1, 3);
         given(mapper.selProfileUserInfo(p2)).willReturn(result2);

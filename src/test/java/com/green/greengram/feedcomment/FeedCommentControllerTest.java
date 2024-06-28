@@ -100,12 +100,9 @@ class FeedCommentControllerTest {
 
         List<FeedCommentGetRes> list = new ArrayList<>();
 
-        FeedCommentGetRes res1 = new FeedCommentGetRes(1, "comment1", "2024-01-01",
-                1, "작성자1", "a.jpg");
-        FeedCommentGetRes res2 = new FeedCommentGetRes(2, "comment2", "2024-01-02",
-                2, "작성자2", "b.jpg");
-        FeedCommentGetRes res3 = new FeedCommentGetRes(3, "comment3", "2024-01-03",
-                3, "작성자3", "c.jpg");
+        FeedCommentGetRes res1 = new FeedCommentGetRes();
+        FeedCommentGetRes res2 = new FeedCommentGetRes();
+        FeedCommentGetRes res3 = new FeedCommentGetRes();
         list.add(res1);
         list.add(res2);
         list.add(res3);
@@ -135,14 +132,10 @@ class FeedCommentControllerTest {
 
         List<FeedCommentGetRes> list = new ArrayList<>();
 
-        FeedCommentGetRes res1 = new FeedCommentGetRes(1, "comment1", "2024-01-01",
-                1, "작성자1", "a.jpg");
-        FeedCommentGetRes res2 = new FeedCommentGetRes(2, "comment2", "2024-01-02",
-                2, "작성자2", "b.jpg");
-        FeedCommentGetRes res3 = new FeedCommentGetRes(3, "comment3", "2024-01-03",
-                3, "작성자3", "c.jpg");
-        FeedCommentGetRes res4 = new FeedCommentGetRes(4, "comment4", "2024-01-04",
-                4, "작성자4", "d.jpg");
+        FeedCommentGetRes res1 = new FeedCommentGetRes();
+        FeedCommentGetRes res2 = new FeedCommentGetRes();
+        FeedCommentGetRes res3 = new FeedCommentGetRes();
+        FeedCommentGetRes res4 = new FeedCommentGetRes();
         list.add(res1);
         list.add(res2);
         list.add(res3);

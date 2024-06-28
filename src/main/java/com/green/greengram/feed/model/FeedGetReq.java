@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.BindParam;
 
 @Getter
 @Setter
+@ToString
 public class FeedGetReq extends Paging {
     @JsonIgnore
     //@Schema(name = "signed_user_id")

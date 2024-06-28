@@ -51,10 +51,10 @@ app:
     refresh-token-expiry: 1_296_000_000
 
 management:
-  endpoint:
+  endpoint: #엔드포인트 (URL)
     health:
       show-details: always
-  endpoints:
+  endpoints: #전체 엔드포인트 세팅
     web:
       exposure:
         include: "*"

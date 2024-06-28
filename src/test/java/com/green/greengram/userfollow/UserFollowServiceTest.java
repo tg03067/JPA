@@ -25,9 +25,9 @@ class UserFollowServiceTest {
     @Test
     @DisplayName("유저 servicePost 확인")
     void postUserFollow() {
-        UserFollowReq p1 = new UserFollowReq(1, 2);
-        UserFollowReq p2 = new UserFollowReq(1, 3);
-        UserFollowReq p3 = new UserFollowReq(1, 4);
+        UserFollowReq p1 = new UserFollowReq(1);
+        UserFollowReq p2 = new UserFollowReq(1);
+        UserFollowReq p3 = new UserFollowReq(1);
         //UserFollowReq p4 = new UserFollowReq(1, 2);
 
         given(mapper.insUserFollow(p1)).willReturn(0);
@@ -50,9 +50,9 @@ class UserFollowServiceTest {
     @Test
     @DisplayName("유저 serviceDelete 확인")
     void deleteUserFollow() {
-        UserFollowReq p1 = new UserFollowReq(1, 2);
-        UserFollowReq p2 = new UserFollowReq(1, 3);
-        UserFollowReq p3 = new UserFollowReq(1, 4);
+        UserFollowReq p1 = new UserFollowReq(1);
+        UserFollowReq p2 = new UserFollowReq(1);
+        UserFollowReq p3 = new UserFollowReq(1);
 
         given(mapper.delUserFollow(p1)).willReturn(0);
         given(mapper.delUserFollow(p2)).willReturn(1);

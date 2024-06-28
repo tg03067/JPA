@@ -52,21 +52,21 @@ class FeedCommentServiceTest {
     @DisplayName("FeedComment Delete")
     void delFeedComment() {
         FeedCommentDeleteReq p1 =
-                new FeedCommentDeleteReq(1,2);
+                new FeedCommentDeleteReq(2);
         given(mapper.delFeedComment(p1)).willReturn(1);
         long result1 = service.delFeedComment(p1);
         assertEquals(1,  result1, "1. 먼가이상");
         verify(mapper, times(1)).delFeedComment(p1);
 
         FeedCommentDeleteReq p2 =
-                new FeedCommentDeleteReq(19,29);
+                new FeedCommentDeleteReq(19);
         given(mapper.delFeedComment(p2)).willReturn(0);
         long result2 = service.delFeedComment(p2);
         assertEquals(0, result2, "2. 먼가이상");
         verify(mapper, times(1)).delFeedComment(p2);
 
         FeedCommentDeleteReq p3 =
-                new FeedCommentDeleteReq(100,200);
+                new FeedCommentDeleteReq(100);
         given(mapper.delFeedComment(p3)).willReturn(100);
         long result3 = service.delFeedComment(p3);
         assertEquals(100, result3, "3. 먼가이상");
@@ -79,12 +79,9 @@ class FeedCommentServiceTest {
         long feedId = 1;
         long feedIdZero = 5;
 
-        FeedCommentGetRes res1 = new FeedCommentGetRes(1,"1",
-                "24-12-12", 1, "1길동", "test1.png");
-        FeedCommentGetRes res2 = new FeedCommentGetRes(2,"2",
-                "24-12-12", 2, "2길동", "test2.png");
-        FeedCommentGetRes res3 = new FeedCommentGetRes(3,"3",
-                "24-12-12", 3, "3길동", "test3.png");
+        FeedCommentGetRes res1 = new FeedCommentGetRes();
+        FeedCommentGetRes res2 = new FeedCommentGetRes();
+        FeedCommentGetRes res3 = new FeedCommentGetRes();
         List<FeedCommentGetRes> list = new ArrayList<>();
         list.add(res1);
         list.add(res2);

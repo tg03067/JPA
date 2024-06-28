@@ -27,7 +27,7 @@ public class UserFollowIntegrationTest extends BaseIntegrationTest {
     @Rollback(value = false)
     @DisplayName("post - 유저팔로우")
     public void postUserFollow() throws Exception {
-        UserFollowReq p = new UserFollowReq(4, 1);
+        UserFollowReq p = new UserFollowReq(4);
         String reqJson = om.writeValueAsString(p);
 
         MvcResult mr = mvc.perform(post(BASE_URL).contentType(MediaType.APPLICATION_JSON).content(reqJson))
@@ -44,7 +44,7 @@ public class UserFollowIntegrationTest extends BaseIntegrationTest {
     @Rollback(value = false)
     @DisplayName("delete - 유저팔로우")
     public void deleteUserFollow() throws Exception {
-        UserFollowReq p = new UserFollowReq(1, 2);
+        UserFollowReq p = new UserFollowReq(1);
 
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.add("from_user_id", String.valueOf(p.getFromUserId()));
