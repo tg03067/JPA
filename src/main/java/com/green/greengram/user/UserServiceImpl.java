@@ -76,10 +76,18 @@ public class UserServiceImpl implements UserService {
                 userId(user.getUserId()).
                 role("ROLE_USER").
                 build();
-
+        /*
+        access, refresh token 에 myUser ( 유저 Pk, 권한정보 ) 를 담는다.
+        refresh token 에 myUser 정보를 넣는 이유는 access token 을 재발급 받을 때,
+        access token 에 myUser 를 담기 위해서 담는다.
+        왜 담았냐. FE가 accessToken 이 계속 backEnd 로 요청을 보낼 때,
+                  Header 에 넣어서 보내준다
+        요청이 올 때마다 Request 에 token 이 담겨져 있는지 체크 ( Filter 에서 한다. )
+        token 에 담겨져 있는 muUser 를 빼내서 사용하기 위해 myUser 를 담았다.
+         */
         String accessToken = jwtTokenProvider.generateAccessToken(myUser);
         String refreshToken = jwtTokenProvider.generateRefreshToken(myUser);
-        // refreshToken 은 보안 쿠키를 이용해서 처리
+        // refreshToken 은 보안 쿠키를 이용해서 처리 ( FE가 따로 작업을 하지 않아도 아래 cookie 항상 넘어온다. )
         int refreshTokenMaxAge = appProperties.getJwt().getRefreshTokenCookieMaxAge();
         cookieUtils.deleteCookie(res, "refresh-token");
         cookieUtils.setCookie(res, "refresh-token", refreshToken, refreshTokenMaxAge);

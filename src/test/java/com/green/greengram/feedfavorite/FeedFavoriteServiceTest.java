@@ -25,8 +25,8 @@ class FeedFavoriteServiceTest {
 
     @Test
     void toggleFavoriteTe() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1,2);
-        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(10,20);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1);
+        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(10);
 
         given(mapper.delFeedFavorite(p1)).willReturn(0);
         given(mapper.delFeedFavorite(p2)).willReturn(1);
@@ -47,7 +47,7 @@ class FeedFavoriteServiceTest {
 
     @Test
     void toggleFavoriteIns() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1,2);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1);
         given(mapper.insFeedFavorite(p1)).willReturn(1);
         assertEquals(1, service.toggleFavorite(p1), "insFavorite");
         verify(mapper).insFeedFavorite(p1);
@@ -55,19 +55,19 @@ class FeedFavoriteServiceTest {
 
     @Test
     void toggleFavoriteDel() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1,2);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1);
 
         given(mapper.delFeedFavorite(p1)).willReturn(1);
         assertEquals(0, service.toggleFavorite(p1), "delFavorite");
         verify(mapper).delFeedFavorite(p1);
 
-        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(5,1);
+        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(5);
 
         given(mapper.delFeedFavorite(p2)).willReturn(0);
         assertEquals(0, service.toggleFavorite(p2), "delFavorite");
         verify(mapper).delFeedFavorite(p2);
 
-        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(1,3);
+        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(1);
 
         given(mapper.delFeedFavorite(p3)).willReturn(1);
         assertEquals(0, service.toggleFavorite(p3), "delFavorite");
@@ -76,7 +76,7 @@ class FeedFavoriteServiceTest {
 
     @Test
     void toggleFavoritegpt() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1, 2);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(1);
 
         // delete 상황 테스트
         given(mapper.delFeedFavorite(p1)).willReturn(1);

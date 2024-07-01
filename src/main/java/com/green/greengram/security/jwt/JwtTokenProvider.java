@@ -16,6 +16,15 @@ import org.springframework.stereotype.Component;
 import javax.crypto.SecretKey;
 import java.util.Date;
 
+/*
+V2 와 다른 점은 SecretKey secretKey 멤버필드의 final 유무가 차이점
+ObjectMapper, AppProperties 를 생성자를 통해 DI 받고 있음.
+SecretKey 는 생성자 호출 이 후에
+SecretKey 는 @PostConstruct 애노태에션을 가지고 있는 init 메소드를 통해 초기화됨.
+init 는 메소드이지 생성자가 아니기 때문에 final을 초기화 할 수 없다.
+SecretKey 를 final 로 세팅할 수 없음.
+ */
+
 @Slf4j
 @Component
 @RequiredArgsConstructor
