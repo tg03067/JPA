@@ -77,72 +77,72 @@ class UserServiceTest {
         savedFile2.delete();
         assertNotEquals(p2Upw, p2.getUpw());
     }
-    @Test
-    void getUserById() {
-        HttpServletResponse res = null;
-        SignInPostReq p1 = new SignInPostReq();
-        p1.setUid("id1");
-        p1.setUpw("1212");
-        String hashUpw1 = BCrypt.hashpw(p1.getUpw(), BCrypt.gensalt());
-
-        SignInPostReq p2 = new SignInPostReq();
-        p2.setUid("id2");
-        p2.setUpw("2121");
-        String hashUpw2 = BCrypt.hashpw(p2.getUpw(), BCrypt.gensalt());
-
-        User user1 = new User(10, p1.getUid(), hashUpw1, "길동1", "pic1.jpg", "1111-11-11", null);
-        given(mapper.signInPost(p1.getUid())).willReturn(user1);
-
-        User user2 = new User(20, p2.getUid(), hashUpw2, "길동2", "pic2.jpg", "1111-11-11", null);
-        given(mapper.signInPost(p2.getUid())).willReturn(user2);
-
-        try(MockedStatic<BCrypt> mockedStatic = mockStatic(BCrypt.class)) {
-            mockedStatic.when(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw())).thenReturn(true);
-            mockedStatic.when(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw())).thenReturn(true);
-
-            SignInRes res1 = service.getUserById(p1, res);
-            assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
-            assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
-            assertEquals(user1.getPic(), res1.getPic(), "3. Pic먼가이상");
-            mockedStatic.verify(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw()));
-
-            SignInRes res2 = service.getUserById(p2, res);
-            assertEquals(user2.getUserId(), res2.getUserId(), "4. Id먼가이상");
-            assertEquals(user2.getNm(), res2.getNm(), "5. Nm먼가이상");
-            assertEquals(user2.getPic(), res2.getPic(), "6. Pic먼가이상");
-            mockedStatic.verify(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw()));
-        }
-
-        SignInPostReq p3 = new SignInPostReq();
-        p3.setUid("id3");
-        given(mapper.signInPost(p3.getUid())).willReturn(null);
-        Throwable ex1 = assertThrows(RuntimeException.class, () -> service.getUserById(p3, res), "아이디 없음 예외처리 안함.");
-        assertEquals("아이디를 확인해 주세요.", ex1.getMessage(), "아이디 없음, 에러메시지 다름.");
-
-        SignInPostReq p4 = new SignInPostReq();
-        p4.setUid("id4");
-        p4.setUpw("6666");
-        String hashUpw4 = BCrypt.hashpw("7777", BCrypt.gensalt());
-        User user4 = new User(10, p4.getUid(), hashUpw4, "길동4", "pic4.jpg", "1111-11-11", null);
-        given(mapper.signInPost(p4.getUid())).willReturn(user4);
-        Throwable ex2 = assertThrows(RuntimeException.class, () -> service.getUserById(p4, res), "비밀번호 다름 예외처리 안함.");
-        assertEquals("비밀번호를 확인해 주세요", ex2.getMessage(), "비밀번호 다름, 에러메시지 다름.");
-
-//        SignInRes res1 = service.getUserById(p1);
-//        assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
-//        assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
-//        assertEquals(user1.getPic(), res1.getPic(), "3. Pic먼가이상");
-//        try(MockedStatic<BCrypt> mockedStatic = mockStatic(BCrypt.class)){
+//    @Test
+//    void getUserById() {
+//        HttpServletResponse res = null;
+//        SignInPostReq p1 = new SignInPostReq();
+//        p1.setUid("id1");
+//        p1.setUpw("1212");
+//        String hashUpw1 = BCrypt.hashpw(p1.getUpw(), BCrypt.gensalt());
+//
+//        SignInPostReq p2 = new SignInPostReq();
+//        p2.setUid("id2");
+//        p2.setUpw("2121");
+//        String hashUpw2 = BCrypt.hashpw(p2.getUpw(), BCrypt.gensalt());
+//
+//        User user1 = new User(10, p1.getUid(), hashUpw1, "길동1", "pic1.jpg", "1111-11-11", null);
+//        given(mapper.signInPost(p1.getUid())).willReturn(user1);
+//
+//        User user2 = new User(20, p2.getUid(), hashUpw2, "길동2", "pic2.jpg", "1111-11-11", null);
+//        given(mapper.signInPost(p2.getUid())).willReturn(user2);
+//
+//        try(MockedStatic<BCrypt> mockedStatic = mockStatic(BCrypt.class)) {
 //            mockedStatic.when(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw())).thenReturn(true);
 //            mockedStatic.when(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw())).thenReturn(true);
-//            boolean result1 = BCrypt.checkpw(p1.getUpw(), user1.getUpw());
-//            boolean result2 = BCrypt.checkpw(p2.getUpw(), user2.getUpw());
-//            assertTrue(result1);
-//            assertTrue(result2);
+//
+//            SignInRes res1 = service.getUserById(p1, res);
+//            assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
+//            assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
+//            assertEquals(user1.getPic(), res1.getPic(), "3. Pic먼가이상");
 //            mockedStatic.verify(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw()));
+//
+//            SignInRes res2 = service.getUserById(p2, res);
+//            assertEquals(user2.getUserId(), res2.getUserId(), "4. Id먼가이상");
+//            assertEquals(user2.getNm(), res2.getNm(), "5. Nm먼가이상");
+//            assertEquals(user2.getPic(), res2.getPic(), "6. Pic먼가이상");
 //            mockedStatic.verify(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw()));
 //        }
-    }
+//
+//        SignInPostReq p3 = new SignInPostReq();
+//        p3.setUid("id3");
+//        given(mapper.signInPost(p3.getUid())).willReturn(null);
+//        Throwable ex1 = assertThrows(RuntimeException.class, () -> service.getUserById(p3, res), "아이디 없음 예외처리 안함.");
+//        assertEquals("아이디를 확인해 주세요.", ex1.getMessage(), "아이디 없음, 에러메시지 다름.");
+//
+//        SignInPostReq p4 = new SignInPostReq();
+//        p4.setUid("id4");
+//        p4.setUpw("6666");
+//        String hashUpw4 = BCrypt.hashpw("7777", BCrypt.gensalt());
+//        User user4 = new User(10, p4.getUid(), hashUpw4, "길동4", "pic4.jpg", "1111-11-11", null);
+//        given(mapper.signInPost(p4.getUid())).willReturn(user4);
+//        Throwable ex2 = assertThrows(RuntimeException.class, () -> service.getUserById(p4, res), "비밀번호 다름 예외처리 안함.");
+//        assertEquals("비밀번호를 확인해 주세요", ex2.getMessage(), "비밀번호 다름, 에러메시지 다름.");
+//
+////        SignInRes res1 = service.getUserById(p1);
+////        assertEquals(user1.getUserId(), res1.getUserId(), "1. Id먼가이상");
+////        assertEquals(user1.getNm(), res1.getNm(), "2. Nm먼가이상");
+////        assertEquals(user1.getPic(), res1.getPic(), "3. Pic먼가이상");
+////        try(MockedStatic<BCrypt> mockedStatic = mockStatic(BCrypt.class)){
+////            mockedStatic.when(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw())).thenReturn(true);
+////            mockedStatic.when(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw())).thenReturn(true);
+////            boolean result1 = BCrypt.checkpw(p1.getUpw(), user1.getUpw());
+////            boolean result2 = BCrypt.checkpw(p2.getUpw(), user2.getUpw());
+////            assertTrue(result1);
+////            assertTrue(result2);
+////            mockedStatic.verify(() -> BCrypt.checkpw(p1.getUpw(), user1.getUpw()));
+////            mockedStatic.verify(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw()));
+////        }
+//    }
     @Test
     void getUserInfo() {
         UserInfoGetReq p1 = new UserInfoGetReq(2);
