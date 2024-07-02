@@ -69,7 +69,6 @@ management:
     port: 8080 #8080으로 접근했을때만 접근가능
 
 ---
-
 spring:
   config:
     activate:

@@ -24,17 +24,17 @@ class FeedFavoriteMapperTest {
     @Test
     @DisplayName("팔로우 insert 테스트")
     void insFeedFavorite() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(0, 0);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(0);
         List<FeedFavoriteEntity> list1 = mapper.selFeedFavoriteForTest(p1);
         assertEquals(RECORD_COUNT, list1.size(), "0. 먼가이상");
 
-        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(2, 1);
+        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(1);
         int result = mapper.insFeedFavorite(p2);
         assertEquals(1, result, "1. 먼가이상");
         List<FeedFavoriteEntity> list2 = mapper.selFeedFavoriteForTest(p1);
         assertEquals(1, list2.size() - list1.size(), "2. 먼가이상");
 
-        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(3, 1);
+        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(1);
         int result2 = mapper.insFeedFavorite(p3);
         assertEquals(1, result2, "3. 먼가이상");
         List<FeedFavoriteEntity> list3 = mapper.selFeedFavoriteForTest(p1);
@@ -46,25 +46,25 @@ class FeedFavoriteMapperTest {
     @Test
     @DisplayName("팔로우 select 테스트")
     void selFeedFavoriteForTest() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(0, 0);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq( 0);
         List<FeedFavoriteEntity> list1 = mapper.selFeedFavoriteForTest(p1);
         assertEquals(RECORD_COUNT, list1.size(), "1. 먼가이상");
 
-        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(5, 1);
+        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(1);
         List<FeedFavoriteEntity> list2 = mapper.selFeedFavoriteForTest(p2);
         assertEquals(1, list2.size(), "2. 먼가이상");
 
-        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(12, 12);
+        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(12);
         List<FeedFavoriteEntity> list3 = mapper.selFeedFavoriteForTest(p3);
         assertEquals(0, list3.size(), "3. 먼가이상");
 
-        FeedFavoriteToggleReq p4 = new FeedFavoriteToggleReq(0, 1);
+        FeedFavoriteToggleReq p4 = new FeedFavoriteToggleReq(1);
         List<FeedFavoriteEntity> list4 = mapper.selFeedFavoriteForTest(p4);
         assertEquals(2, list4.size(), "4. 먼가이상");
         assertEquals(new FeedFavoriteEntity(5, 1, "2024-05-09 11:51:47"),
                 list1.get(0), "5. 먼가이상");
 
-        FeedFavoriteToggleReq p5 = new FeedFavoriteToggleReq(5, 0);
+        FeedFavoriteToggleReq p5 = new FeedFavoriteToggleReq( 0);
         List<FeedFavoriteEntity> list5 = mapper.selFeedFavoriteForTest(p5);
         assertEquals(1, list5.size(), "6. 먼가이상");
     }
@@ -72,14 +72,14 @@ class FeedFavoriteMapperTest {
     @Test
     @DisplayName("팔로우 delete 테스트")
     void delFeedFavorite() {
-        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(0, 0);
+        FeedFavoriteToggleReq p1 = new FeedFavoriteToggleReq(0);
         List<FeedFavoriteEntity> list1 = mapper.selFeedFavoriteForTest(p1);
 
-        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(5, 100);
+        FeedFavoriteToggleReq p2 = new FeedFavoriteToggleReq(5);
         int del = mapper.delFeedFavorite(p2);
         assertEquals(0, del,"1. 먼가이상");
 
-        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(5, 1);
+        FeedFavoriteToggleReq p3 = new FeedFavoriteToggleReq(5);
         int del2 = mapper.delFeedFavorite(p3);
         assertEquals(1, del2, "2. 먼가이상");
         List<FeedFavoriteEntity> list2 = mapper.selFeedFavoriteForTest(p1);

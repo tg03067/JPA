@@ -47,17 +47,17 @@ class UserMapperTest {
     @Test
     @DisplayName("유저 profile 테스트")
     void selProfileUserInfo() {
-        UserInfoGetReq p1 = new UserInfoGetReq(1, 7);
+        UserInfoGetReq p1 = new UserInfoGetReq(1);
         UserInfoGetRes p2 = mapper.selProfileUserInfo(p1);
         assertEquals(new UserInfoGetRes("홍길동", "70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png",
                 "2024-05-08 13:06:19", 7, 3,0, 0, 0),
                 p2, "1. 먼가이상");
 
-        UserInfoGetReq p3 = new UserInfoGetReq(11, 12);
+        UserInfoGetReq p3 = new UserInfoGetReq(12);
         UserInfoGetRes p4 = mapper.selProfileUserInfo(p3);
         assertNull(p4, "2. 먼가이상");
 
-        UserInfoGetReq p5 = new UserInfoGetReq(5, 10);
+        UserInfoGetReq p5 = new UserInfoGetReq(5);
         UserInfoGetRes p6 = mapper.selProfileUserInfo(p5);
         assertEquals(new UserInfoGetRes("허리케인", "b8cd485c-31fd-49f5-bde4-d529c41c945a.png",
                "2024-05-16 12:48:02", 0, 0,0, 0, 0),

@@ -22,7 +22,7 @@ public class FeedFavoriteIntegrationTest extends BaseIntegrationTest {
     @Rollback(value = false)
     @DisplayName("favorite-toggle-delete 좋아요 취소 토글")
     public void favoriteToggle() throws Exception {
-        FeedFavoriteToggleReq p = new FeedFavoriteToggleReq(5,1);
+        FeedFavoriteToggleReq p = new FeedFavoriteToggleReq(1);
 
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.add("feed_id", String.valueOf(p.getFeedId()));
@@ -42,7 +42,7 @@ public class FeedFavoriteIntegrationTest extends BaseIntegrationTest {
     @Rollback(value = false)
     @DisplayName("favorite-toggle-post 좋아요 처리 토글")
     public void favoriteToggle2() throws Exception {
-        FeedFavoriteToggleReq p = new FeedFavoriteToggleReq(6,1);
+        FeedFavoriteToggleReq p = new FeedFavoriteToggleReq(6);
 
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.add("feed_id", String.valueOf(p.getFeedId()));

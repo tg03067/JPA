@@ -35,7 +35,7 @@ class FeedFavoriteControllerTest {
 
     @Test
     void toggleFavorite() throws Exception {
-        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(1, 2);
+        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(2);
         int result = 1;
         given(service.toggleFavorite(req)).willReturn(result);
 
@@ -60,7 +60,7 @@ class FeedFavoriteControllerTest {
 
     @Test
     void toggleFavorite2() throws Exception {
-        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(1, 2);
+        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(2);
         int result = 0;
         given(service.toggleFavorite(req)).willReturn(result);
 
@@ -86,7 +86,7 @@ class FeedFavoriteControllerTest {
 
     @Test
     void toggleFavorite3() throws Exception {
-        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(1, 2);
+        FeedFavoriteToggleReq req = new FeedFavoriteToggleReq(2);
         int resultData = 1;
         given(service.toggleFavorite(req)).willReturn(resultData);
 

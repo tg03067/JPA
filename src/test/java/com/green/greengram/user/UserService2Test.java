@@ -54,7 +54,6 @@ public class UserService2Test {
         String filePath1 = String.format("%s/%s", midPath, fileName1);
         verify(customFileUtils).transferTo(p1.getPic(), filePath1);
     }
-
     @Test
     public void patchProfilePic2() throws Exception {
         long signedUserId1 = 600;

@@ -1,0 +1,804 @@
+[2024-06-28 10:39:55 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 8376 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-06-28 10:39:55 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-28 10:39:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-28 10:39:55 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1266 ms[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@662ef4ad[0;39m
+[2024-06-28 10:39:56 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-28 10:39:57 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: 43b840ce-e5f6-40a3-9a1c-f749f0a9ecdd
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44188213, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@690ebd6, org.springframework.security.web.context.SecurityContextHolderFilter@471678cf, org.springframework.security.web.header.HeaderWriterFilter@186929e2, org.springframework.web.filter.CorsFilter@a24b185, org.springframework.security.web.authentication.logout.LogoutFilter@59608fe5, com.green.greengram.security.jwt.JwtAuthenticationFilter@5350ad60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@56751cfa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3c7ba7db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f560578, org.springframework.security.web.session.SessionManagementFilter@4cebc4ec, org.springframework.security.web.access.ExceptionTranslationFilter@602da17a, org.springframework.security.web.access.intercept.AuthorizationFilter@685553fd][0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-28 10:39:57 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 2.889 seconds (process running for 3.417)[0;39m
+[2024-06-28 10:39:58 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:39:58 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:39:58 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:00 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:40:01 [32mINFO [0;39m http-nio-8080-exec-10] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 227 ms[0;39m
+[2024-06-28 10:42:17 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-28 10:42:17 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-28 10:42:21 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 5748 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-06-28 10:42:21 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-28 10:42:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-28 10:42:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1186 ms[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@2c68971b[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-28 10:42:22 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: 90e54da2-dbd4-41b7-b450-733f18eed4ce
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-28 10:42:22 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3618e722, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25acc554, org.springframework.security.web.context.SecurityContextHolderFilter@6ec3b577, org.springframework.security.web.header.HeaderWriterFilter@34e6c869, org.springframework.web.filter.CorsFilter@587177b7, org.springframework.security.web.authentication.logout.LogoutFilter@ab96676, com.green.greengram.security.jwt.JwtAuthenticationFilter@62689e5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@386d8969, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a0457b5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f0e970e, org.springframework.security.web.session.SessionManagementFilter@186ee28c, org.springframework.security.web.access.ExceptionTranslationFilter@7f6332ab, org.springframework.security.web.access.intercept.AuthorizationFilter@423a23a6][0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 2.583 seconds (process running for 2.963)[0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:42:23 [32mINFO [0;39m RMI TCP Connection(1)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:42:25 [32mINFO [0;39m http-nio-8080-exec-10] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 239 ms[0;39m
+[2024-06-28 10:44:04 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-28 10:44:04 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-28 10:44:06 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 12424 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-06-28 10:44:06 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-28 10:44:06 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-06-28 10:44:06 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-06-28 10:44:07 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-28 10:44:07 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:44:07 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-28 10:44:07 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1151 ms[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@4da3d360[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-06-28 10:44:08 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: ef092b00-47e8-4429-be41-9e717c26832b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2094e939, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69073582, org.springframework.security.web.context.SecurityContextHolderFilter@71be3a00, org.springframework.security.web.header.HeaderWriterFilter@7af0c83a, org.springframework.web.filter.CorsFilter@259513bc, org.springframework.security.web.authentication.logout.LogoutFilter@6029a3b6, com.green.greengram.security.jwt.JwtAuthenticationFilter@78765709, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51d48e59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70fcf889, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@578ae91, org.springframework.security.web.session.SessionManagementFilter@bc36aad, org.springframework.security.web.access.ExceptionTranslationFilter@526f1127, org.springframework.security.web.access.intercept.AuthorizationFilter@378fcabb][0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:44:08 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-28 10:44:09 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 2.526 seconds (process running for 2.911)[0;39m
+[2024-06-28 10:44:09 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:44:09 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:44:09 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:10 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:11 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:44:11 [32mINFO [0;39m http-nio-8080-exec-6] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 223 ms[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m Thread-5] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m Thread-5] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 12424 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 578 ms[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Starting...[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-2 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@61291610[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Start completed.[0;39m
+[2024-06-28 10:45:48 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: 5cd81140-c10b-417b-a07f-009af8bdfad7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-28 10:45:48 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@634a7c7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45cfb91f, org.springframework.security.web.context.SecurityContextHolderFilter@6447c16b, org.springframework.security.web.header.HeaderWriterFilter@751f0c7d, org.springframework.web.filter.CorsFilter@159300b, org.springframework.security.web.authentication.logout.LogoutFilter@288d66b8, com.green.greengram.security.jwt.JwtAuthenticationFilter@4ad68773, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51ee91f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5c1f1352, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69f9ec22, org.springframework.security.web.session.SessionManagementFilter@f9427c7, org.springframework.security.web.access.ExceptionTranslationFilter@625af8c5, org.springframework.security.web.access.intercept.AuthorizationFilter@29683406][0;39m
+[2024-06-28 10:45:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-28 10:45:49 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:45:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-28 10:45:49 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 0.922 seconds (process running for 102.976)[0;39m
+[2024-06-28 10:45:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-06-28 10:46:07 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:46:07 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:46:07 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-28 10:46:07 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-06-28 10:46:07 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.user.UserControllerImpl] [36mp; SignInPostReq(uid=mic, upw=1212)[0;39m
+[2024-06-28 10:46:07 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT user_id as userId, uid, upw, nm, pic,
+               created_at AS createdAt, updated_at AS updatedAt
+        FROM user
+        WHERE uid = 'mic'
+ {executed in 9 msec}[0;39m
+[2024-06-28 10:46:08 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+|user_id |uid |upw                                                          |nm  |pic                                      |created_at          |updated_at |
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+|9       |mic |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |홍길동 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |2024-05-03 18:00:47 |null       |
+|--------|----|-------------------------------------------------------------|----|-----------------------------------------|--------------------|-----------|
+[0;39m
+[2024-06-28 10:46:50 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:46:50 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 1
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 17 msec}[0;39m
+[2024-06-28 10:46:50 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:01 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:01 [32mDEBUG[0;39m http-nio-8080-exec-3] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 5
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:01 [32mINFO [0;39m http-nio-8080-exec-3] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:03 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:03 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 6
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:03 [32mINFO [0;39m http-nio-8080-exec-5] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:05 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:05 [32mDEBUG[0;39m http-nio-8080-exec-4] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 2
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:05 [32mINFO [0;39m http-nio-8080-exec-4] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:08 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:08 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 3
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 3 msec}[0;39m
+[2024-06-28 10:47:08 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:12 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:12 [32mDEBUG[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 6
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:12 [32mINFO [0;39m http-nio-8080-exec-7] [jdbc.resultsettable] [36m
+|--------|--------|---|----|-----------|---------|---------|------|
+|feed_id |user_id |nm |pic |created_at |contents |location |isfav |
+|--------|--------|---|----|-----------|---------|---------|------|
+|--------|--------|---|----|-----------|---------|---------|------|
+[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+            WHERE A.writer_id = 12
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 2 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|--------|--------|---|------------------------------------------|--------------------|-----------------------------------|---------|------|
+|feed_id |user_id |nm |pic                                       |created_at          |contents                           |location |isfav |
+|--------|--------|---|------------------------------------------|--------------------|-----------------------------------|---------|------|
+|19      |12      |재문 |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:53:53 |보보보..봇치는 씹덕이 아니라고 생각해요             |도쿄       |0     |
+|17      |12      |재문 |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:51:10 |봇치더락 총집편 2024년 6월 7일 개봉
+많은사랑 부탁드려요 |도쿄       |0     |
+|14      |12      |재문 |1f75390e-6d9b-47ce-841b-1bdf0dec7d6a.webp |2024-05-07 16:48:33 |온세상이 봇치다..                         |도쿄       |0     |
+|--------|--------|---|------------------------------------------|--------------------|-----------------------------------|---------|------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 19
+ {executed in 1 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|------------------------------------------|
+|pic                                       |
+|------------------------------------------|
+|a1530b02-6725-4ad4-b4b9-55d19c80e08f.webp |
+|------------------------------------------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 19
+        LIMIT 4
+ {executed in 1 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 17
+ {executed in 1 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|68d3f9d0-ac64-4278-84e7-2339d4947efd.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 17
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 14
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|------------------------------------------|
+|pic                                       |
+|------------------------------------------|
+|58425896-1f48-4825-89c2-a981554eec39.webp |
+|------------------------------------------|
+[0;39m
+[2024-06-28 10:47:14 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+11. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 14
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:47:14 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] [36mRestarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)[0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m Thread-7] [org.apache.coyote.http11.Http11NioProtocol] [36mStopping ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown initiated...[0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m Thread-7] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-2 - Shutdown completed.[0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 12424 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-06-28 10:54:52 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 370 ms[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Starting...[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-3 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1f831bca[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Start completed.[0;39m
+[2024-06-28 10:54:53 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [36m
+
+Using generated security password: d1db5c94-9536-4721-b56a-bc8f7e26094f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34d4ef45, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6da20e77, org.springframework.security.web.context.SecurityContextHolderFilter@387aaab2, org.springframework.security.web.header.HeaderWriterFilter@60536094, org.springframework.web.filter.CorsFilter@4388b0ef, org.springframework.security.web.authentication.logout.LogoutFilter@565a81cc, com.green.greengram.security.jwt.JwtAuthenticationFilter@dbf1ca4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2f78d4eb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54d44650, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@67cb53ba, org.springframework.security.web.session.SessionManagementFilter@5007f491, org.springframework.security.web.access.ExceptionTranslationFilter@12f0acaa, org.springframework.security.web.access.intercept.AuthorizationFilter@36825cb8][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 0.724 seconds (process running for 647.424)[0;39m
+[2024-06-28 10:54:53 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [36mCondition evaluation unchanged[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 1 ms[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MTk1MzkxNjgsImV4cCI6MTcxOTU0MDk2OCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjksXCJyb2xlXCI6XCJST0xFX1VTRVJcIn0ifQ.t3rzdEDm9dBN0Xw-eDtLe6OT2-ba8TqBzBvwkto9vTZkOJewtqj-87Mlc8yUufKhk87aytOadTfJFZlIkWsJ8A[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_id AS feedId,
+                B.user_id AS writerId,
+                B.nm AS writerNm,
+                B.pic AS writerPic,
+                A.created_at AS createdAt,
+                A.contents,
+                A.location,
+                IF(C.feed_id IS NULL, 0, 1) AS isFav
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_id = B.user_id
+        LEFT JOIN feed_favorite C
+        ON A.feed_id = C.feed_id
+        AND c.user_id = 9
+
+        ORDER BY A.feed_id DESC
+        LIMIT 0, 10
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------|--------|------|-----------------------------------------|--------------------|---------|---------|------|
+|feed_id |user_id |nm    |pic                                      |created_at          |contents |location |isfav |
+|--------|--------|------|-----------------------------------------|--------------------|---------|---------|------|
+|46      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-06-27 11:05:47 |dfgh     |dfgh     |0     |
+|45      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-06-27 10:49:59 |asdasd   |asdasd   |0     |
+|44      |8       |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |2024-06-27 10:05:12 |asd      |asdasd   |0     |
+|43      |18      |hi    |5bbd3848-326b-42e4-8746-ee160901df02.jpg |2024-05-16 12:47:44 |ㅁㅁ       |ㅁㅁ       |0     |
+|38      |18      |hi    |5bbd3848-326b-42e4-8746-ee160901df02.jpg |2024-05-14 13:25:45 |a        |a        |0     |
+|37      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |2024-05-13 16:42:50 |a        |a        |0     |
+|32      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |2024-05-10 12:11:37 |ㅁㄴㅇ      |ㅁㄴㅇ      |0     |
+|30      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |2024-05-09 18:10:10 |ㅁㅁ       |ㅁㅁ       |0     |
+|29      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |2024-05-09 17:30:52 |히히       |대구시      |0     |
+|28      |13      |홍길동   |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |2024-05-08 15:04:51 |a        |a        |0     |
+|--------|--------|------|-----------------------------------------|--------------------|---------|---------|------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 46
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|5df4262e-0736-4f21-b576-089f2d66fb21.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 46
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 45
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|9ad66821-55a8-4207-8cd4-85ccb91187ea.png |
+|398e1637-3af5-49e3-9154-3d150a99cd26.png |
+|6d13d9bf-b11a-41e5-9c67-9877ffeaa6d9.png |
+|034cd1ee-574f-48a3-bab5-92d4ad7929f4.png |
+|f329092f-25ef-41ef-8da5-34e7936c4fce.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 45
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 44
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|56de0dbd-2ee7-4329-a072-4034d47557f8.ico |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 44
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 43
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|692ff94c-5302-4ea0-b6a4-bd9233e825ff.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 43
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|feed_comment_id |comment |created_at          |nm    |pic                                      |user_id |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|101             |gd      |2024-05-21 10:51:23 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|103             |ㅎㅇ      |2024-05-21 10:51:33 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|104             |ㅎㅇ      |2024-05-21 10:51:33 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|105             |ㅎㅇ      |2024-05-21 10:51:34 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 38
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|b1655528-d003-4317-971f-abdc247abed7.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 38
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|feed_comment_id |comment |created_at          |nm    |pic                                      |user_id |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+|102             |ㅎㅇ      |2024-05-21 10:51:26 |유사한국인 |b8c01735-c2c4-437d-ba0f-46bb318237dc.jpg |8       |
+|----------------|--------|--------------------|------|-----------------------------------------|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 37
+ {executed in 15 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|cac06d31-20af-4f92-a488-f8923e6c68ad.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 37
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|--------------------|----|-----------------------------------------|--------|
+|feed_comment_id |comment |created_at          |nm  |pic                                      |user_id |
+|----------------|--------|--------------------|----|-----------------------------------------|--------|
+|106             |asdf    |2024-05-23 10:49:21 |홍길동 |70acbe3c-7ecc-4e29-8749-c27cd811e0d4.png |13      |
+|----------------|--------|--------------------|----|-----------------------------------------|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 32
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|0de826a0-acca-471f-b81e-e91b523be8c7.png |
+|bdcd8370-237b-4c5c-ad17-4d3687e3bbc4.jpg |
+|0d76ced2-2a28-473b-8c2e-1be74437daec.jpg |
+|724cd9fb-a9ac-4ef6-9ad0-346b696ffe8c.jpg |
+|70b9c3bd-a8ab-417f-b1cc-7e972daee7fc.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 32
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 30
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|a2c9c133-c92f-4384-9e4d-3be809145a4c.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 30
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 29
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|dba4d116-228d-440d-b508-573688d18c00.png |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 29
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT pic
+        FROM feed_pics
+        WHERE feed_id = 28
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|-----------------------------------------|
+|pic                                      |
+|-----------------------------------------|
+|0077e40f-3fe2-495f-8476-921f535f0064.jpg |
+|-----------------------------------------|
+[0;39m
+[2024-06-28 10:56:06 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+21. SELECT A.feed_comment_id AS feedCommentId, A.comment, A.created_at AS createdAt,
+               B.nm AS writerNm, B.pic AS writerPic, B.user_id AS writerId
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 28
+        LIMIT 4
+ {executed in 0 msec}[0;39m
+[2024-06-28 10:56:06 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|---|----|--------|
+|feed_comment_id |comment |created_at |nm |pic |user_id |
+|----------------|--------|-----------|---|----|--------|
+|----------------|--------|-----------|---|----|--------|
+[0;39m
+[2024-06-28 11:00:10 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown initiated...[0;39m
+[2024-06-28 11:00:10 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-3 - Shutdown completed.[0;39m

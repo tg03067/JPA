@@ -4,6 +4,7 @@ import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.security.AuthenticationFacade;
+import com.green.greengram.security.SignInProviderType;
 import com.green.greengram.security.jwt.JwtTokenProviderV2;
 import com.green.greengram.security.MyUser;
 import com.green.greengram.security.MyUserDetails;
@@ -65,7 +66,8 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public SignInRes getUserById(SignInPostReq p, HttpServletResponse res){
-        User user = mapper.signInPost(p.getUid());
+        p.setProviderType(SignInProviderType.LOCAL.name());
+        User user = mapper.signInPost(p);
         if(Objects.isNull(user)){
             throw new RuntimeException("아이디를 확인해 주세요.");
         } else if(!BCrypt.checkpw(p.getUpw(), user.getUpw())){
@@ -126,7 +128,7 @@ public class UserServiceImpl implements UserService {
         return fileNm;
     }
     @Override
-    public Map getAccessToken(HttpServletRequest req){
+    public Map<String, String> getAccessToken(HttpServletRequest req){
         Cookie cookie = cookieUtils.getCookie(req, "refresh-token");
         if(cookie == null){ // refresh-token 값이 쿠키에 존재여부
             throw new RuntimeException();
@@ -139,7 +141,7 @@ public class UserServiceImpl implements UserService {
         MyUser myUser = ((MyUserDetails)auth).getUser();
         String accessToken = jwtTokenProvider.generateAccessToken(myUser);
 
-        Map map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
         map.put("accessToken", accessToken);
         return map;
     }

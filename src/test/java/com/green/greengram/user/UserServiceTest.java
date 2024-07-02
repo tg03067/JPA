@@ -77,7 +77,6 @@ class UserServiceTest {
         savedFile2.delete();
         assertNotEquals(p2Upw, p2.getUpw());
     }
-
     @Test
     void getUserById() {
         HttpServletResponse res = null;
@@ -144,7 +143,6 @@ class UserServiceTest {
 //            mockedStatic.verify(() -> BCrypt.checkpw(p2.getUpw(), user2.getUpw()));
 //        }
     }
-
     @Test
     void getUserInfo() {
         UserInfoGetReq p1 = new UserInfoGetReq(2);
@@ -164,7 +162,6 @@ class UserServiceTest {
         assertEquals(result2, res2);
         verify(mapper).selProfileUserInfo(p2);
     }
-
     @Test
     void patchProfilePic() throws IOException {
         String picName = "2372b92a-4933-47ec-9431-6489c1cb1239.png";
@@ -183,7 +180,6 @@ class UserServiceTest {
         assertNotEquals(p1.getPicName(), picName);
         verify(mapper, times(1)).updProfilePic(p1);
     }
-
     @Test
     void patchProfilePic2() throws IOException {
         long signedUserId1 = 500;
@@ -201,7 +197,6 @@ class UserServiceTest {
         UserProfilePatchReq p1 = new UserProfilePatchReq();
         p1.setSignedUserId(signedUserId1);
     }
-
     @Test
     void patchProfilePic3() throws IOException {
         long signedUserId1 = 500;
