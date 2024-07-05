@@ -12,6 +12,8 @@ import org.springframework.security.oauth2.client.web.AuthorizationRequestReposi
 import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest;
 import org.springframework.stereotype.Component;
 
+
+//oauth2_auth_request
 @Component
 @Slf4j
 @RequiredArgsConstructor
@@ -37,11 +39,14 @@ public class OAuth2AuthenticationRequestBasedOnCookieRepository
                 , appProperties.getOauth2().getAuthorizationRequestCookieName()
                 , authorizationRequest
                 , appProperties.getOauth2().getCookieExpirySecond()) ;
+
+        // FE로 돌아갈 redirect 주소값 ( 즉, FE가 redirect_uri 파라미터로 백엔드에 보내준 값 )
         String redirectUriAfterLogin = request.getParameter(appProperties.getOauth2().getRedirectUriParamCookieName()) ;
         log.info("redirectUriAfterLogin: {}", redirectUriAfterLogin) ;
         if(StringUtils.isNoneBlank(redirectUriAfterLogin)){
             cookieUtils.setCookie(response
-                    , appProperties.getOauth2().getAuthorizationRequestCookieName()
+                    //, appProperties.getOauth2().getAuthorizationRequestCookieName()
+                    , appProperties.getOauth2().getRedirectUriParamCookieName()
                     , redirectUriAfterLogin
                     , appProperties.getOauth2().getCookieExpirySecond()) ;
         }

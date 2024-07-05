@@ -25,11 +25,11 @@ public class MyUserDetails implements UserDetails, OAuth2User {
 //        return list;
         return Collections.singletonList(new SimpleGrantedAuthority(user.getRole()));
     }
-    @Override public String getPassword() {return "";}
-    @Override public String getUsername() {return "";}
-    @Override public boolean isAccountNonExpired() {return false;}
-    @Override public boolean isAccountNonLocked() {return false;}
-    @Override public boolean isCredentialsNonExpired() {return false;}
-    @Override public boolean isEnabled() {return false;}
-    @Override public String getName() { return ""; }
+    @Override public String getPassword() { return "" ; }
+    @Override public String getUsername() { return user == null ? "GUEST" : String.valueOf(user.getUserId()) ; }
+    @Override public boolean isAccountNonExpired() { return false ; }
+    @Override public boolean isAccountNonLocked() { return false ; }
+    @Override public boolean isCredentialsNonExpired() { return false ; }
+    @Override public boolean isEnabled() { return false ; }
+    @Override public String getName() { return "" ; }
 }

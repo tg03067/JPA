@@ -23,10 +23,11 @@
 
     <insert id="postUser" keyProperty="userId" useGeneratedKeys="true">
         INSERT INTO user
-        SET uid = #{uid}
-        , upw = #{upw}
-        , nm = #{nm}
-        , pic = #{pic}
+        SET provider_type = #{providerType}
+                , uid = #{uid}
+                , upw = #{upw}
+                , nm = #{nm}
+                , pic = #{pic}
     </insert>
 
     <select id="signInPost">

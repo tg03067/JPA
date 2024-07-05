@@ -3,12 +3,17 @@ package com.green.greengram.security;
 import com.green.greengram.security.jwt.JwtAuthenticationAccessDeniedHandler;
 import com.green.greengram.security.jwt.JwtAuthenticationEntryPoint;
 import com.green.greengram.security.jwt.JwtAuthenticationFilter;
+import com.green.greengram.security.oauth2.MyOAuth2UserService;
+import com.green.greengram.security.oauth2.OAuth2AuthenticationFailureHandler;
+import com.green.greengram.security.oauth2.OAuth2AuthenticationRequestBasedOnCookieRepository;
+import com.green.greengram.security.oauth2.OAuth2AuthenticationSuccessHandler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.config.oauth2.client.CommonOAuth2Provider;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
@@ -19,16 +24,22 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 public class SecurityConfiguration {
     //@Component 로 빈등록을 하였기 때문에 DI가 된다.
     private final JwtAuthenticationFilter jwtAuthenticationFilter;
+    private final OAuth2AuthenticationFailureHandler oauth2AuthenticationFailureHandler ;
+    private final OAuth2AuthenticationRequestBasedOnCookieRepository repository ;
+    private final OAuth2AuthenticationSuccessHandler oauth2AuthenticationSuccessHandler ;
+    private final MyOAuth2UserService myOAuth2UserService ;
+
     /*
         메소드 빈등록으로 주로 쓰는 케이스(현재기준) : Security 와 관련된 빈등록을 여러개 하고 싶은 때
         메소드 현식으로 빈등록을 하면 한 곳에 모을 수가 있으니 좋다.
         메소드 빈등록을 하지않으면 각각 클래스로 만들어야한다.
      */
-
     @Bean // 메소드 타입의 빈 등록 ( 파라미터, 리턴타입 중요 )
           // 파라미터는 빈 등록할 때 필요한 객체
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         // 파라미터없이 내가 직전 new 객체화해서 리턴으로 빈 등록가능
+        CommonOAuth2Provider o ;
+
         /*
        return http.sessionManagement(new Customizer<SessionManagementConfigurer<HttpSecurity>>() {
             @Override
@@ -80,54 +91,72 @@ public class SecurityConfiguration {
                 })
                 // 체이닝 기법
                 */
-                .authorizeHttpRequests(auth -> auth.requestMatchers(
-                        // 회원가입, 로그인 인증이 안 되어 있어도 사용가능하게 세팅
-                        "/api/user/sign-up",
-                        "/api/user/sign-in",
-                        "/api/user/access-token",
-                        // swagger 사용할 수 있게 세팅
-                        "/swagger",
-                        "/swagger-ui/**",
-                        "/v3/api-docs/**",
-                        // 사진
-                        "/pic/**",
-                        //프론트 화면 보일수 있게 세팅
-                        "/",
-                        "/index.html",
-                        "/css/**",
-                        "/static/**",
-                        "/js/**",
-                        "/fimg/**",
-                        "/manifest.json",
-                        "/favicon.ico",
-                        "/logo192.png",
-                        // 프론트에서 사용하는 라우터 주소
-                        "/sign-in",
-                        "/sign-up",
-                        "/profile/*",
-                        "/feed" ,
-
-                        //actuator
-                        "/actuator",
-                        "/actuator/**"
-                                ).permitAll()
-                        .anyRequest().authenticated()
+                .authorizeHttpRequests(auth ->
+                                auth.requestMatchers(
+                                        "/api/feed",
+                                        "/api/feed/*",
+                                        "/api/user/pic",
+                                        "/api/user/follow"
+                                )
+                                .authenticated()
+                                .anyRequest().permitAll()
+//                                auth.requestMatchers(
+//                        // 회원가입, 로그인 인증이 안 되어 있어도 사용가능하게 세팅
+//                        "/api/user/sign-up",
+//                        "/api/user/sign-in",
+//                        "/api/user/access-token",
+//                        // swagger 사용할 수 있게 세팅
+//                        "/swagger",
+//                        "/swagger-ui/**",
+//                        "/v3/api-docs/**",
+//                        // 사진
+//                        "/pic/**",
+//                        //프론트 화면 보일수 있게 세팅
+//                        "/",
+//                        "/index.html",
+//                        "/css/**",
+//                        "/static/**",
+//                        "/js/**",
+//                        "/fimg/**",
+//                        "/manifest.json",
+//                        "/favicon.ico",
+//                        "/logo192.png",
+//                        // 프론트에서 사용하는 라우터 주소
+//                        "/sign-in",
+//                        "/sign-up",
+//                        "/profile/*",
+//                        "/feed" ,
+//
+//                        //actuator
+//                        "/actuator",
+//                        "/actuator/**"
+//                                ).permitAll()
+//                        .anyRequest().authenticated()
                         // 어떤 요청이든 인증이 되어야함.
                         // 로그인이 되어 있어야만 허용.
+
+//                         앞에서 부터 순서가 중요함. anyRequest는 마지막에
+//                         단점 : Swagger가 다 막힘.
+//                         requestMatchers
+//                         권한 세팅, Security의 핵심
+//                         로그인이 되지않아도 사용할 수 있음을 세팅.
+//                         permitAll : 나머지는 인증이 필요하다. 나 자신의 주소값 호출, 그러므로 { } 를 사용하지않고 작성가능
                 )
-                // 앞에서 부터 순서가 중요함. anyRequest는 마지막에
-                // 단점 : Swagger가 다 막힘.
-                // requestMatchers
-                // 권한 세팅, Security의 핵심
-                // 로그인이 되지않아도 사용할 수 있음을 세팅.
-                // permitAll : 나머지는 인증이 필요하다. 나 자신의 주소값 호출, 그러므로 { } 를 사용하지않고 작성가능
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(exception -> exception
                         .authenticationEntryPoint(new JwtAuthenticationEntryPoint())
                         .accessDeniedHandler(new JwtAuthenticationAccessDeniedHandler()))
+                .oauth2Login( oauth2 -> oauth2.authorizationEndpoint(
+                        auth -> auth.baseUri("/oauth2/authorization")
+                                .authorizationRequestRepository(repository)
+                    )
+                        .redirectionEndpoint( redirection -> redirection.baseUri("/*/oauth2/code/*"))
+                        .userInfoEndpoint(userInfo -> userInfo.userService(myOAuth2UserService))
+                        .successHandler(oauth2AuthenticationSuccessHandler)
+                        .failureHandler(oauth2AuthenticationFailureHandler)
+                )
                 .build();
     }
-
     @Bean
     public PasswordEncoder passwordEncoder() {
         // 암호화된 암호를 매칭시킬 때 사용 Spring 표준 ( 규격화 )

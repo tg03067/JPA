@@ -1,26 +1,21 @@
 package com.green.greengram.common;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+import org.springframework.util.SerializationUtils;
+
+import java.util.Base64;
 
 @Slf4j
 @Component
-@RequiredArgsConstructor
 public class CookieUtils {
-    private final ObjectMapper om;
     public <T> T getData(T type, HttpServletRequest req, String name){
-        try {
-            Cookie cookie = getCookie(req, name);
-            String json = cookie.getValue();
-            return (T) om.readValue(json, type.getClass());
-        } catch (Exception e) {
-            e.printStackTrace();
+        Cookie cookie = getCookie(req, name);
+        if(cookie != null){
+            return null;
         }
         return null;
     }
@@ -38,12 +33,10 @@ public class CookieUtils {
         return null;
     }
     public <T> T getCookie(HttpServletRequest req, String name, Class<T> type) {
-        Cookie cookie = getCookie(req, name);
-        try{
-            return om.readValue(cookie.getValue(), type);
-        } catch (JsonProcessingException e) {
-            throw new RuntimeException(e);
-        }
+        Cookie cookie = getCookie(req, name) ;
+        if(cookie == null) { return null ; }
+        if(type == String.class) { return (T) cookie.getValue() ; }
+        return deserialize(cookie, type) ;
     }
     public void setCookie(HttpServletResponse res, String name, String value, int maxAge) {
         Cookie cookie = new Cookie(name, value) ;
@@ -52,12 +45,60 @@ public class CookieUtils {
         cookie.setMaxAge(maxAge) ; // 만료시간
         res.addCookie(cookie) ;
     }
-    public void setCookie(HttpServletResponse res, String name, Object value, int maxAge) {
+    public void setCookie(HttpServletResponse res, String name, Object obj, int maxAge) {
         // value 에 객체를 넣으면 json 형태로 변환해서 cookie 에 저장
-        try{ this.setCookie(res, name, om.writeValueAsString(value), maxAge) ; }
-        catch (JsonProcessingException e){ throw new RuntimeException(e) ; }
+        this.setCookie(res, name, serialize(obj), maxAge) ;
     }
     public void deleteCookie(HttpServletResponse res, String name) {
         setCookie(res, name, null, 0);
+    }
+//    public String serialize(Object obj) {
+//        // 객체가 가지고 있는 데이터를 문자열로 변환 ( 암호화 )
+//                                                    // Object > byte[] > String
+//        return Base64.getUrlEncoder().encodeToString(SerializationUtils.serialize(obj));
+//    }
+//    public <T> T deserialize(Cookie cookie, Class<T> cls) { // 복호화
+//        return cls.cast(
+//            SerializationUtils.deserialize(
+//                Base64.getUrlDecoder().decode(cookie.getValue()) // String > byte[] > Object
+//            )
+//        ) ;
+//    }
+    public static String serialize(Object obj) {
+    // 객체가 가지고 있는 데이터를 문자열로 변환 ( 암호화 )
+        return Base64.getUrlEncoder().encodeToString(SerializationUtils.serialize(obj));
+    }
+    // Deserialize method using URL decoding Base64
+    public static <T> T deserialize(Cookie cookie, Class<T> cls) {
+        try {
+            String cookieValue = cookie.getValue();
+
+            // Base64 URL 디코딩 전에 로그 출력
+            System.out.println("Cookie value to decode: " + cookieValue);
+
+            // Base64 URL 인코딩 문자열인지 확인
+            if (!isBase64Encoded(cookieValue)) {
+                throw new IllegalArgumentException("Invalid Base64 encoded string: " + cookieValue);
+            }
+
+            // Base64 URL 디코딩
+            byte[] decodedBytes = Base64.getUrlDecoder().decode(cookieValue);
+
+            // 역직렬화
+            return cls.cast(SerializationUtils.deserialize(decodedBytes));
+        } catch (IllegalArgumentException e) {
+            // 디코딩 중 예외 발생 시 로그 출력
+            System.err.println("Failed to decode Base64 string: " + cookie.getValue());
+            throw e;
+        }
+    }
+    // Base64 인코딩된 문자열인지 확인하는 헬퍼 메서드
+    private static boolean isBase64Encoded(String value) {
+        try {
+            Base64.getUrlDecoder().decode(value);
+            return true;
+        } catch (IllegalArgumentException e) {
+            return false;
+        }
     }
 }

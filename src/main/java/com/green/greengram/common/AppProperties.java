@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+import java.util.List;
+
 // @ConfigurationProperties : yaml 에 작성되어 있는 데이터를 객체화 시켜주는 애노테이션
 @Getter
 @ConfigurationProperties(prefix = "app") //prefix 의 app 은 application.yaml 파일의 34Line 의 app
@@ -20,6 +22,7 @@ public class AppProperties {
         private String headerSchemaName ;
         private String tokenType ;
         private long accessTokenExpiry ;
+        private String refreshTokenCookieName ;
         private long refreshTokenExpiry ;
         private int refreshTokenCookieMaxAge ;
 
@@ -33,5 +36,6 @@ public class AppProperties {
         private String authorizationRequestCookieName ;
         private String redirectUriParamCookieName ;
         private int cookieExpirySecond ;
+        private List<String> authorizedRedirectUris ;
     }
 }

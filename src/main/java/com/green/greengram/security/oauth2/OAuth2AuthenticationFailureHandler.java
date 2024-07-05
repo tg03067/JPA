@@ -22,12 +22,14 @@ public class OAuth2AuthenticationFailureHandler extends SimpleUrlAuthenticationF
     private final AppProperties appProperties ;
 
     @Override
-    public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
+    public void onAuthenticationFailure(HttpServletRequest request
+            , HttpServletResponse response
+            , AuthenticationException exception) throws IOException, ServletException {
         log.info("OAuth2AuthenticationFailureHandler - onAuthenticationFailure") ;
         exception.printStackTrace() ;
         String targetUrl = cookieUtils.getCookie(request
                 , appProperties.getOauth2().getAuthorizationRequestCookieName()
-                , String.class) ;
+                , String.class ) ;
         repository.removeAuthorizationRequestCookies(response) ;
 
         getRedirectStrategy().sendRedirect(request, response, targetUrl) ;
