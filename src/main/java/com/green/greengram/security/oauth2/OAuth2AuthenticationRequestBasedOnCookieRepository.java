@@ -14,6 +14,20 @@ import org.springframework.stereotype.Component;
 
 
 //oauth2_auth_request
+/*
+    OAuth2 인증 과정 중에 쿠키에 저장하는 데이터는 보안 때문. CSRF 공격을 방지하기 위해 state 값을 사용 .
+    OAuth2AuthorizationRequest를 인가코드 ( 인증코드 ) 받을 때까지 사용
+     > access token 받은 이후에는 다시 사용할 가치가 없기때문에 세션에서 삭제.
+
+     만약 터큰이 만려가 되어 퀀한부여 요청을 ( 인증 / 인가 코드 ) 다시 하는 경우 이전에 세션이 존재한다면 현재를 사용하는 것이 아니라
+     예전꺼를 사용하기 때문에 문제될 가능성이 있음. 그래서 세션에서 삭제를 한다.
+     인가/인증 코드가 1회 용인 것처럼 OAuth2AuthorizationRequest 객체도 1회 용으로 사용.
+     ( 인가/인증 코드는 요청 보낼 때마다 값이 달라진다. )
+
+     ( 사용자 정보 받았다 / 못 받았다 분기 )
+        성공 > OAuth2AuthenticationSuccessHandler - onAuthenticationSuccess 호출
+        실패 > OAuth2AuthenticationFailureHandler -
+ */
 @Component
 @Slf4j
 @RequiredArgsConstructor
@@ -54,7 +68,7 @@ public class OAuth2AuthenticationRequestBasedOnCookieRepository
     @Override
     public OAuth2AuthorizationRequest removeAuthorizationRequest(HttpServletRequest request, HttpServletResponse response) {
         log.info("CookieRepository -removeAuthorizationRequest") ;
-        return this.loadAuthorizationRequest(request) ;
+        return this.loadAuthorizationRequest(request) ; // null
     }
     public void removeAuthorizationRequestCookies(HttpServletResponse response) {
         log.info("CookieRepository -removeAuthorizationRequestCookies") ;

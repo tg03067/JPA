@@ -14,11 +14,11 @@ public class AuthenticationFacade {
         MyUserDetails myUserDetails = (MyUserDetails) SecurityContextHolder
                 .getContext()
                 .getAuthentication()
-                .getPrincipal();
-        return myUserDetails == null ? null : myUserDetails.getUser();
+                .getPrincipal() ;
+        return myUserDetails == null ? null : myUserDetails.getUser() ;
     }
     public long getLoginUserId() {
-        MyUser myUser = getLoginUser();
-        return myUser == null ? 0 : myUser.getUserId();
+        MyUser myUser = getLoginUser() ;
+        return myUser == null ? 0 : myUser.getUserId() ;
     }
 }

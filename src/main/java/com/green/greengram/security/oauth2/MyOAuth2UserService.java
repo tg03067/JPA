@@ -19,12 +19,14 @@ import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
+import javax.security.sasl.AuthenticationException;
+
 /*
     MyOAuth2UserService :
     OAuth2 제공자 ( 구글, 페이스북, 카카오, 네이버 등 ) 로 부터 Access-Token 받은 후 loadUser 메소드가 호출이 됨.
     ( 스프링 시큐리티에 구현되어 있음. )
     OAuth2 사용자 정보를 가져와서 ( 이미 구현되어 있음. super.loadUser(userRequest); )
-    OAuth2User 인터페이스를 구현한 객체( 인증 객체 )를 리턴 ( service 에서 해야할 작업 )
+    OAuth2User 인터페이스를 구현한 객체( 인증 객체 )를 리턴 ( service 에서 해야할 작업 ) / SuccessHandler 로 가는 객체
 
     FE  > 플랫폼 소셜로그인 아이콘 클릭 ( 리다이렉트 정보 전달 -- 이 리다이렉트는 로그인 완료 후 다시 돌아온 FE 주소값 )
         > 백엔드에 요청 ( ' 나 무슨 소셜로그인 하고 싶어 ' 에 대한 정보가 전달 )
@@ -80,12 +82,16 @@ public class MyOAuth2UserService extends DefaultOAuth2UserService {
             signUpParam.setPic(oAuth2UserInfo.getProfilePicUrl()) ;
             int result = mapper.postUser(signUpParam) ;
             user = new User(signUpParam.getUserId()
-                        , signUpParam.getUid()
-                        , signUpParam.getUpw()
+                        , signUpParam.getUid() // or null
+                        , signUpParam.getUpw() // or null
                         , signUpParam.getNm()
                         , signUpParam.getPic()
                         , null
                         , null ) ;
+        } else { // 이미 회원가입 되어 있었음
+            if(user.getPic() == null || ( user.getPic().startsWith("http") && !user.getPic().equals(oAuth2UserInfo.getProfilePicUrl()))){ // 프로필 값이 변경이 되었다면
+                // 프로필 사진 변경처리 ( update )
+            }
         }
 
         MyUserOAuth2Vo myUserOAuth2Vo =

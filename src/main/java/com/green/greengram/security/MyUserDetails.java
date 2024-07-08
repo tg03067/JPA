@@ -13,8 +13,11 @@ import java.util.Map;
 @Getter
 @Setter
 @NoArgsConstructor
-public class MyUserDetails implements UserDetails, OAuth2User {
-    private MyUser user;
+// 시큐리티에서 로그인 처리를 할 때 사용하는 객체
+public class MyUserDetails implements UserDetails, OAuth2User { // 상속관계 is a
+    // userDetails = 로그인 처리때, OAuth2User = 소셜로그인 때
+    private MyUser user; // JWT 에 만들 떄 payload 에 담을 데이터를 담는 객체 .
+    // 가지고 있는 것 has a ( 포함 관계 )
 
     @Override
     public Map<String, Object> getAttributes() { return Map.of(); }
