@@ -1,11 +1,10 @@
 package com.green.greengram.feedfavorite;
 
 import com.green.greengram.BaseIntegrationTest;
-import com.green.greengram.common.model.ResultDto;
+import com.green.greengram.common.model.MyResponse;
 import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.springframework.http.HttpStatus;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.util.LinkedMultiValueMap;
@@ -33,7 +32,7 @@ public class FeedFavoriteIntegrationTest extends BaseIntegrationTest {
                 .andExpect(status().isOk())
                 .andReturn();
         String resJson = mr.getResponse().getContentAsString();
-        ResultDto<Integer> result = om.readValue(resJson, ResultDto.class);
+        MyResponse<Integer> result = om.readValue(resJson, MyResponse.class);
         assertEquals(0, result.getResultData());
         assertEquals("좋아요 취소", result.getResultMsg());
     }
@@ -53,7 +52,7 @@ public class FeedFavoriteIntegrationTest extends BaseIntegrationTest {
                 .andExpect(status().isOk())
                 .andReturn();
         String resJson = mr.getResponse().getContentAsString();
-        ResultDto<Integer> result = om.readValue(resJson, ResultDto.class);
+        MyResponse<Integer> result = om.readValue(resJson, MyResponse.class);
         assertEquals(1, result.getResultData());
         assertEquals("좋아요 처리", result.getResultMsg());
     }

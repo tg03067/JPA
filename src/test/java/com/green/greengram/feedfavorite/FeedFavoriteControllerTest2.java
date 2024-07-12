@@ -2,7 +2,6 @@ package com.green.greengram.feedfavorite;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.green.greengram.CharEncodingConfiguration;
-import com.green.greengram.common.model.ResultDto;
 import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

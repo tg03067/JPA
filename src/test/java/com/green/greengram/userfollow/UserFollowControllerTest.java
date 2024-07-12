@@ -2,7 +2,7 @@ package com.green.greengram.userfollow;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.green.greengram.CharEncodingConfiguration;
-import com.green.greengram.common.model.ResultDto;
+import com.green.greengram.common.model.MyResponse;
 import com.green.greengram.userfollow.model.UserFollowReq;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,7 +40,7 @@ class UserFollowControllerTest {
         given(service.postUserFollow(req)).willReturn(result);
         String json = om.writeValueAsString(req);
 
-        ResultDto<Integer> expectedResult = ResultDto.<Integer>builder().
+        MyResponse<Integer> expectedResult = MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
@@ -74,7 +74,7 @@ class UserFollowControllerTest {
         given(service.postUserFollow(req)).willReturn(result);
         String json = om.writeValueAsString(req);
 
-        ResultDto<Integer> expectedResult = ResultDto.<Integer>builder().
+        MyResponse<Integer> expectedResult = MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
@@ -110,7 +110,7 @@ class UserFollowControllerTest {
         params.add("from_user_id", String.valueOf(req.getFromUserId()));
         params.add("to_user_id", String.valueOf(req.getToUserId()));
 
-        ResultDto<Integer> expectedResult = ResultDto.<Integer>builder().
+        MyResponse<Integer> expectedResult = MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
@@ -135,7 +135,7 @@ class UserFollowControllerTest {
         params.add("from_user_id", String.valueOf(req.getFromUserId()));
         params.add("to_user_id", String.valueOf(req.getToUserId()));
 
-        ResultDto<Integer> expectedResult = ResultDto.<Integer>builder().
+        MyResponse<Integer> expectedResult = MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).

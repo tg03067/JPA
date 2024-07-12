@@ -65,6 +65,11 @@
       "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
     },
     {
+      "name": "app.oauth2.base-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    },
+    {
       "name": "app.oauth2.cookie-expiry-second",
       "type": "java.lang.Integer",
       "sourceType": "com.green.greengram.common.AppProperties$Oauth2"

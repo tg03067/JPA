@@ -23,11 +23,11 @@ public class FeedControllerImpl {
 
     @PostMapping
     @Operation(summary = "Feed 등록", description = "")
-    public ResultDto<FeedPostRes> postFeed(@RequestPart List<MultipartFile> pics,
-                                          @RequestPart FeedPostReq p){
+    public MyResponse<FeedPostRes> postFeed(@RequestPart List<MultipartFile> pics,
+                                            @RequestPart FeedPostReq p){
         FeedPostRes result = service.postFeed(pics, p);
 
-        return ResultDto.<FeedPostRes>builder().
+        return MyResponse.<FeedPostRes>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
@@ -36,10 +36,10 @@ public class FeedControllerImpl {
 
     @GetMapping
     @Operation(summary = "Feed 리스트", description = "loginUserId는 로그인한 사용자의 PK")
-    public ResultDto<List<FeedGetRes>> getFeed(@ParameterObject @ModelAttribute FeedGetReq p){
+    public MyResponse<List<FeedGetRes>> getFeed(@ParameterObject @ModelAttribute FeedGetReq p){
         List<FeedGetRes> list = service.getFeed(p);
 
-        return ResultDto.<List<FeedGetRes>>builder().
+        return MyResponse.<List<FeedGetRes>>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(list).

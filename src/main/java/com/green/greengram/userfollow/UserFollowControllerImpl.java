@@ -1,6 +1,6 @@
 package com.green.greengram.userfollow;
 
-import com.green.greengram.common.model.ResultDto;
+import com.green.greengram.common.model.MyResponse;
 import com.green.greengram.userfollow.model.UserFollowReq;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -9,8 +9,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Map;
 
 @RestController
 @Slf4j
@@ -22,10 +20,10 @@ public class UserFollowControllerImpl implements UserFollowController {
     @Override
     @PostMapping
     @Operation(summary = "유저간 Follow", description = "Follow 처리")
-    public ResultDto<Integer> postUserFollow(@RequestBody UserFollowReq p) {
+    public MyResponse<Integer> postUserFollow(@RequestBody UserFollowReq p) {
         int result = service.postUserFollow(p);
 
-        return ResultDto.<Integer>builder().
+        return MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).
@@ -35,10 +33,10 @@ public class UserFollowControllerImpl implements UserFollowController {
     @Override
     @DeleteMapping
     @Operation(summary = "유저간 Follow 취소", description = "Follow 취소 처리")
-    public ResultDto<Integer> deleteUserFollow(@ParameterObject @ModelAttribute UserFollowReq p) {
+    public MyResponse<Integer> deleteUserFollow(@ParameterObject @ModelAttribute UserFollowReq p) {
         int result = service.deleteUserFollow(p);
 
-        return ResultDto.<Integer>builder().
+        return MyResponse.<Integer>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(HttpStatus.OK.toString()).
                 resultData(result).

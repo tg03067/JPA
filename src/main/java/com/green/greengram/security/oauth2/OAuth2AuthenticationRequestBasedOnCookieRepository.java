@@ -1,6 +1,5 @@
 package com.green.greengram.security.oauth2;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import jakarta.servlet.http.*;
@@ -16,7 +15,7 @@ import org.springframework.stereotype.Component;
 //oauth2_auth_request
 /*
     OAuth2 인증 과정 중에 쿠키에 저장하는 데이터는 보안 때문. CSRF 공격을 방지하기 위해 state 값을 사용 .
-    OAuth2AuthorizationRequest를 인가코드 ( 인증코드 ) 받을 때까지 사용
+    OAuth2AuthorizationRequest 를 인가코드 ( 인증코드 ) 받을 때까지 사용
      > access token 받은 이후에는 다시 사용할 가치가 없기때문에 세션에서 삭제.
 
      만약 터큰이 만려가 되어 퀀한부여 요청을 ( 인증 / 인가 코드 ) 다시 하는 경우 이전에 세션이 존재한다면 현재를 사용하는 것이 아니라
@@ -27,6 +26,18 @@ import org.springframework.stereotype.Component;
      ( 사용자 정보 받았다 / 못 받았다 분기 )
         성공 > OAuth2AuthenticationSuccessHandler - onAuthenticationSuccess 호출
         실패 > OAuth2AuthenticationFailureHandler -
+
+     스프링 시큐리티 OAuth 처리 때 사용하는 필터가 2개가 있음.
+     OAuth2AuthorizationRequestRedirectFilter( AS 가필터 ), OAuth2LoginAuthenticationFilter( AS 나필터 )
+
+     OAuth2AuthorizationRequest( AS a ) 는 소셜로그인 요청할 때마다 생성되는 객체
+     1단계 인가코드(임시코드, 인증코드)를 요청할 때 a를 사용함
+     2단계 Access Token 을 요청한 이후에는 A를 사용할 일이 발생하지 않기 때문에 Cookie 에서 삭제
+
+     세션을 이용해서 처리하는 방식은 확장이 불리함. >> 쿠키로 해결.
+        > 그래서 이전에 세션에서 삭제 처리를 removeAuthorizationRequest 메소드에서 했던거 같음.
+
+    가필터에서 removeAuthorizationRequest 메소드를 호출해서 리턴받은 값을 활용한다.
  */
 @Component
 @Slf4j

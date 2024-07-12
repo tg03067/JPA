@@ -19,6 +19,22 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.io.IOException;
 import java.net.URI;
 
+/*
+    < 프론트엔드 redirect_uri 가 허용헌 uri 인지 체크하는 부분의 현 상태 >
+    인증받고 싶은 소셜로그인 선택 ( redirect_uri 는 소셜로그인 마무리되고 프론트엔드로 가는 url )
+    소셜로그인 화면 출력
+    아이디/비번 입력해서 로그인 시도 ( redirect_uri 는 백엔드로 가는 url )
+    인가코드 받기 위한 작업이 이루어짐.
+    제공자 ( provider ) 는 아이디/비번이 일치한다면 백엔드 redirect_uri로 인가코드 보내준다.
+    백엔드는 인가코드로 access_token 을 받기 위한 작업이 이루어짐
+    백엔드는 access_token 으로 사용자 벙보를 받기 위한 작업이 이루어짐
+    로컬 로그인 작업 수행 ( SuccessHandler ) ( 프론트엔드 redirect_uri 가 허용헌 uri 인지 체크 )
+    프론트엔드 redirect_uri 로 리다이렉트를 하면서 필요한 정보를 파라미터로 보내준다.
+
+    인증받고 싶은 소셜로그인 선택시 프론트엔드 redirect_uri 가 허용한 uri 인지 체크를 하도록 변경, 필터로 해결
+
+ */
+
 @Slf4j
 @Component
 @RequiredArgsConstructor
@@ -49,10 +65,6 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
         String redirectUri = cookieUtils.getCookie(request
                 , appProperties.getOauth2().getRedirectUriParamCookieName()
                 , String.class) ;
-        // ( yaml ) app.oauth.authorized-redirect-uri 리스트에 없는 uri 인 경우
-        if(redirectUri != null && !hasAuthorizedRedirectUri(redirectUri)) {
-            throw new IllegalArgumentException("인증되지 않은 Redirect URI 입니다.") ;
-        }
 
         // FE가 원하는 redirect_url 값이 저장
         String targetUrl = redirectUri == null ? getDefaultTargetUrl() : redirectUri ;
@@ -90,18 +102,5 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
         super.clearAuthenticationAttributes(request) ;
         repository.removeAuthorizationRequestCookies(response) ;
     }
-    public boolean hasAuthorizedRedirectUri(String uri) { // 우리가 설정한 redirect-uri 인지 체크
-        URI savedCookieRedirectUri = URI.create(uri) ; // uri 객체 좋은 점 : 쿼리스트링 뺴내기 좋음
-        log.info("clientRedirectUri.getHost() : {}", savedCookieRedirectUri.getHost()) ; // http://localhost: 까지 날아옴 /** 부분 전까지 날아옴
-        log.info("clientRedirectUri.getPort() : {}", savedCookieRedirectUri.getPort()) ; // 포트번호가 날아옴.
 
-        for ( String redirectUri : appProperties.getOauth2().getAuthorizedRedirectUris() ){
-            URI authorizedUri = URI.create(redirectUri) ;
-            if ( savedCookieRedirectUri.getHost().equalsIgnoreCase(authorizedUri.getHost())
-                    && savedCookieRedirectUri.getPort() == authorizedUri.getPort() ){
-                return true ;
-            }
-        }
-        return false ;
-    }
 }

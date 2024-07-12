@@ -1,0 +1,54 @@
+[2024-07-08 16:58:49 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 9924 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-07-08 16:58:49 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-07-08 16:58:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-07-08 16:58:49 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-07-08 16:58:50 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1245 ms[0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@43ea748a[0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-07-08 16:58:51 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@182eabf9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50a35aa4, org.springframework.security.web.context.SecurityContextHolderFilter@6b65b51f, org.springframework.security.web.header.HeaderWriterFilter@584a4822, org.springframework.web.filter.CorsFilter@17b29b46, org.springframework.security.web.authentication.logout.LogoutFilter@79775f3b, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5b1d9dae, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3e3edf7f, com.green.greengram.security.jwt.JwtAuthenticationFilter@50e507f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78801c18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@675ebb5b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6800abc7, org.springframework.security.web.session.SessionManagementFilter@44491606, org.springframework.security.web.access.ExceptionTranslationFilter@27cb53d2, org.springframework.security.web.access.intercept.AuthorizationFilter@106b1ae2][0;39m
+[2024-07-08 16:58:52 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-07-08 16:58:52 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-08 16:58:52 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'[0;39m
+[2024-07-08 16:58:52 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-07-08 16:58:52 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-07-08 16:58:52 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [36m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m
+[2024-07-08 16:58:52 [31mERROR[0;39m restartedMain] [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter] [36m
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+[0;39m
+[2024-07-08 16:58:56 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.11 with PID 7980 (D:\2024-01\backEnd\GreengramSecurity\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramSecurity)[0;39m
+[2024-07-08 16:58:56 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-07-08 16:58:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-07-08 16:58:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1181 ms[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@74c06494[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-07-08 16:58:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-07-08 16:58:58 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-07-08 16:58:58 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fa55684, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b1d9dae, org.springframework.security.web.context.SecurityContextHolderFilter@27cb53d2, org.springframework.security.web.header.HeaderWriterFilter@6c815f3c, org.springframework.web.filter.CorsFilter@6d5658a4, org.springframework.security.web.authentication.logout.LogoutFilter@5e36fe88, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4fa9b2f3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@bdbe6f8, com.green.greengram.security.jwt.JwtAuthenticationFilter@41362bfb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@584a4822, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39e1972b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b0aabec, org.springframework.security.web.session.SessionManagementFilter@6ebc1bc0, org.springframework.security.web.access.ExceptionTranslationFilter@515a8b08, org.springframework.security.web.access.intercept.AuthorizationFilter@f578829][0;39m
+[2024-07-08 16:58:58 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-07-08 16:58:58 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'[0;39m
+[2024-07-08 16:58:58 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-07-08 16:58:58 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m

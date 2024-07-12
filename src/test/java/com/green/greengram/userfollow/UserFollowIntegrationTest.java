@@ -1,9 +1,8 @@
 package com.green.greengram.userfollow;
 
 import com.green.greengram.BaseIntegrationTest;
-import com.green.greengram.common.model.ResultDto;
+import com.green.greengram.common.model.MyResponse;
 import com.green.greengram.userfollow.model.UserFollowReq;
-import io.swagger.v3.oas.models.links.Link;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
@@ -11,9 +10,6 @@ import org.springframework.test.annotation.Rollback;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
-
-import java.util.HashMap;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
@@ -36,7 +32,7 @@ public class UserFollowIntegrationTest extends BaseIntegrationTest {
                 .andReturn();
 
         String resContent = mr.getResponse().getContentAsString();
-        ResultDto<Integer> result = om.readValue(resContent, ResultDto.class); // 객체를 string으로 바꿈.
+        MyResponse<Integer> result = om.readValue(resContent, MyResponse.class); // 객체를 string으로 바꿈.
         assertEquals(1, result.getResultData());
     }
 
@@ -56,7 +52,7 @@ public class UserFollowIntegrationTest extends BaseIntegrationTest {
                 .andReturn();
 
         String resContent = mr.getResponse().getContentAsString();
-        ResultDto<Integer> result = om.readValue(resContent, ResultDto.class);
+        MyResponse<Integer> result = om.readValue(resContent, MyResponse.class);
         assertEquals(1, result.getResultData(), "먼가 이상");
     }
 }

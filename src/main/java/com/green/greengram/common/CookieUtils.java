@@ -4,9 +4,11 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.SerializationUtils;
 import org.springframework.stereotype.Component;
-import org.springframework.util.SerializationUtils;
 
+
+import java.io.Serializable;
 import java.util.Base64;
 
 @Slf4j
@@ -45,7 +47,7 @@ public class CookieUtils {
         cookie.setMaxAge(maxAge) ; // 만료시간
         res.addCookie(cookie) ;
     }
-    public void setCookie(HttpServletResponse res, String name, Object obj, int maxAge) {
+    public void setCookie(HttpServletResponse res, String name, Serializable obj, int maxAge) {
         // value 에 객체를 넣으면 json 형태로 변환해서 cookie 에 저장
         this.setCookie(res, name, serialize(obj), maxAge) ;
     }
@@ -66,7 +68,7 @@ public class CookieUtils {
 //    }
     public static String serialize(Object obj) {
     // 객체가 가지고 있는 데이터를 문자열로 변환 ( 암호화 )
-        return Base64.getUrlEncoder().encodeToString(SerializationUtils.serialize(obj));
+        return Base64.getUrlEncoder().encodeToString(org.springframework.util.SerializationUtils.serialize(obj));
     }
     // Deserialize method using URL decoding Base64
     public static <T> T deserialize(Cookie cookie, Class<T> cls) {

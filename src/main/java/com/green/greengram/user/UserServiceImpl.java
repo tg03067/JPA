@@ -3,6 +3,8 @@ package com.green.greengram.user;
 import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
+import com.green.greengram.exception.CustomException;
+import com.green.greengram.exception.MemberErrorCode;
 import com.green.greengram.security.AuthenticationFacade;
 import com.green.greengram.security.SignInProviderType;
 import com.green.greengram.security.jwt.JwtTokenProviderV2;
@@ -67,11 +69,13 @@ public class UserServiceImpl implements UserService {
     public SignInRes getUserById(SignInPostReq p, HttpServletResponse res){
         p.setProviderType(SignInProviderType.LOCAL.name());
         User user = mapper.signInPost(p);
-        if(Objects.isNull(user)){
-            throw new RuntimeException("아이디를 확인해 주세요.");
-        } else if(!BCrypt.checkpw(p.getUpw(), user.getUpw())){
-            throw new RuntimeException("비밀번호를 확인해 주세요");
+        if(Objects.isNull(user) || !passwordEncoder.matches(p.getUpw(), user.getUpw())){
+            throw new CustomException(MemberErrorCode.INCORRECT_ID_PW) ;
+            // new RuntimeException("아이디를 확인해 주세요.") ;
         }
+//        else if(!BCrypt.checkpw(p.getUpw(), user.getUpw())){
+//            throw new RuntimeException("비밀번호를 확인해 주세요") ;
+//        }
 
         MyUser myUser = MyUser.builder().
                 userId(user.getUserId()).
