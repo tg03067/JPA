@@ -12,11 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class SignInRes {
     @Schema(example = "1", description = "유저PK")
-    private long userId;
+    private long userId ;
     @Schema(example = "홍길동", description = "유저 이름")
-    private String nm;
+    private String nm ;
     @Schema(example = "a5655288-e59f-4cd4-94fe-df793bed4a8a.png", description = "유저 프로필 이미지")
-    private String pic;
+    private String pic ;
 
-    private String accessToken;
+    private String accessToken ;
 }

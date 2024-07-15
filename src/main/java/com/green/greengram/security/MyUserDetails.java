@@ -6,9 +6,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Map;
+import java.util.*;
 
 @Getter
 @Setter
@@ -23,10 +21,24 @@ public class MyUserDetails implements UserDetails, OAuth2User { // 상속관계 
     public Map<String, Object> getAttributes() { return Map.of(); }
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-//        List<GrantedAuthority> list = new ArrayList<>();
-//        list.add(new SimpleGrantedAuthority(roles));
-//        return list;
-        return Collections.singletonList(new SimpleGrantedAuthority(user.getRole()));
+        /*
+        단수 > 복수로 변경
+        (1)
+        return Collections.singletonList(new SimpleGrantedAuthority(user.getRoles())) ;
+
+        (2)
+        List<GrantedAuthority> list2 = new ArrayList<>() ;
+        list2.add(new SimpleGrantedAuthority("ROLE_USER")) ;
+        return list2 ;
+
+        (1), (2) 는 동일한 결과
+        */
+        // List<String> >> List<GrantedAuthority> 변경하는 작업 .
+        List<GrantedAuthority> list = new ArrayList<>() ;
+        for(String role : user.getRoles()) {
+            list.add(new SimpleGrantedAuthority(role)) ;
+        }
+        return list ;
     }
     @Override public String getPassword() { return "" ; }
     @Override public String getUsername() { return user == null ? "GUEST" : String.valueOf(user.getUserId()) ; }

@@ -3,6 +3,7 @@ package com.green.greengram.user;
 import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
+import com.green.greengram.common.MyCommonUtils;
 import com.green.greengram.exception.CustomException;
 import com.green.greengram.exception.MemberErrorCode;
 import com.green.greengram.security.AuthenticationFacade;
@@ -16,7 +17,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.mindrot.jbcrypt.BCrypt;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -24,6 +24,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
@@ -67,9 +68,12 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public SignInRes getUserById(SignInPostReq p, HttpServletResponse res){
-        p.setProviderType(SignInProviderType.LOCAL.name());
-        User user = mapper.signInPost(p);
-        if(Objects.isNull(user) || !passwordEncoder.matches(p.getUpw(), user.getUpw())){
+        p.setProviderType(SignInProviderType.LOCAL.name()) ;
+        List<UserInfo> userInfo = mapper.signInPost(p) ;
+
+        UserInfoRoles roles = MyCommonUtils.convertToUserInfoRoles(userInfo) ;
+
+        if(roles == null || !passwordEncoder.matches(p.getUpw(), roles.getUpw())){
             throw new CustomException(MemberErrorCode.INCORRECT_ID_PW) ;
             // new RuntimeException("아이디를 확인해 주세요.") ;
         }
@@ -78,9 +82,9 @@ public class UserServiceImpl implements UserService {
 //        }
 
         MyUser myUser = MyUser.builder().
-                userId(user.getUserId()).
-                role("ROLE_USER").
-                build();
+                userId(roles.getUserId()).
+                roles(roles.getRoles()).
+                build() ;
         /*
         access, refresh token 에 myUser ( 유저 Pk, 권한정보 ) 를 담는다.
         refresh token 에 myUser 정보를 넣는 이유는 access token 을 재발급 받을 때,
@@ -90,17 +94,17 @@ public class UserServiceImpl implements UserService {
         요청이 올 때마다 Request 에 token 이 담겨져 있는지 체크 ( Filter 에서 한다. )
         token 에 담겨져 있는 muUser 를 빼내서 사용하기 위해 myUser 를 담았다.
          */
-        String accessToken = jwtTokenProvider.generateAccessToken(myUser);
-        String refreshToken = jwtTokenProvider.generateRefreshToken(myUser);
+        String accessToken = jwtTokenProvider.generateAccessToken(myUser) ;
+        String refreshToken = jwtTokenProvider.generateRefreshToken(myUser) ;
         // refreshToken 은 보안 쿠키를 이용해서 처리 ( FE가 따로 작업을 하지 않아도 아래 cookie 항상 넘어온다. )
         int refreshTokenMaxAge = appProperties.getJwt().getRefreshTokenCookieMaxAge() ;
         cookieUtils.deleteCookie(res, appProperties.getJwt().getRefreshTokenCookieName()) ;
         cookieUtils.setCookie(res, appProperties.getJwt().getRefreshTokenCookieName(), refreshToken, refreshTokenMaxAge) ;
 
         return SignInRes.builder().
-                userId(user.getUserId()). // 프로필 사진 띄울떄 사용 ( 프로필 사진 주소에 pk 값이 포함됨 )
-                nm(user.getNm()).
-                pic(user.getPic()).
+                userId(roles.getUserId()). // 프로필 사진 띄울떄 사용 ( 프로필 사진 주소에 pk 값이 포함됨 )
+                nm(roles.getNm()).
+                pic(roles.getPic()).
                 accessToken(accessToken).
                 build();
     }

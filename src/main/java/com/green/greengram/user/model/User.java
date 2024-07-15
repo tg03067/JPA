@@ -5,14 +5,13 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 @Data
-@AllArgsConstructor
 @EqualsAndHashCode
 public class User {
-    private long userId;
-    private String uid;
-    private String upw;
-    private String nm;
-    private String pic;
-    private String createdAt;
-    private String updatedAt;
+    private long userId ;
+    private String uid ;
+    private String upw ;
+    private String nm ;
+    private String pic ;
+    private String createdAt ;
+    private String updatedAt ;
 }

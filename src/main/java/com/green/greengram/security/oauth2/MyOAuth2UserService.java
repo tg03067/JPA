@@ -1,5 +1,6 @@
 package com.green.greengram.security.oauth2;
 
+import com.green.greengram.common.MyCommonUtils;
 import com.green.greengram.security.MyUser;
 import com.green.greengram.security.MyUserDetails;
 import com.green.greengram.security.MyUserOAuth2Vo;
@@ -7,9 +8,7 @@ import com.green.greengram.security.SignInProviderType;
 import com.green.greengram.security.oauth2.userinfo.OAuth2UserInfo;
 import com.green.greengram.security.oauth2.userinfo.OAuth2UserInfoFactory;
 import com.green.greengram.user.UserMapper;
-import com.green.greengram.user.model.SignInPostReq;
-import com.green.greengram.user.model.SignUpPostReq;
-import com.green.greengram.user.model.User;
+import com.green.greengram.user.model.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.InternalAuthenticationServiceException;
@@ -20,6 +19,9 @@ import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
 import javax.security.sasl.AuthenticationException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /*
     MyOAuth2UserService :
@@ -72,30 +74,36 @@ public class MyOAuth2UserService extends DefaultOAuth2UserService {
         SignInPostReq signInParam = new SignInPostReq() ;
         signInParam.setUid(oAuth2UserInfo.getId()) ; // 플랫폼에서 넘어오는 유니크값 ( 항상 같은 값이며 다른 사용자와 구별되는 유니크 값 )
         signInParam.setProviderType(signInProviderType.name()) ;
-        User user = mapper.signInPost(signInParam) ;
+        List<UserInfo> userInfoList = mapper.signInPost(signInParam) ;
 
-        if(user == null){ // 회원가입 처리
+        UserInfoRoles userInfoRoles = MyCommonUtils.convertToUserInfoRoles(userInfoList) ;
+
+        if(userInfoRoles == null){ // 회원가입 처리
             SignUpPostReq signUpParam = new SignUpPostReq() ;
             signUpParam.setProviderType(signInProviderType) ;
             signUpParam.setUid(oAuth2UserInfo.getId()) ;
             signUpParam.setNm(oAuth2UserInfo.getName()) ;
             signUpParam.setPic(oAuth2UserInfo.getProfilePicUrl()) ;
             int result = mapper.postUser(signUpParam) ;
-            user = new User(signUpParam.getUserId()
-                        , signUpParam.getUid() // or null
-                        , signUpParam.getUpw() // or null
-                        , signUpParam.getNm()
-                        , signUpParam.getPic()
-                        , null
-                        , null ) ;
+
+            userInfoRoles = new UserInfoRoles() ;
+            userInfoRoles.setUserId(signUpParam.getUserId()) ;
+            userInfoRoles.setUid(signUpParam.getUid()) ;
+            userInfoRoles.setNm(signUpParam.getNm()) ;
+            userInfoRoles.setPic(signUpParam.getPic()) ;
+
         } else { // 이미 회원가입 되어 있었음
-            if(user.getPic() == null || ( user.getPic().startsWith("http") && !user.getPic().equals(oAuth2UserInfo.getProfilePicUrl()))){ // 프로필 값이 변경이 되었다면
+            if(userInfoRoles.getPic() == null || ( userInfoRoles.getPic().startsWith("http") && !userInfoRoles.getPic().equals(oAuth2UserInfo.getProfilePicUrl()))){ // 프로필 값이 변경이 되었다면
                 // 프로필 사진 변경처리 ( update )
             }
         }
+        List<String> roles = new ArrayList<>() ;
+        roles.add("ROLE_USER") ;
+
+        // List<String> roles = userInfoList.stream().map(UserInfo::getRole).collect(Collectors.toList()) ;
 
         MyUserOAuth2Vo myUserOAuth2Vo =
-                new MyUserOAuth2Vo(user.getUserId(), "ROLE_USER", user.getNm(), user.getPic()) ;
+                new MyUserOAuth2Vo(userInfoRoles.getUserId(), roles, userInfoRoles.getNm(), userInfoRoles.getPic()) ;
 
         MyUserDetails signInUser = new MyUserDetails() ;
         signInUser.setUser(myUserOAuth2Vo) ;

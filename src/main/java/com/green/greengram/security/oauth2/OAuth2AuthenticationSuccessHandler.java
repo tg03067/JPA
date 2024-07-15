@@ -17,7 +17,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.IOException;
-import java.net.URI;
 
 /*
     < 프론트엔드 redirect_uri 가 허용헌 uri 인지 체크하는 부분의 현 상태 >
@@ -79,7 +78,7 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
         // JWT 를 만들기 위해 MyUser 객체화
         MyUser myUser = MyUser.builder()
                 .userId(myUserOAuth2Vo.getUserId())
-                .role(myUserOAuth2Vo.getRole())
+                .roles(myUserOAuth2Vo.getRoles())
                 .build() ;
 
         String accessToken = jwtTokenProvider.generateAccessToken(myUser) ;
