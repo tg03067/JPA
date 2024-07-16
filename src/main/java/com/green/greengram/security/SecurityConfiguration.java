@@ -93,14 +93,24 @@ public class SecurityConfiguration {
                 // 체이닝 기법
                 */
                 .authorizeHttpRequests(auth ->
-                                auth.requestMatchers(
-                                        "/api/feed",
+                                auth
+                                        .requestMatchers("/api/feed")
+                                        .authenticated()
+                                        .requestMatchers(
                                         "/api/feed/*",
                                         "/api/user/pic",
                                         "/api/user/follow"
-                                )
-                                .authenticated()
-                                .anyRequest().permitAll()
+                                        )
+                                        .hasAnyRole("USER")
+
+                                        .requestMatchers(
+                                                "/api/admin/",
+                                                "/api/admin/**"
+                                        )
+                                        .hasAnyRole("ADMIN", "ADMINISTRATION")
+
+                                        .anyRequest()
+                                        .permitAll()
 //                                auth.requestMatchers(
 //                        // 회원가입, 로그인 인증이 안 되어 있어도 사용가능하게 세팅
 //                        "/api/user/sign-up",
