@@ -4,6 +4,7 @@ import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
 import com.green.greengram.common.MyCommonUtils;
+import com.green.greengram.entity.User;
 import com.green.greengram.exception.CustomException;
 import com.green.greengram.exception.MemberErrorCode;
 import com.green.greengram.security.AuthenticationFacade;
@@ -17,6 +18,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.ApplicationArguments;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -39,6 +41,8 @@ public class UserServiceImpl implements UserService {
     private final CookieUtils cookieUtils;
     private final AuthenticationFacade authenticationFacade;
     private final AppProperties appProperties;
+    private final UserRepository repository ;
+    private final ApplicationArguments springApplicationArguments;
     // SecurityContextHolder > Context > Authentication(UserNamePasswordAuthenticationToken)
     //    > MyUserDetails > MyUser
 
@@ -51,9 +55,18 @@ public class UserServiceImpl implements UserService {
         //String hashPassword = BCrypt.hashpw(p.getUpw(), BCrypt.gensalt());
         p.setUpw(password);
 
-        int result = mapper.postUser(p);
+        User user = new User() ; // User 엔터티 직접 객체 생성 ( 영속성 없는 상태 )
+        user.setProviderType(SignInProviderType.LOCAL) ;
+        user.setUid(p.getUid()) ;
+        user.setUpw(password) ;
+        user.setNm(p.getNm()) ;
+        user.setPic(saveFileName) ;
+
+        repository.save( user ) ;
+        // int result = mapper.postUser(p);
+
         if(pic == null){
-            return result ;
+            return 1 ;
         }
         try {
             String path = String.format("user/%d", p.getUserId());
@@ -64,7 +77,7 @@ public class UserServiceImpl implements UserService {
             e.printStackTrace();
             throw new RuntimeException("파일오류");
         }
-        return result ;
+        return 1 ;
     }
     @Override
     public SignInRes getUserById(SignInPostReq p, HttpServletResponse res){

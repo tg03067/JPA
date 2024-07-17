@@ -16,6 +16,13 @@ spring:
     deserialization:
       fail-on-ignored-properties: false
     default-property-inclusion: non_null
+  jpa:
+    hibernate:
+      ddl-auto: create # entity(테이블)를 서버 기동할때마다 새롭게 만든다.
+    show-sql: true # JPA 가 만든 쿼리문 로그에 출력해줘
+    properties:
+      hibernate:
+        format_sql: true # 로그 찍을 때 보기편하게 포맷팅해서 출력해줘
   security:
     oauth2:
       client:
@@ -128,6 +135,7 @@ management:
   server:
     port: 8080 #8080으로 접근했을때만 접근가능
 
+
 ---
 spring:
   config:
@@ -147,5 +155,8 @@ spring:
     url: ${PROD.DB_URL}
     username: ${PROD.DB_USERNAME}
     password: ${PROD.DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
 file:
   dir: ${PROD.FILE_DIRECTORY}

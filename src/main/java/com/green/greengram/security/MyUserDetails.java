@@ -34,11 +34,15 @@ public class MyUserDetails implements UserDetails, OAuth2User { // 상속관계 
         (1), (2) 는 동일한 결과
         */
         // List<String> >> List<GrantedAuthority> 변경하는 작업 .
-        List<GrantedAuthority> list = new ArrayList<>() ;
-        for(String role : user.getRoles()) {
-            list.add(new SimpleGrantedAuthority(role)) ;
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        if (user != null && user.getRoles() != null) {
+            for (String role : user.getRoles()) {
+                authorities.add(new SimpleGrantedAuthority(role));
+            }
+        } else {
+            authorities.add(new SimpleGrantedAuthority("ROLE_GUEST")); // 기본 권한 추가
         }
-        return list ;
+        return authorities;
     }
     @Override public String getPassword() { return "" ; }
     @Override public String getUsername() { return user == null ? "GUEST" : String.valueOf(user.getUserId()) ; }
