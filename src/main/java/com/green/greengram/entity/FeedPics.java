@@ -16,5 +16,5 @@ public class FeedPics extends CreatedAt {
     @Column(nullable = false, length = 70)
     private String pic ;
     @ManyToOne @JoinColumn(name = "feed_id", nullable = false)
-    private Feed feedId;
+    private Feed feed ;
 }
