@@ -19,7 +19,7 @@ public class FeedFavorite extends CreatedAt{
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long feedFavoriteId ;
     @ManyToOne @JoinColumn(name = "feed_id", nullable = false)
-    private Feed feedId ;
+    private Feed feed ;
     @ManyToOne @JoinColumn(name = "user_id", nullable = false)
-    private User userId ;
+    private User user ;
 }
