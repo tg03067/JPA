@@ -19,7 +19,7 @@ public class UserFollow extends CreatedAt {
     private Long userFollowId ;
 
     @ManyToOne // many 가 해당객체 ( UserFollow ) To One ( User )
-    @JoinColumn(name = "from_user_id") // 컬럼 명
+    @JoinColumn(name = "from_user_id") // name = 컬럼 명
     private User fromUser ;
     @ManyToOne @JoinColumn(name = "to_user_id")
     private User toUser ;

@@ -12,6 +12,6 @@ public class MainCode {
     private Long mainCodeId ;
     @Column(nullable = false, length = 20)
     private String cdName ;
-    @Column(nullable = false, length = 30)
+    @Column(length = 30)
     private String description ;
 }

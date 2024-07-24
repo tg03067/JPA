@@ -8,15 +8,20 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(
-        name = "user_roles"
+        name = "user_role",
+        uniqueConstraints = {
+                @UniqueConstraint(
+                        columnNames = {"user_id", "role_cd"}
+                )
+        }
 )
-public class UserRoles {
+public class UserRole {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userRolesId ;
     @ManyToOne @JoinColumn(name = "user_id", nullable = false)
     private User user ;
     @ManyToOne @JoinColumn(name = "role_cd", nullable = false)
     private SubCode roleCd ;
-    @Column(length = 20)
+    @Column(length = 20, nullable = false)
     private String role ;
 }
