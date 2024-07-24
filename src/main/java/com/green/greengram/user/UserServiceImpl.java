@@ -3,7 +3,6 @@ package com.green.greengram.user;
 import com.green.greengram.common.AppProperties;
 import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.CustomFileUtils;
-import com.green.greengram.common.MyCommonUtils;
 import com.green.greengram.entity.User;
 import com.green.greengram.entity.UserRole;
 import com.green.greengram.exception.CustomException;
@@ -19,7 +18,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.ApplicationArguments;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -70,7 +68,7 @@ public class UserServiceImpl implements UserService {
             return 1 ;
         }
         try {
-            String path = String.format("user/%d", p.getUserId());
+            String path = String.format("user/%d", user.getUserId());
             customFileUtils.makeFolders(path);
             String target = String.format("%s/%s",path,saveFileName);
             customFileUtils.transferTo(pic,target);
@@ -82,13 +80,13 @@ public class UserServiceImpl implements UserService {
     }
     @Override
     public SignInRes getUserById(SignInPostReq p, HttpServletResponse res){
-        p.setProviderType(SignInProviderType.LOCAL.name()) ;
+        // p.setProviderType(SignInProviderType.LOCAL.name()) ;
         // 1.내가 시도하는 select 2번
         User user = repository.getUserByProviderTypeAndUid(SignInProviderType.LOCAL, p.getUid()) ;
         if(user == null || !passwordEncoder.matches(p.getUpw(), user.getUpw())){ // 아이디가 없거나 비밀번호가 다르거나 에러발생 .
             throw new CustomException(MemberErrorCode.INCORRECT_ID_PW) ;
         }
-        List<UserRole> userRoleList = userRoleRepository.findAllByUserId(user.getUserId()) ;
+        List<UserRole> userRoleList = userRoleRepository.findAllByUser(user) ;
         List<String> roles = new ArrayList<>() ;
         for(UserRole ur : userRoleList){
             roles.add(ur.getRole()) ;
@@ -138,24 +136,30 @@ public class UserServiceImpl implements UserService {
     }
     @Override @Transactional
     public String patchProfilePic(UserProfilePatchReq p){
-        p.setSignedUserId(authenticationFacade.getLoginUserId());
-        String fileNm = customFileUtils.makeRandomFileName(p.getPic());
-        p.setPicName(fileNm);
-        mapper.updProfilePic(p); //DB수정
+        long signedUserId = authenticationFacade.getLoginUserId() ;
+        // p.setSignedUserId(authenticationFacade.getLoginUserId()) ;
+        String fileNm = customFileUtils.makeRandomFileName(p.getPic()) ;
+        p.setPicName(fileNm) ;
+        // User user = repository.getReferenceById(signedUserId) ; // ( 영속성 있음. )
+        // select 를 한번 줄여줘서 밑 방법이 좋긴함. 단, pk 값이 있을 때
+        User user =  repository.getReferenceById(signedUserId) ;
+        user.setPic(fileNm) ;
+        repository.save(user) ;
+        // pk 값이 있으면 업데이트 없으면 인서트함.
 
         //기존 폴더 삭제
         try {
-            String midPath = String.format("user/%d",p.getSignedUserId());
-            String delAbsoluteFolderPath = String.format("%s%s", customFileUtils.uploadPath, midPath);
-            customFileUtils.deleteFolder(delAbsoluteFolderPath);
+            String midPath = String.format("user/%d",signedUserId) ;
+            String delAbsoluteFolderPath = String.format("%s%s", customFileUtils.uploadPath, midPath) ;
+            customFileUtils.deleteFolder(delAbsoluteFolderPath) ;
 
-            customFileUtils.makeFolders(midPath);
-            String filePath = String.format("%s/%s", midPath, fileNm);
-            customFileUtils.transferTo(p.getPic(), filePath);
+            customFileUtils.makeFolders(midPath) ;
+            String filePath = String.format("%s/%s", midPath, fileNm) ;
+            customFileUtils.transferTo(p.getPic(), filePath) ;
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e) ;
         }
-        return fileNm;
+        return fileNm ;
     }
     @Override
     public Map<String, String> getAccessToken(HttpServletRequest req){

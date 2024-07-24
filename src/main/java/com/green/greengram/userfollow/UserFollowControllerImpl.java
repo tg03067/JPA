@@ -17,10 +17,11 @@ import org.springframework.web.bind.annotation.*;
 @Tag(name = "유저 Follow", description = "유저 Follow CRUD")
 public class UserFollowControllerImpl implements UserFollowController {
     private final UserFollowService service;
+
     @Override
     @PostMapping
     @Operation(summary = "유저간 Follow", description = "Follow 처리")
-    public MyResponse<Integer> postUserFollow(@RequestBody UserFollowReq p) {
+    public MyResponse<Integer> postUserFollow(@ParameterObject @ModelAttribute UserFollowReq p) {
         int result = service.postUserFollow(p);
 
         return MyResponse.<Integer>builder().
