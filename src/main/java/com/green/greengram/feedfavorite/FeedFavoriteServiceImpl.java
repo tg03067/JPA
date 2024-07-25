@@ -1,7 +1,12 @@
 package com.green.greengram.feedfavorite;
 
+import com.green.greengram.entity.Feed;
+import com.green.greengram.entity.FeedFavorite;
+import com.green.greengram.entity.User;
+import com.green.greengram.feed.FeedRepository;
 import com.green.greengram.feedfavorite.model.FeedFavoriteToggleReq;
 import com.green.greengram.security.AuthenticationFacade;
+import com.green.greengram.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -11,30 +16,41 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class FeedFavoriteServiceImpl implements FeedFavoriteService{
     private final FeedFavoriteMapper mapper ;
-    private final AuthenticationFacade authentication;
+    private final AuthenticationFacade authentication ;
+    private final UserRepository userRepository ;
+    private final FeedFavoriteRepository favoriteRepository ;
+    private final FeedRepository feedRepository ;
+
     @Override
     public int insFeedFavorite(FeedFavoriteToggleReq p){
         return mapper.insFeedFavorite(p);
     }
+//
+//    @Override
+//    public int toggleFavorite(FeedFavoriteToggleReq p){
+//        long signedUserId = authentication.getLoginUserId() ;
+//        FeedFavorite feedFavoriteRepository = favoriteRepository.findFeedFavoriteByUserIdAndFeedId(signedUserId, p.getFeedId()) ;
+//        if(feedFavoriteRepository == null) {
+//            User user = userRepository.getReferenceById(signedUserId) ;
+//            Feed feed = feedRepository.getReferenceById(p.getFeedId()) ;
+//            FeedFavorite feedFavorite = new FeedFavorite() ;
+//            feedFavorite.setUser(user) ;
+//            feedFavorite.setFeed(feed) ;
+//            favoriteRepository.save(feedFavorite);
+//            return 1;
+//        }
+//        favoriteRepository.delete(feedFavoriteRepository) ;
+//        return 0 ;
+//    }
 
-    //방법론 (1)
-    //select로 레코드 확인
-    //레코드가 있으면 delete, return 0
-    //레코드가 있으면 insert, return 1
-
-    //방법론 (2)
-    //insert 에러가 터짐 > delete
-
-    //방법론 (3)
-    //delete > 1 > return 0;
-    //delete > 0 > insert > return 1;
     @Override
     public int toggleFavorite(FeedFavoriteToggleReq p){
-        p.setUserId(authentication.getLoginUserId());
-        int delAffectedRows = mapper.delFeedFavorite(p);
-        if(delAffectedRows == 1){
-            return 0;
+        FeedFavorite feedFavoriteRepository = favoriteRepository.findFeedFavoriteByUserIdAndFeedId(authentication.getLoginUserId(), p.getFeedId()) ;
+        if(feedFavoriteRepository == null){
+            favoriteRepository.saveFeedFavorite(authentication.getLoginUserId(), p.getFeedId()) ;
+            return 1 ;
         }
-        return mapper.insFeedFavorite(p);
+        favoriteRepository.delete(feedFavoriteRepository) ;
+        return 0 ;
     }
 }
