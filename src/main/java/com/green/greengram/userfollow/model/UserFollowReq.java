@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.BindParam;
 import java.beans.ConstructorProperties;
 
 @Getter
+@Setter
 @ToString
 @EqualsAndHashCode
 public class UserFollowReq {
@@ -22,10 +23,6 @@ public class UserFollowReq {
     @Schema(name = "to_user_id", example = "8", description = "팔로잉 아이디",
             requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private long toUserId;
-
-    public void setFromUserId(long fromUserId) {
-        this.fromUserId = fromUserId;
-    }
 
     @ConstructorProperties({"to_user_id"})
     public UserFollowReq(long toUserId) {

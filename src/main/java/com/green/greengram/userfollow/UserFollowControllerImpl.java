@@ -1,6 +1,8 @@
 package com.green.greengram.userfollow;
 
 import com.green.greengram.common.model.MyResponse;
+import com.green.greengram.userfollow.model.UserFollowDeleteReq;
+import com.green.greengram.userfollow.model.UserFollowPostReq;
 import com.green.greengram.userfollow.model.UserFollowReq;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -21,7 +23,7 @@ public class UserFollowControllerImpl implements UserFollowController {
     @Override
     @PostMapping
     @Operation(summary = "유저간 Follow", description = "Follow 처리")
-    public MyResponse<Integer> postUserFollow(@ParameterObject @ModelAttribute UserFollowReq p) {
+    public MyResponse<Integer> postUserFollow(@RequestBody UserFollowPostReq p) {
         int result = service.postUserFollow(p);
 
         return MyResponse.<Integer>builder().
@@ -31,16 +33,16 @@ public class UserFollowControllerImpl implements UserFollowController {
                 build();
     }
 
+    @Operation(summary = "유저간 Follow 취소", description = "Follow 취소 처리")
     @Override
     @DeleteMapping
-    @Operation(summary = "유저간 Follow 취소", description = "Follow 취소 처리")
-    public MyResponse<Integer> deleteUserFollow(@ParameterObject @ModelAttribute UserFollowReq p) {
+    public MyResponse<Integer> deleteUserFollow(@ParameterObject @ModelAttribute UserFollowDeleteReq p) {
         int result = service.deleteUserFollow(p);
 
-        return MyResponse.<Integer>builder().
-                statusCode(HttpStatus.OK).
-                resultMsg(HttpStatus.OK.toString()).
-                resultData(result).
-                build();
+        return MyResponse.<Integer>builder()
+                .statusCode(HttpStatus.OK)
+                .resultMsg(HttpStatus.OK.toString())
+                .resultData(result)
+                .build();
     }
 }
