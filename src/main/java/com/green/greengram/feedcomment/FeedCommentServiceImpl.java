@@ -1,9 +1,14 @@
 package com.green.greengram.feedcomment;
 
+import com.green.greengram.entity.Feed;
+import com.green.greengram.entity.FeedComment;
+import com.green.greengram.entity.User;
+import com.green.greengram.feed.FeedRepository;
 import com.green.greengram.feedcomment.model.FeedCommentDeleteReq;
 import com.green.greengram.feedcomment.model.FeedCommentGetRes;
 import com.green.greengram.feedcomment.model.FeedCommentPostReq;
 import com.green.greengram.security.AuthenticationFacade;
+import com.green.greengram.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -15,20 +20,44 @@ import java.util.List;
 @Service
 public class FeedCommentServiceImpl implements FeedCommentService {
     private final FeedCommentMapper mapper ;
-    private final AuthenticationFacade authenticationFacade;
+    private final AuthenticationFacade authenticationFacade ;
+    private final FeedCommentRepository commentRepository ;
+    private final UserRepository userRepository ;
+    private final FeedRepository feedRepository ;
+
     @Override
     public long postFeedComment(FeedCommentPostReq p){
-        p.setUserId(authenticationFacade.getLoginUserId());
-        mapper.postFeedComment(p);
-        return p.getFeedCommentId();
+        // User Entity ( 영속성 )
+        User user = userRepository.getReferenceById(authenticationFacade.getLoginUserId()) ;
+
+        // Feed Entity ( 영속성 )
+        Feed feed = feedRepository.getReferenceById(p.getFeedId()) ;
+
+//        FeedComment fc = commentRepository.saveFeedComment(p.getFeedId(), user.getUserId(), p.getComment()) ;
+//        log.info("p: {}", p.getFeedCommentId());
+//        commentRepository.save(fc) ;
+
+        FeedComment feedComment = new FeedComment() ;
+        feedComment.setComment(p.getComment()) ;
+        feedComment.setFeedId(feed) ;
+        feedComment.setUserId(user) ;
+
+        commentRepository.save(feedComment) ;
+
+        return feedComment.getFeedCommentId() ;
     }
     @Override
     public int delFeedComment(FeedCommentDeleteReq p){
-        p.setSignedUserId(authenticationFacade.getLoginUserId());
-        return mapper.delFeedComment(p);
+        User user = userRepository.getReferenceById(authenticationFacade.getLoginUserId()) ;
+        FeedComment feedComment = commentRepository.findFeedCommentByUserIdAndFeedCommentId(user, p.getFeedCommentId()) ;
+        commentRepository.delete(feedComment) ;
+        return 1 ;
     }
     @Override
     public List<FeedCommentGetRes> getFeedComment(Long feedId){
-        return mapper.selFeedComment(feedId);
+        Feed feed = feedRepository.getReferenceById(feedId) ;
+        List<FeedComment> feedComments = commentRepository.findAllByFeedId(feed) ;
+
+        return mapper.selFeedComment(feedId) ;
     }
 }
