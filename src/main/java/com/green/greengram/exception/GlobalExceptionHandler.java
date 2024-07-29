@@ -17,7 +17,7 @@ import java.util.List;
 
 /*
     Advice 라는 단어가 보이면 AOP 라고 인식하면 됨.
-    AOP( Aspect Oriented Programming 관점지향 프로그래밍 )
+    AOP ( Aspect Oriented Programming 관점지향 프로그래밍 ) - 다른 작업들 사이에서 같은 작업이 있으면 하나만 만들어서 연결시켜서 실행되게 작업을 하는 것
     Exception 을 잡아낸다. ( 모두 or 개별 가능 )
  */
 @Slf4j

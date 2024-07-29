@@ -1,5 +1,7 @@
 package com.green.greengram.security.jwt;
 
+import com.green.greengram.exception.CustomException;
+import com.green.greengram.exception.MemberErrorCode;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -43,6 +45,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 SecurityContextHolder.getContext().setAuthentication(auth);
             }
         }
+//        else {
+//            request.setAttribute("exception", new CustomException(MemberErrorCode.UNAUTHENTICATED)) ;
+//        }
         filterChain.doFilter(request, response);
         /*
             다음 필터한테 넘기겠다.

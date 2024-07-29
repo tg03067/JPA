@@ -3,6 +3,8 @@ package com.green.greengram.feedcomment;
 import com.green.greengram.entity.Feed;
 import com.green.greengram.entity.FeedComment;
 import com.green.greengram.entity.User;
+import com.green.greengram.exception.CustomException;
+import com.green.greengram.exception.MemberErrorCode;
 import com.green.greengram.feed.FeedRepository;
 import com.green.greengram.feedcomment.model.FeedCommentDeleteReq;
 import com.green.greengram.feedcomment.model.FeedCommentGetRes;
@@ -46,18 +48,28 @@ public class FeedCommentServiceImpl implements FeedCommentService {
 
         return feedComment.getFeedCommentId() ;
     }
-    @Override
-    public int delFeedComment(FeedCommentDeleteReq p){
-        User user = userRepository.getReferenceById(authenticationFacade.getLoginUserId()) ;
-        FeedComment feedComment = commentRepository.findFeedCommentByUserIdAndFeedCommentId(user, p.getFeedCommentId()) ;
-        commentRepository.delete(feedComment) ;
-        return 1 ;
-    }
+//    @Override
+//    public int delFeedComment(FeedCommentDeleteReq p){
+//        User user = userRepository.getReferenceById(authenticationFacade.getLoginUserId()) ;
+//        FeedComment feedComment = commentRepository.findFeedCommentByUserIdAndFeedCommentId(user, p.getFeedCommentId()) ;
+//        commentRepository.delete(feedComment) ;
+//        return 1 ;
+//    }
+
+        @Override
+        public int delFeedComment(FeedCommentDeleteReq p){
+            FeedComment fc = commentRepository.getReferenceById(p.getFeedCommentId()) ;
+            fc.getUserId().getUserId() ; // 그래프 탐색이라 호칭
+            if(fc.getUserId().getUserId() != authenticationFacade.getLoginUserId()){
+                throw new CustomException(MemberErrorCode.UNAUTHORIZED) ;
+            }
+            commentRepository.delete(fc) ;
+
+            return 1 ;
+        }
+
     @Override
     public List<FeedCommentGetRes> getFeedComment(Long feedId){
-        Feed feed = feedRepository.getReferenceById(feedId) ;
-        List<FeedComment> feedComments = commentRepository.findAllByFeedId(feed) ;
-
         return mapper.selFeedComment(feedId) ;
     }
 }

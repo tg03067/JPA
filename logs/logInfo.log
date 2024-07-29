@@ -16498,3 +16498,1924 @@ Caused by: java.sql.SQLException: Unknown label 'feed_comment_id'. Possible valu
 [2024-07-29 11:07:00 [32mINFO [0;39m SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mClosing JPA EntityManagerFactory for persistence unit 'default'[0;39m
 [2024-07-29 11:07:00 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Shutdown initiated...[0;39m
 [2024-07-29 11:07:00 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-5 - Shutdown completed.[0;39m
+[2024-07-29 11:39:55 [32mINFO [0;39m background-preinit] [org.hibernate.validator.internal.util.Version] [36mHV000001: Hibernate Validator 8.0.1.Final[0;39m
+[2024-07-29 11:39:55 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.12 with PID 13356 (D:\2024-01\backEnd\GreengramJpa\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramJpa)[0;39m
+[2024-07-29 11:39:55 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-07-29 11:39:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-07-29 11:39:56 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-07-29 11:39:56 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mBootstrapping Spring Data JPA repositories in DEFAULT mode.[0;39m
+[2024-07-29 11:39:56 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mFinished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1541 ms[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@39653886[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.hibernate.jpa.internal.util.LogHelper] [36mHHH000204: Processing PersistenceUnitInfo [name: default][0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.hibernate.Version] [36mHHH000412: Hibernate ORM core version 6.4.4.Final[0;39m
+[2024-07-29 11:39:57 [32mINFO [0;39m restartedMain] [org.hibernate.cache.internal.RegionFactoryInitiator] [36mHHH000026: Second-level cache disabled[0;39m
+[2024-07-29 11:39:58 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] [36mNo LoadTimeWeaver setup: ignoring JPA class transformer[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. SELECT @@character_set_database, @@sql_mode
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:39:58 [32mINFO [0;39m restartedMain] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [36mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       drop 
+       foreign key if exists FKcy2ouh4endkbaq0ocwqemqx1q
+ {executed in 14 msec}[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKg554m92domilyknftfwsxeq17
+ {executed in 15 msec}[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKc0e5dirjftdt7d718pc7jqm2
+ {executed in 13 msec}[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKfk4yfdqi2gb88pun10xr0a9b8
+ {executed in 13 msec}[0;39m
+[2024-07-29 11:39:58 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKbn7bebdjw066rbedub57qda3b
+ {executed in 12 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       drop 
+       foreign key if exists FKfv312s43a9pjn2pcn8j09nvv3
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       drop 
+       foreign key if exists FKey7m0oa3tllpg49nuo8snbmn8
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK6u2fa06k0nngn9m62ubv0hyq2
+ {executed in 12 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK859n2jvi8ivhui0rl0esws6o
+ {executed in 14 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FK602cn3xgrgd5ch8lcdanddqv5
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FKi651t243ra5g8sdcsvracrp84
+ {executed in 15 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_comment
+ {executed in 10 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_favorite
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_pics
+ {executed in 10 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists main_code
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists sub_code
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_role
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_follow
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed (
+        created_at datetime(6) not null,
+        feed_id bigint not null auto_increment,
+        updated_at datetime(6) not null,
+        writer_id bigint not null,
+        location varchar(30),
+        contents varchar(1000),
+        primary key (feed_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_comment (
+        created_at datetime(6) not null,
+        feed_comment_id bigint not null auto_increment,
+        feed_id bigint not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null,
+        comment varchar(1000) not null,
+        primary key (feed_comment_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_favorite (
+        created_at datetime(6) not null,
+        feed_favorite_id bigint not null auto_increment,
+        feed_id bigint not null,
+        user_id bigint not null,
+        primary key (feed_favorite_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_pics (
+        created_at datetime(6) not null,
+        feed_id bigint not null,
+        feed_pic_id bigint not null auto_increment,
+        pic varchar(70) not null,
+        primary key (feed_pic_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table main_code (
+        main_code_id bigint not null auto_increment,
+        cd_name varchar(20) not null,
+        description varchar(30),
+        primary key (main_code_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table sub_code (
+        main_code_id bigint not null,
+        sub_code_id bigint not null auto_increment,
+        description varchar(30),
+        val varchar(30) not null,
+        primary key (sub_code_id)
+    ) engine=InnoDB
+ {executed in 7 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user (
+        provider_type tinyint default 4 not null check (provider_type between 0 and 4),
+        created_at datetime(6) not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null auto_increment,
+        nm varchar(50) not null,
+        uid varchar(50) not null,
+        upw varchar(100) not null,
+        pic varchar(200),
+        primary key (user_id)
+    ) engine=InnoDB
+ {executed in 10 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_role (
+        role_cd bigint not null,
+        user_id bigint not null,
+        user_roles_id bigint not null auto_increment,
+        role varchar(20) not null,
+        primary key (user_roles_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_follow (
+        created_at datetime(6) not null,
+        from_user_id bigint,
+        to_user_id bigint,
+        user_follow_id bigint not null auto_increment,
+        primary key (user_follow_id)
+    ) engine=InnoDB
+ {executed in 10 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint UKpupdpvvkcr9e90altsoq9hlwg unique (feed_id, user_id)
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint UKjtwox9abqvpnip8aphq4we3vq unique (main_code_id, val)
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user 
+       add constraint UKb87p6qocmykrbhvhbft82x423 unique (provider_type, uid)
+ {executed in 19 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint UK4os7jqau8i155lej5drb6trt2 unique (user_id, role_cd)
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint UKrnkub2b0tqeh5asgubt9mbvt8 unique (from_user_id, to_user_id)
+ {executed in 19 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       add constraint FKcy2ouh4endkbaq0ocwqemqx1q 
+       foreign key (writer_id) 
+       references user (user_id)
+ {executed in 21 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKg554m92domilyknftfwsxeq17 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 21 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKc0e5dirjftdt7d718pc7jqm2 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 25 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKfk4yfdqi2gb88pun10xr0a9b8 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 28 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKbn7bebdjw066rbedub57qda3b 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 39 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       add constraint FKfv312s43a9pjn2pcn8j09nvv3 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 27 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint FKey7m0oa3tllpg49nuo8snbmn8 
+       foreign key (main_code_id) 
+       references main_code (main_code_id)
+ {executed in 25 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK6u2fa06k0nngn9m62ubv0hyq2 
+       foreign key (role_cd) 
+       references sub_code (sub_code_id)
+ {executed in 25 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK859n2jvi8ivhui0rl0esws6o 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 24 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FK602cn3xgrgd5ch8lcdanddqv5 
+       foreign key (from_user_id) 
+       references user (user_id)
+ {executed in 23 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FKi651t243ra5g8sdcsvracrp84 
+       foreign key (to_user_id) 
+       references user (user_id)
+ {executed in 22 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `main_code` (`main_code_id`, `cd_name`, `description`) VALUES (1, 'role', '권한')
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `sub_code` (`sub_code_id`, `main_code_id`, `val`, `description`) VALUES (1, 1, 'ROLE_USER', '일반 사용자'), (2, 1, 'ROLE_ADMIN', '관리자')
+ {executed in 3 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`,`provider_type`, `uid`, `upw`, `nm`, `pic`, `created_at`, `updated_at`) VALUES(1,4, 'mic1', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '일반사용자', 'a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg', '2024-05-3 18:00:47', '2024-07-15 10:14:51') ,(2,4, 'mic2', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '관리자', NULL, '2024-05-03 18:00:55', '2024-07-15 10:14:41'),(3,4, 'mic3', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '사용자_관리자', NULL, '2024-07-15 10:10:42', '2024-07-15 10:14:42')
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user_role` (`user_id`, `role_cd`, `role`) VALUES(1, 1, 'ROLE_USER'), (2, 2, 'ROLE_ADMIN'), (3, 1, 'ROLE_USER'), (3, 2, 'ROLE_ADMIN')
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:39:59 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`created_at`, `updated_at`, `writer_id`, `location`, `contents`) VALUES ('2024-07-25 11:16:37.000000', '2024-07-25 11:16:37.000000', 2, 'asdf', 'asdf')
+ {executed in 3 msec}[0;39m
+[2024-07-29 11:39:59 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mInitialized JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] [36mHibernate is in classpath; If applicable, HQL parser will be used.[0;39m
+[2024-07-29 11:40:00 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [36mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-07-29 11:40:00 [33mWARN [0;39m restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] [36mException encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/green/greengram/security/SecurityConfiguration.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mClosing JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStopping service [Tomcat][0;39m
+[2024-07-29 11:40:00 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] [36m
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.[0;39m
+[2024-07-29 11:40:00 [31mERROR[0;39m restartedMain] [org.springframework.boot.SpringApplication] [36mApplication run failed[0;39m
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'securityFilterChain' defined in class path resource [com/green/greengram/security/SecurityConfiguration.class]: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1335)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1165)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:962)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at com.green.greengram.GreengramApplication.main(GreengramApplication.java:15)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.web.SecurityFilterChain]: Factory method 'securityFilterChain' threw exception with message: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:177)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcHandlerMappingIntrospector' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1240)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.createMvcMatchers(AbstractRequestMatcherRegistry.java:119)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:210)
+	at org.springframework.security.config.annotation.web.AbstractRequestMatcherRegistry.requestMatchers(AbstractRequestMatcherRegistry.java:368)
+	at com.green.greengram.security.SecurityConfiguration.lambda$securityFilterChain$4(SecurityConfiguration.java:97)
+	at org.springframework.security.config.annotation.web.builders.HttpSecurity.authorizeHttpRequests(HttpSecurity.java:1467)
+	at com.green.greengram.security.SecurityConfiguration.securityFilterChain(SecurityConfiguration.java:95)
+	at com.green.greengram.security.SecurityConfiguration$$SpringCGLIB$$0.CGLIB$securityFilterChain$1(<generated>)
+	at com.green.greengram.security.SecurityConfiguration$$SpringCGLIB$$FastClass$$1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.green.greengram.security.SecurityConfiguration$$SpringCGLIB$$0.securityFilterChain(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:140)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:665)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1388)
+	at org.springframework.beans.factory.BeanFactoryUtils.beansOfTypeIncludingAncestors(BeanFactoryUtils.java:368)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.initHandlerMappings(HandlerMappingIntrospector.java:130)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.afterPropertiesSet(HandlerMappingIntrospector.java:118)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 48 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'feedCommentControllerImpl' method 
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList(Long)
+to {GET [/api/feed/comment]}: There is already 'feedCommentControllerImpl' bean method
+com.green.greengram.feedcomment.FeedCommentControllerImpl#getFeedCommentList2(Long) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1833)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 61 common frames omitted
+[2024-07-29 11:40:39 [32mINFO [0;39m background-preinit] [org.hibernate.validator.internal.util.Version] [36mHV000001: Hibernate Validator 8.0.1.Final[0;39m
+[2024-07-29 11:40:39 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.12 with PID 15128 (D:\2024-01\backEnd\GreengramJpa\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramJpa)[0;39m
+[2024-07-29 11:40:39 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-07-29 11:40:39 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-07-29 11:40:39 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-07-29 11:40:40 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mBootstrapping Spring Data JPA repositories in DEFAULT mode.[0;39m
+[2024-07-29 11:40:40 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mFinished Spring Data repository scanning in 44 ms. Found 6 JPA repository interfaces.[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1528 ms[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@215701de[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.hibernate.jpa.internal.util.LogHelper] [36mHHH000204: Processing PersistenceUnitInfo [name: default][0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.hibernate.Version] [36mHHH000412: Hibernate ORM core version 6.4.4.Final[0;39m
+[2024-07-29 11:40:41 [32mINFO [0;39m restartedMain] [org.hibernate.cache.internal.RegionFactoryInitiator] [36mHHH000026: Second-level cache disabled[0;39m
+[2024-07-29 11:40:42 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] [36mNo LoadTimeWeaver setup: ignoring JPA class transformer[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. SELECT @@character_set_database, @@sql_mode
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:40:42 [32mINFO [0;39m restartedMain] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [36mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       drop 
+       foreign key if exists FKcy2ouh4endkbaq0ocwqemqx1q
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKg554m92domilyknftfwsxeq17
+ {executed in 23 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKc0e5dirjftdt7d718pc7jqm2
+ {executed in 23 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKfk4yfdqi2gb88pun10xr0a9b8
+ {executed in 20 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKbn7bebdjw066rbedub57qda3b
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       drop 
+       foreign key if exists FKfv312s43a9pjn2pcn8j09nvv3
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       drop 
+       foreign key if exists FKey7m0oa3tllpg49nuo8snbmn8
+ {executed in 16 msec}[0;39m
+[2024-07-29 11:40:42 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK6u2fa06k0nngn9m62ubv0hyq2
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK859n2jvi8ivhui0rl0esws6o
+ {executed in 16 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FK602cn3xgrgd5ch8lcdanddqv5
+ {executed in 18 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FKi651t243ra5g8sdcsvracrp84
+ {executed in 12 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_comment
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_favorite
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_pics
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists main_code
+ {executed in 7 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists sub_code
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user
+ {executed in 7 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_role
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_follow
+ {executed in 7 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed (
+        created_at datetime(6) not null,
+        feed_id bigint not null auto_increment,
+        updated_at datetime(6) not null,
+        writer_id bigint not null,
+        location varchar(30),
+        contents varchar(1000),
+        primary key (feed_id)
+    ) engine=InnoDB
+ {executed in 10 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_comment (
+        created_at datetime(6) not null,
+        feed_comment_id bigint not null auto_increment,
+        feed_id bigint not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null,
+        comment varchar(1000) not null,
+        primary key (feed_comment_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_favorite (
+        created_at datetime(6) not null,
+        feed_favorite_id bigint not null auto_increment,
+        feed_id bigint not null,
+        user_id bigint not null,
+        primary key (feed_favorite_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_pics (
+        created_at datetime(6) not null,
+        feed_id bigint not null,
+        feed_pic_id bigint not null auto_increment,
+        pic varchar(70) not null,
+        primary key (feed_pic_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table main_code (
+        main_code_id bigint not null auto_increment,
+        cd_name varchar(20) not null,
+        description varchar(30),
+        primary key (main_code_id)
+    ) engine=InnoDB
+ {executed in 8 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table sub_code (
+        main_code_id bigint not null,
+        sub_code_id bigint not null auto_increment,
+        description varchar(30),
+        val varchar(30) not null,
+        primary key (sub_code_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user (
+        provider_type tinyint default 4 not null check (provider_type between 0 and 4),
+        created_at datetime(6) not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null auto_increment,
+        nm varchar(50) not null,
+        uid varchar(50) not null,
+        upw varchar(100) not null,
+        pic varchar(200),
+        primary key (user_id)
+    ) engine=InnoDB
+ {executed in 13 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_role (
+        role_cd bigint not null,
+        user_id bigint not null,
+        user_roles_id bigint not null auto_increment,
+        role varchar(20) not null,
+        primary key (user_roles_id)
+    ) engine=InnoDB
+ {executed in 11 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_follow (
+        created_at datetime(6) not null,
+        from_user_id bigint,
+        to_user_id bigint,
+        user_follow_id bigint not null auto_increment,
+        primary key (user_follow_id)
+    ) engine=InnoDB
+ {executed in 9 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint UKpupdpvvkcr9e90altsoq9hlwg unique (feed_id, user_id)
+ {executed in 19 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint UKjtwox9abqvpnip8aphq4we3vq unique (main_code_id, val)
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user 
+       add constraint UKb87p6qocmykrbhvhbft82x423 unique (provider_type, uid)
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint UK4os7jqau8i155lej5drb6trt2 unique (user_id, role_cd)
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint UKrnkub2b0tqeh5asgubt9mbvt8 unique (from_user_id, to_user_id)
+ {executed in 17 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       add constraint FKcy2ouh4endkbaq0ocwqemqx1q 
+       foreign key (writer_id) 
+       references user (user_id)
+ {executed in 21 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKg554m92domilyknftfwsxeq17 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 20 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKc0e5dirjftdt7d718pc7jqm2 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 43 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKfk4yfdqi2gb88pun10xr0a9b8 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 20 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKbn7bebdjw066rbedub57qda3b 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 24 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       add constraint FKfv312s43a9pjn2pcn8j09nvv3 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 21 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint FKey7m0oa3tllpg49nuo8snbmn8 
+       foreign key (main_code_id) 
+       references main_code (main_code_id)
+ {executed in 22 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK6u2fa06k0nngn9m62ubv0hyq2 
+       foreign key (role_cd) 
+       references sub_code (sub_code_id)
+ {executed in 23 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK859n2jvi8ivhui0rl0esws6o 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 28 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FK602cn3xgrgd5ch8lcdanddqv5 
+       foreign key (from_user_id) 
+       references user (user_id)
+ {executed in 23 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FKi651t243ra5g8sdcsvracrp84 
+       foreign key (to_user_id) 
+       references user (user_id)
+ {executed in 22 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `main_code` (`main_code_id`, `cd_name`, `description`) VALUES (1, 'role', '권한')
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `sub_code` (`sub_code_id`, `main_code_id`, `val`, `description`) VALUES (1, 1, 'ROLE_USER', '일반 사용자'), (2, 1, 'ROLE_ADMIN', '관리자')
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`,`provider_type`, `uid`, `upw`, `nm`, `pic`, `created_at`, `updated_at`) VALUES(1,4, 'mic1', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '일반사용자', 'a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg', '2024-05-3 18:00:47', '2024-07-15 10:14:51') ,(2,4, 'mic2', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '관리자', NULL, '2024-05-03 18:00:55', '2024-07-15 10:14:41'),(3,4, 'mic3', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '사용자_관리자', NULL, '2024-07-15 10:10:42', '2024-07-15 10:14:42')
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user_role` (`user_id`, `role_cd`, `role`) VALUES(1, 1, 'ROLE_USER'), (2, 2, 'ROLE_ADMIN'), (3, 1, 'ROLE_USER'), (3, 2, 'ROLE_ADMIN')
+ {executed in 4 msec}[0;39m
+[2024-07-29 11:40:43 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`created_at`, `updated_at`, `writer_id`, `location`, `contents`) VALUES ('2024-07-25 11:16:37.000000', '2024-07-25 11:16:37.000000', 2, 'asdf', 'asdf')
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:40:43 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mInitialized JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 11:40:43 [32mINFO [0;39m restartedMain] [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] [36mHibernate is in classpath; If applicable, HQL parser will be used.[0;39m
+[2024-07-29 11:40:44 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [36mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[0;39m
+[2024-07-29 11:40:44 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-07-29 11:40:44 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-07-29 11:40:44 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2aeab42b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3140295f, org.springframework.security.web.context.SecurityContextHolderFilter@7e492d11, org.springframework.security.web.header.HeaderWriterFilter@3fb6050f, org.springframework.web.filter.CorsFilter@7691a146, org.springframework.security.web.authentication.logout.LogoutFilter@6ed2f4e8, com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter@24d8e0e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7514375b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3a76a274, com.green.greengram.security.jwt.JwtAuthenticationFilter@4900b510, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a0248b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1258c37d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@46a4044, org.springframework.security.web.session.SessionManagementFilter@6a8132a5, org.springframework.security.web.access.ExceptionTranslationFilter@48fe7143, org.springframework.security.web.access.intercept.AuthorizationFilter@1b040448][0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 5.573 seconds (process running for 5.99)[0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-07-29 11:40:45 [32mINFO [0;39m RMI TCP Connection(3)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 2 ms[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/index.html[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/swagger-ui.css[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/swagger-ui-standalone-preset.js[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/swagger-initializer.js[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/index.css[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/swagger-ui-bundle.js[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /swagger-ui/favicon-32x32.png[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /v3/api-docs/swagger-config[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /v3/api-docs[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:51 [32mINFO [0;39m http-nio-8080-exec-9] [org.springdoc.api.AbstractOpenApiResource] [36mInit duration for springdoc-openapi is: 259 ms[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/user/sign-in[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: null[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.user.UserControllerImpl] [36mp; SignInPostReq(uid=mic1, upw=1212, providerType=null)[0;39m
+[2024-07-29 11:40:56 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.provider_type=4 and u1_0.uid='mic1'
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 11:40:56 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select ur1_0.user_roles_id,ur1_0.role,ur1_0.role_cd,ur1_0.user_id from user_role ur1_0 where ur1_0.user_id=1
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:40:56 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select sc1_0.sub_code_id,sc1_0.description,sc1_0.main_code_id,mci1_0.main_code_id,mci1_0.cd_name,mci1_0.description,sc1_0.val from sub_code sc1_0 join main_code mci1_0 on mci1_0.main_code_id=sc1_0.main_code_id where sc1_0.sub_code_id=1
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|------------|------------|-------------|-------------|--------|------------|----------|
+|sub_code_id |description |main_code_id |main_code_id |cd_name |description |val       |
+|------------|------------|-------------|-------------|--------|------------|----------|
+|1           |일반 사용자      |1            |1            |role    |권한          |ROLE_USER |
+|------------|------------|-------------|-------------|--------|------------|----------|
+[0;39m
+[2024-07-29 11:40:56 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|--------------|----------|--------|--------|
+|user_roles_id |role      |role_cd |user_id |
+|--------------|----------|--------|--------|
+|1             |ROLE_USER |1       |1       |
+|--------------|----------|--------|--------|
+[0;39m
+[2024-07-29 11:41:07 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 11:41:07 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:07 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 11:41:07 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:07.359',1,'07/29/2024 11:41:07.359',1)
+ {executed in 2 msec}[0;39m
+[2024-07-29 11:41:07 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:07.359',1,'07/29/2024 11:41:07.359',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:07 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|1         |
+|----------|
+[0;39m
+[2024-07-29 11:41:08 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 11:41:08 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:08 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 11:41:08 [32mDEBUG[0;39m http-nio-8080-exec-3] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:08.820',1,'07/29/2024 11:41:08.820',1)
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:41:08 [32mDEBUG[0;39m http-nio-8080-exec-3] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:08.820',1,'07/29/2024 11:41:08.820',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:08 [32mINFO [0;39m http-nio-8080-exec-3] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|2         |
+|----------|
+[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 11:41:09 [32mDEBUG[0;39m http-nio-8080-exec-4] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:09.300',1,'07/29/2024 11:41:09.300',1)
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:41:09 [32mDEBUG[0;39m http-nio-8080-exec-4] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:09.300',1,'07/29/2024 11:41:09.300',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-4] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|3         |
+|----------|
+[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 11:41:09 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:09.705',1,'07/29/2024 11:41:09.705',1)
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:41:09 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 11:41:09.705',1,'07/29/2024 11:41:09.705',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:09 [32mINFO [0;39m http-nio-8080-exec-5] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|4         |
+|----------|
+[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:15 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:15 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 11:41:15 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|1               |string  |2024-07-29 11:41:07.359799 |1       |2024-07-29 11:41:07.359799 |1       |
+|2               |string  |2024-07-29 11:41:08.820559 |1       |2024-07-29 11:41:08.820559 |1       |
+|3               |string  |2024-07-29 11:41:09.30077  |1       |2024-07-29 11:41:09.30077  |1       |
+|4               |string  |2024-07-29 11:41:09.705678 |1       |2024-07-29 11:41:09.705678 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 11:41:15 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+2. SELECT A.feed_comment_id AS feedCommentId
+                , A.comment AS `comment`
+                , A.created_at AS createdAt
+                , B.nm AS writerNm
+                , B.user_id AS writerId
+                , B.pic AS writerPic
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id = 1
+        LIMIT 3, 999
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:41:15 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|------|--------|-----------------------------------------|
+|feed_comment_id |comment |created_at                 |nm    |user_id |pic                                      |
+|----------------|--------|---------------------------|------|--------|-----------------------------------------|
+|4               |string  |2024-07-29 11:41:09.705678 |일반사용자 |1       |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |
+|----------------|--------|---------------------------|------|--------|-----------------------------------------|
+[0;39m
+[2024-07-29 11:41:38 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment/get-jpa[0;39m
+[2024-07-29 11:41:38 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 11:41:38 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.feed_id=1
+ {executed in 1 msec}[0;39m
+[2024-07-29 11:41:38 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:38 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 11:41:38 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 11:41:38 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 11:41:38 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|1               |string  |2024-07-29 11:41:07.359799 |1       |2024-07-29 11:41:07.359799 |1       |
+|2               |string  |2024-07-29 11:41:08.820559 |1       |2024-07-29 11:41:08.820559 |1       |
+|3               |string  |2024-07-29 11:41:09.30077  |1       |2024-07-29 11:41:09.30077  |1       |
+|4               |string  |2024-07-29 11:41:09.705678 |1       |2024-07-29 11:41:09.705678 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 11:41:38 [31mERROR[0;39m http-nio-8080-exec-2] [com.green.greengram.exception.GlobalExceptionHandler] [36mException - handlerException: {}[0;39m
+org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:489)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:114)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:297)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:192)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.green.greengram.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter.doFilterInternal(OAuth2AuthenticationCheckRedirectUriFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: com.green.greengram.common.model.MyResponse["resultData"]->java.util.ArrayList[0]->com.green.greengram.entity.FeedComment["feedId"]->com.green.greengram.entity.Feed$HibernateProxy$ZmD70XL5["hibernateLazyInitializer"])
+	at com.fasterxml.jackson.databind.exc.InvalidDefinitionException.from(InvalidDefinitionException.java:77)
+	at com.fasterxml.jackson.databind.SerializerProvider.reportBadDefinition(SerializerProvider.java:1308)
+	at com.fasterxml.jackson.databind.DatabindContext.reportBadDefinition(DatabindContext.java:414)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.failForEmpty(UnknownSerializer.java:53)
+	at com.fasterxml.jackson.databind.ser.impl.UnknownSerializer.serialize(UnknownSerializer.java:30)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:732)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:772)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:178)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:479)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:318)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1572)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1061)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:483)
+	... 153 common frames omitted
+[2024-07-29 11:41:38 [33mWARN [0;39m http-nio-8080-exec-2] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.http.converter.HttpMessageConversionException: Type definition error: [simple type, class org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor]][0;39m
+[2024-07-29 11:43:22 [32mINFO [0;39m SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mClosing JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 11:43:22 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-07-29 11:43:22 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m
+[2024-07-29 12:40:21 [32mINFO [0;39m background-preinit] [org.hibernate.validator.internal.util.Version] [36mHV000001: Hibernate Validator 8.0.1.Final[0;39m
+[2024-07-29 12:40:21 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarting GreengramApplication using Java 17.0.12 with PID 2900 (D:\2024-01\backEnd\GreengramJpa\build\classes\java\main started by Administrator in D:\2024-01\backEnd\GreengramJpa)[0;39m
+[2024-07-29 12:40:21 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mNo active profile set, falling back to 1 default profile: "default"[0;39m
+[2024-07-29 12:40:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mDevtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable[0;39m
+[2024-07-29 12:40:21 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [36mFor additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'[0;39m
+[2024-07-29 12:40:22 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mBootstrapping Spring Data JPA repositories in DEFAULT mode.[0;39m
+[2024-07-29 12:40:22 [32mINFO [0;39m restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [36mFinished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat initialized with port 8080 (http)[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mInitializing ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardService] [36mStarting service [Tomcat][0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.StandardEngine] [36mStarting Servlet engine: [Apache Tomcat/10.1.20][0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring embedded WebApplicationContext[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [36mRoot WebApplicationContext: initialization completed in 1725 ms[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Starting...[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.pool.HikariPool] [36mHikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@a141c81[0;39m
+[2024-07-29 12:40:23 [32mINFO [0;39m restartedMain] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Start completed.[0;39m
+[2024-07-29 12:40:24 [32mINFO [0;39m restartedMain] [org.hibernate.jpa.internal.util.LogHelper] [36mHHH000204: Processing PersistenceUnitInfo [name: default][0;39m
+[2024-07-29 12:40:24 [32mINFO [0;39m restartedMain] [org.hibernate.Version] [36mHHH000412: Hibernate ORM core version 6.4.4.Final[0;39m
+[2024-07-29 12:40:24 [32mINFO [0;39m restartedMain] [org.hibernate.cache.internal.RegionFactoryInitiator] [36mHHH000026: Second-level cache disabled[0;39m
+[2024-07-29 12:40:24 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] [36mNo LoadTimeWeaver setup: ignoring JPA class transformer[0;39m
+[2024-07-29 12:40:24 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+1. SELECT @@character_set_database, @@sql_mode
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:24 [32mINFO [0;39m restartedMain] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [36mHHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)[0;39m
+[2024-07-29 12:40:24 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       drop 
+       foreign key if exists FKcy2ouh4endkbaq0ocwqemqx1q
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKg554m92domilyknftfwsxeq17
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       drop 
+       foreign key if exists FKc0e5dirjftdt7d718pc7jqm2
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKfk4yfdqi2gb88pun10xr0a9b8
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       drop 
+       foreign key if exists FKbn7bebdjw066rbedub57qda3b
+ {executed in 22 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       drop 
+       foreign key if exists FKfv312s43a9pjn2pcn8j09nvv3
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       drop 
+       foreign key if exists FKey7m0oa3tllpg49nuo8snbmn8
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK6u2fa06k0nngn9m62ubv0hyq2
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       drop 
+       foreign key if exists FK859n2jvi8ivhui0rl0esws6o
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FK602cn3xgrgd5ch8lcdanddqv5
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       drop 
+       foreign key if exists FKi651t243ra5g8sdcsvracrp84
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_comment
+ {executed in 6 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_favorite
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists feed_pics
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists main_code
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists sub_code
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_role
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. drop table if exists user_follow
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed (
+        created_at datetime(6) not null,
+        feed_id bigint not null auto_increment,
+        updated_at datetime(6) not null,
+        writer_id bigint not null,
+        location varchar(30),
+        contents varchar(1000),
+        primary key (feed_id)
+    ) engine=InnoDB
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_comment (
+        created_at datetime(6) not null,
+        feed_comment_id bigint not null auto_increment,
+        feed_id bigint not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null,
+        comment varchar(1000) not null,
+        primary key (feed_comment_id)
+    ) engine=InnoDB
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_favorite (
+        created_at datetime(6) not null,
+        feed_favorite_id bigint not null auto_increment,
+        feed_id bigint not null,
+        user_id bigint not null,
+        primary key (feed_favorite_id)
+    ) engine=InnoDB
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table feed_pics (
+        created_at datetime(6) not null,
+        feed_id bigint not null,
+        feed_pic_id bigint not null auto_increment,
+        pic varchar(70) not null,
+        primary key (feed_pic_id)
+    ) engine=InnoDB
+ {executed in 7 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table main_code (
+        main_code_id bigint not null auto_increment,
+        cd_name varchar(20) not null,
+        description varchar(30),
+        primary key (main_code_id)
+    ) engine=InnoDB
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table sub_code (
+        main_code_id bigint not null,
+        sub_code_id bigint not null auto_increment,
+        description varchar(30),
+        val varchar(30) not null,
+        primary key (sub_code_id)
+    ) engine=InnoDB
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user (
+        provider_type tinyint default 4 not null check (provider_type between 0 and 4),
+        created_at datetime(6) not null,
+        updated_at datetime(6) not null,
+        user_id bigint not null auto_increment,
+        nm varchar(50) not null,
+        uid varchar(50) not null,
+        upw varchar(100) not null,
+        pic varchar(200),
+        primary key (user_id)
+    ) engine=InnoDB
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_role (
+        role_cd bigint not null,
+        user_id bigint not null,
+        user_roles_id bigint not null auto_increment,
+        role varchar(20) not null,
+        primary key (user_roles_id)
+    ) engine=InnoDB
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. create table user_follow (
+        created_at datetime(6) not null,
+        from_user_id bigint,
+        to_user_id bigint,
+        user_follow_id bigint not null auto_increment,
+        primary key (user_follow_id)
+    ) engine=InnoDB
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint UKpupdpvvkcr9e90altsoq9hlwg unique (feed_id, user_id)
+ {executed in 31 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint UKjtwox9abqvpnip8aphq4we3vq unique (main_code_id, val)
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user 
+       add constraint UKb87p6qocmykrbhvhbft82x423 unique (provider_type, uid)
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint UK4os7jqau8i155lej5drb6trt2 unique (user_id, role_cd)
+ {executed in 23 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint UKrnkub2b0tqeh5asgubt9mbvt8 unique (from_user_id, to_user_id)
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed 
+       add constraint FKcy2ouh4endkbaq0ocwqemqx1q 
+       foreign key (writer_id) 
+       references user (user_id)
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKg554m92domilyknftfwsxeq17 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 31 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_comment 
+       add constraint FKc0e5dirjftdt7d718pc7jqm2 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 25 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKfk4yfdqi2gb88pun10xr0a9b8 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 8 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_favorite 
+       add constraint FKbn7bebdjw066rbedub57qda3b 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 31 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists feed_pics 
+       add constraint FKfv312s43a9pjn2pcn8j09nvv3 
+       foreign key (feed_id) 
+       references feed (feed_id)
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists sub_code 
+       add constraint FKey7m0oa3tllpg49nuo8snbmn8 
+       foreign key (main_code_id) 
+       references main_code (main_code_id)
+ {executed in 31 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK6u2fa06k0nngn9m62ubv0hyq2 
+       foreign key (role_cd) 
+       references sub_code (sub_code_id)
+ {executed in 28 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_role 
+       add constraint FK859n2jvi8ivhui0rl0esws6o 
+       foreign key (user_id) 
+       references user (user_id)
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FK602cn3xgrgd5ch8lcdanddqv5 
+       foreign key (from_user_id) 
+       references user (user_id)
+ {executed in 32 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. alter table if exists user_follow 
+       add constraint FKi651t243ra5g8sdcsvracrp84 
+       foreign key (to_user_id) 
+       references user (user_id)
+ {executed in 15 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `main_code` (`main_code_id`, `cd_name`, `description`) VALUES (1, 'role', '권한')
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `sub_code` (`sub_code_id`, `main_code_id`, `val`, `description`) VALUES (1, 1, 'ROLE_USER', '일반 사용자'), (2, 1, 'ROLE_ADMIN', '관리자')
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user` (`user_id`,`provider_type`, `uid`, `upw`, `nm`, `pic`, `created_at`, `updated_at`) VALUES(1,4, 'mic1', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '일반사용자', 'a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg', '2024-05-3 18:00:47', '2024-07-15 10:14:51') ,(2,4, 'mic2', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '관리자', NULL, '2024-05-03 18:00:55', '2024-07-15 10:14:41'),(3,4, 'mic3', '$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm', '사용자_관리자', NULL, '2024-07-15 10:10:42', '2024-07-15 10:14:42')
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `user_role` (`user_id`, `role_cd`, `role`) VALUES(1, 1, 'ROLE_USER'), (2, 2, 'ROLE_ADMIN'), (3, 1, 'ROLE_USER'), (3, 2, 'ROLE_ADMIN')
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mDEBUG[0;39m restartedMain] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+1. INSERT INTO `feed` (`created_at`, `updated_at`, `writer_id`, `location`, `contents`) VALUES ('2024-07-25 11:16:37.000000', '2024-07-25 11:16:37.000000', 2, 'asdf', 'asdf')
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:25 [32mINFO [0;39m restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mInitialized JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 12:40:26 [32mINFO [0;39m restartedMain] [org.springframework.data.jpa.repository.query.QueryEnhancerFactory] [36mHibernate is in classpath; If applicable, HQL parser will be used.[0;39m
+[2024-07-29 12:40:26 [33mWARN [0;39m restartedMain] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [36mspring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning[0;39m
+[2024-07-29 12:40:26 [32mINFO [0;39m restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [36mAdding welcome page: class path resource [static/index.html][0;39m
+[2024-07-29 12:40:26 [32mINFO [0;39m restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [36mExposing 13 endpoint(s) beneath base path '/actuator'[0;39m
+[2024-07-29 12:40:26 [32mINFO [0;39m restartedMain] [org.springframework.security.web.DefaultSecurityFilterChain] [36mWill secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1cdc864e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ef9a16d, org.springframework.security.web.context.SecurityContextHolderFilter@7d8cac36, org.springframework.security.web.header.HeaderWriterFilter@ebf993f, org.springframework.web.filter.CorsFilter@33d2d978, org.springframework.security.web.authentication.logout.LogoutFilter@44999025, com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter@3f5ec05e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@e518f57, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@21845a51, com.green.greengram.security.jwt.JwtAuthenticationFilter@4e16d72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb2be18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@57d0d825, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5064e8d7, org.springframework.security.web.session.SessionManagementFilter@4888e6d0, org.springframework.security.web.access.ExceptionTranslationFilter@7c2a0183, org.springframework.security.web.access.intercept.AuthorizationFilter@3b2c09f9][0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [36mLiveReload server is running on port 35729[0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [36mStarting ProtocolHandler ["http-nio-8080"][0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [36mTomcat started on port 8080 (http) with context path ''[0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m restartedMain] [com.green.greengram.GreengramApplication] [36mStarted GreengramApplication in 5.79 seconds (process running for 6.278)[0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] [36mInitializing Spring DispatcherServlet 'dispatcherServlet'[0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mInitializing Servlet 'dispatcherServlet'[0;39m
+[2024-07-29 12:40:27 [32mINFO [0;39m RMI TCP Connection(2)-192.168.0.164] [org.springframework.web.servlet.DispatcherServlet] [36mCompleted initialization in 0 ms[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/user/sign-in[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjA4NTYsImV4cCI6MTcyMjIyMjY1Niwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.aa4-Y_ziNEYy_KwUO8NxNTyxuyrrMxGLfoNyKjb4ZqWHF_XXnHC1k-hdBQ5Lja7hST9cPl0PLhUGLQsDAI2n7g[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.user.UserControllerImpl] [36mp; SignInPostReq(uid=mic1, upw=1212, providerType=null)[0;39m
+[2024-07-29 12:40:38 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.provider_type=4 and u1_0.uid='mic1'
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:40:38 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select ur1_0.user_roles_id,ur1_0.role,ur1_0.role_cd,ur1_0.user_id from user_role ur1_0 where ur1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:38 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select sc1_0.sub_code_id,sc1_0.description,sc1_0.main_code_id,mci1_0.main_code_id,mci1_0.cd_name,mci1_0.description,sc1_0.val from sub_code sc1_0 join main_code mci1_0 on mci1_0.main_code_id=sc1_0.main_code_id where sc1_0.sub_code_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|------------|------------|-------------|-------------|--------|------------|----------|
+|sub_code_id |description |main_code_id |main_code_id |cd_name |description |val       |
+|------------|------------|-------------|-------------|--------|------------|----------|
+|1           |일반 사용자      |1            |1            |role    |권한          |ROLE_USER |
+|------------|------------|-------------|-------------|--------|------------|----------|
+[0;39m
+[2024-07-29 12:40:38 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------------|----------|--------|--------|
+|user_roles_id |role      |role_cd |user_id |
+|--------------|----------|--------|--------|
+|1             |ROLE_USER |1       |1       |
+|--------------|----------|--------|--------|
+[0;39m
+[2024-07-29 12:40:48 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:40:48 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:40:48 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 12:40:49 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:49.028',1,'07/29/2024 12:40:49.028',1)
+ {executed in 16 msec}[0;39m
+[2024-07-29 12:40:49 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:49.028',1,'07/29/2024 12:40:49.028',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:49 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|1         |
+|----------|
+[0;39m
+[2024-07-29 12:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 12:40:51 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:51.776',1,'07/29/2024 12:40:51.776',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:51 [32mDEBUG[0;39m http-nio-8080-exec-6] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:51.776',1,'07/29/2024 12:40:51.776',1)
+ {executed in 1 msec}[0;39m
+[2024-07-29 12:40:51 [32mINFO [0;39m http-nio-8080-exec-6] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|2         |
+|----------|
+[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-4] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-4] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.218',1,'07/29/2024 12:40:52.218',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-4] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.218',1,'07/29/2024 12:40:52.218',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-4] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|3         |
+|----------|
+[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-5] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.573',1,'07/29/2024 12:40:52.573',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-5] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.573',1,'07/29/2024 12:40:52.573',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-5] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|4         |
+|----------|
+[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-3] [com.green.greengram.feedcomment.FeedCommentControllerImpl] [36mp : FeedCommentPostReq(feedCommentId=0, feedId=1, userId=0, comment=string)[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-3] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.919',1,'07/29/2024 12:40:52.919',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mDEBUG[0;39m http-nio-8080-exec-3] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyStatement.getGeneratedKeys(ProxyStatement.java:229)
+1. getGeneratedKeys on query: insert into feed_comment (comment,created_at,feed_id,updated_at,user_id) values ('string','07/29/2024 12:40:52.919',1,'07/29/2024 12:40:52.919',1)
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:40:52 [32mINFO [0;39m http-nio-8080-exec-3] [jdbc.resultsettable] [36m
+|----------|
+|insert_id |
+|----------|
+|5         |
+|----------|
+[0;39m
+[2024-07-29 12:41:00 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:00 [32mINFO [0;39m http-nio-8080-exec-7] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:00 [32mDEBUG[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=3
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:00 [32mDEBUG[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:00 [32mINFO [0;39m http-nio-8080-exec-7] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:00 [32mDEBUG[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:00 [32mINFO [0;39m http-nio-8080-exec-7] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:00 [32mINFO [0;39m http-nio-8080-exec-7] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|3               |string  |2024-07-29 12:40:52.218002 |1       |2024-07-29 12:40:52.218002 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 12:41:00 [32mDEBUG[0;39m http-nio-8080-exec-7] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. delete from feed_comment where feed_comment_id=3
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:02 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:02 [32mINFO [0;39m http-nio-8080-exec-8] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:02 [32mDEBUG[0;39m http-nio-8080-exec-8] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=3
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:02 [32mINFO [0;39m http-nio-8080-exec-8] [jdbc.resultsettable] [36m
+|----------------|--------|-----------|--------|-----------|--------|
+|feed_comment_id |comment |created_at |feed_id |updated_at |user_id |
+|----------------|--------|-----------|--------|-----------|--------|
+|----------------|--------|-----------|--------|-----------|--------|
+[0;39m
+[2024-07-29 12:41:02 [31mERROR[0;39m http-nio-8080-exec-8] [com.green.greengram.exception.GlobalExceptionHandler] [36mException - handlerException: {}[0;39m
+org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:371)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:246)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy184.delete(Unknown Source)
+	at com.green.greengram.feedcomment.FeedCommentServiceImpl.delFeedComment(FeedCommentServiceImpl.java:53)
+	at com.green.greengram.feedcomment.FeedCommentControllerImpl.deleteFeedComment(FeedCommentControllerImpl.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.green.greengram.security.jwt.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:51)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:181)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter.doFilterInternal(OAuth2AuthenticationCheckRedirectUriFilter.java:46)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:175)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:150)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1736)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.lang.IllegalArgumentException: Entity must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:172)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.delete(SimpleJpaRepository.java:183)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 164 common frames omitted
+[2024-07-29 12:41:02 [33mWARN [0;39m http-nio-8080-exec-8] [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver] [36mResolved [org.springframework.dao.InvalidDataAccessApiUsageException: Entity must not be null][0;39m
+[2024-07-29 12:41:05 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:05 [32mINFO [0;39m http-nio-8080-exec-9] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:05 [32mDEBUG[0;39m http-nio-8080-exec-9] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=4
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:05 [32mDEBUG[0;39m http-nio-8080-exec-9] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:05 [32mINFO [0;39m http-nio-8080-exec-9] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:05 [32mDEBUG[0;39m http-nio-8080-exec-9] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:05 [32mINFO [0;39m http-nio-8080-exec-9] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:05 [32mINFO [0;39m http-nio-8080-exec-9] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|4               |string  |2024-07-29 12:40:52.573964 |1       |2024-07-29 12:40:52.573964 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 12:41:05 [32mDEBUG[0;39m http-nio-8080-exec-9] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. delete from feed_comment where feed_comment_id=4
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:07 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:07 [32mINFO [0;39m http-nio-8080-exec-10] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:07 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:07 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:07 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:07 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:07 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:07 [32mINFO [0;39m http-nio-8080-exec-10] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|1               |string  |2024-07-29 12:40:49.028216 |1       |2024-07-29 12:40:49.028216 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 12:41:07 [32mDEBUG[0;39m http-nio-8080-exec-10] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. delete from feed_comment where feed_comment_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:09 [32mINFO [0;39m http-nio-8080-exec-1] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:09 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=2
+ {executed in 1 msec}[0;39m
+[2024-07-29 12:41:09 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:09 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:09 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:09 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:09 [32mINFO [0;39m http-nio-8080-exec-1] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|2               |string  |2024-07-29 12:40:51.776537 |1       |2024-07-29 12:40:51.776537 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 12:41:09 [32mDEBUG[0;39m http-nio-8080-exec-1] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. delete from feed_comment where feed_comment_id=2
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:14 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.oauth2.OAuth2AuthenticationCheckRedirectUriFilter] [36mRequest URI: /api/feed/comment[0;39m
+[2024-07-29 12:41:14 [32mINFO [0;39m http-nio-8080-exec-2] [com.green.greengram.security.jwt.JwtAuthenticationFilter] [36mJwtAuthenticationFilter-Token: eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE3MjIyMjQ0MzgsImV4cCI6MTcyMjIyNjIzOCwic2lnbmVkVXNlciI6IntcInVzZXJJZFwiOjEsXCJyb2xlc1wiOltcIlJPTEVfVVNFUlwiXX0ifQ.B3__MUOTcldrag3sRz5UwMTlR1X8SR6bWzL86-RFPawC0OvJzi4yplPU39bJpMxYnjASiJEOdae7Vz1XEOR2Fw[0;39m
+[2024-07-29 12:41:14 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select fc1_0.feed_comment_id,fc1_0.comment,fc1_0.created_at,fc1_0.feed_id,fc1_0.updated_at,fc1_0.user_id from feed_comment fc1_0 where fc1_0.user_id=1 and fc1_0.feed_comment_id=5
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:14 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select f1_0.feed_id,f1_0.contents,f1_0.created_at,f1_0.location,f1_0.updated_at,f1_0.writer_id,u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from feed f1_0 join user u1_0 on u1_0.user_id=f1_0.writer_id where f1_0.feed_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:14 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|feed_id |contents |created_at            |location |updated_at            |writer_id |user_id |created_at            |nm  |pic |provider_type |uid  |updated_at            |upw                                                          |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |asdf     |2024-07-25 11:16:37.0 |asdf     |2024-07-25 11:16:37.0 |2         |2       |2024-05-03 18:00:55.0 |관리자 |null|4             |mic2 |2024-07-15 10:14:41.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|---------|----------------------|---------|----------------------|----------|--------|----------------------|----|----|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:14 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+1. select u1_0.user_id,u1_0.created_at,u1_0.nm,u1_0.pic,u1_0.provider_type,u1_0.uid,u1_0.updated_at,u1_0.upw from user u1_0 where u1_0.user_id=1
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:41:14 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|user_id |created_at            |nm    |pic                                      |provider_type |uid  |updated_at            |upw                                                          |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+|1       |2024-05-03 18:00:47.0 |일반사용자 |a4983740-8a6d-4692-9e17-8b45e1b6f8e4.jpg |4             |mic1 |2024-07-15 10:14:51.0 |$2a$10$gSmS4Bw0wi35PURGxKeq0ua3V0xI20f5NrxelSkSmLXFaPMENt8Qm |
+|--------|----------------------|------|-----------------------------------------|--------------|-----|----------------------|-------------------------------------------------------------|
+[0;39m
+[2024-07-29 12:41:14 [32mINFO [0;39m http-nio-8080-exec-2] [jdbc.resultsettable] [36m
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|feed_comment_id |comment |created_at                 |feed_id |updated_at                 |user_id |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+|5               |string  |2024-07-29 12:40:52.919805 |1       |2024-07-29 12:40:52.919805 |1       |
+|----------------|--------|---------------------------|--------|---------------------------|--------|
+[0;39m
+[2024-07-29 12:41:14 [32mDEBUG[0;39m http-nio-8080-exec-2] [jdbc.sqltiming] [36m com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+1. delete from feed_comment where feed_comment_id=5
+ {executed in 0 msec}[0;39m
+[2024-07-29 12:42:12 [32mINFO [0;39m SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [36mClosing JPA EntityManagerFactory for persistence unit 'default'[0;39m
+[2024-07-29 12:42:12 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown initiated...[0;39m
+[2024-07-29 12:42:12 [32mINFO [0;39m SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] [36mHikariPool-1 - Shutdown completed.[0;39m

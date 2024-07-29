@@ -29,6 +29,8 @@ public class SecurityConfiguration {
     private final MyOAuth2UserService myOAuth2UserService ;
     private final AppProperties appProperties ;
     private final OAuth2AuthenticationCheckRedirectUriFilter oAuth2AuthenticationCheckRedirectUriFilter ;
+    private final JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint ;
+    private final JwtAuthenticationAccessDeniedHandler jwtAuthenticationAccessDeniedHandler ;
 
     /*
         메소드 빈등록으로 주로 쓰는 케이스(현재기준) : Security 와 관련된 빈등록을 여러개 하고 싶은 때
@@ -155,8 +157,8 @@ public class SecurityConfiguration {
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
                 .exceptionHandling(exception -> exception
-                        .authenticationEntryPoint(new JwtAuthenticationEntryPoint())
-                        .accessDeniedHandler(new JwtAuthenticationAccessDeniedHandler()))
+                        .authenticationEntryPoint(jwtAuthenticationEntryPoint)
+                        .accessDeniedHandler(jwtAuthenticationAccessDeniedHandler))
                 .oauth2Login( oauth2 -> oauth2.authorizationEndpoint(
                         auth -> auth.baseUri(appProperties.getOauth2().getBaseUri())
                                 .authorizationRequestRepository(repository) // 객체의 주소값을 등록

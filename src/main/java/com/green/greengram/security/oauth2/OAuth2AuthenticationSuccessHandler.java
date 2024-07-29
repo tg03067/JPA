@@ -52,8 +52,11 @@ public class OAuth2AuthenticationSuccessHandler extends SimpleUrlAuthenticationS
             return ;
         }
         String targetUrl = determineTargetUrl(request, response, authentication) ; // 리다이렉트 할 Url 얻음.
+
         log.info("targetUrl: {}", targetUrl) ;
+
         clearAuthenticationAttributes(request, response) ; // 리다이렉트 전 사용했던 자료 삭제
+
         getRedirectStrategy().sendRedirect(request, response, targetUrl) ; // 리다이렉트 실행
     }
     @Override
