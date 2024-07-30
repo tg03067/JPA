@@ -11,6 +11,6 @@ import java.util.List;
 
 public interface FeedCommentController {
     MyResponse<Long> postFeedComment(FeedCommentPostReq p);
-    MyResponse<List<FeedCommentGetRes>> getFeedCommentList(Long feedId);
+    MyResponse<List<FeedCommentGetResInterpace>> getFeedCommentList(Long feedId);
     MyResponse<Integer> deleteFeedComment(FeedCommentDeleteReq p);
 }

@@ -5,10 +5,12 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.ColumnDefault;
 
 @Getter
 @Setter
+@ToString
 @Entity // 이 클래스는 entity ( 테이블 ) 이다.
 @Table(
         uniqueConstraints = {

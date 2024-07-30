@@ -13,5 +13,5 @@ import java.util.List;
 public interface FeedCommentService {
     long postFeedComment(FeedCommentPostReq p);
     int delFeedComment(FeedCommentDeleteReq p);
-    List<FeedCommentGetRes> getFeedComment(Long feedId);
+    List<FeedCommentGetResInterpace> getFeedComment(Long feedId);
 }

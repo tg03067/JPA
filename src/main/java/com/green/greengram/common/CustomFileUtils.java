@@ -16,7 +16,7 @@ import java.util.UUID;
 public class CustomFileUtils {
     public final String uploadPath;
 
-    public CustomFileUtils(@Value("${file.dir}") String uploadPath) {
+    public CustomFileUtils(@Value("${file.directory}") String uploadPath) {
         this.uploadPath = uploadPath;
     }
     public String makeFolders(String path){

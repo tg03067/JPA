@@ -20,7 +20,7 @@ import java.io.IOException;
 @Configuration
 public class WebMvcConfiguration implements WebMvcConfigurer {
     private final String uploadPath;
-    public WebMvcConfiguration(@Value("${file.dir}") String uploadPath){
+    public WebMvcConfiguration(@Value("${file.directory}") String uploadPath){
         this.uploadPath = uploadPath ;
     }
 

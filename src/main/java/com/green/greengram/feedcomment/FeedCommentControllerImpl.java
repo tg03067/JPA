@@ -39,10 +39,10 @@ public class FeedCommentControllerImpl implements FeedCommentController {
     }
 
     @Override @GetMapping @Operation(summary = "댓글 가져오기")
-    public MyResponse<List<FeedCommentGetRes>> getFeedCommentList(@RequestParam(name = "feed_id") Long feedId) {
-        List<FeedCommentGetRes> list = service.getFeedComment(feedId);
+    public MyResponse<List<FeedCommentGetResInterpace>> getFeedCommentList(@RequestParam(name = "feed_id") Long feedId) {
+        List<FeedCommentGetResInterpace> list = service.getFeedComment(feedId);
 
-        return MyResponse.<List<FeedCommentGetRes>>builder().
+        return MyResponse.<List<FeedCommentGetResInterpace>>builder().
                 statusCode(HttpStatus.OK).
                 resultMsg(String.format("rows: %,d", list.size())).
                 resultData(list).
