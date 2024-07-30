@@ -90,7 +90,7 @@ server:
   port: 8080
 
 file:
-  dir: ${DEFAULT.FILE_DIRECTORY}
+  directory: ${DEFAULT.FILE_DIRECTORY}
 
 # Custom 속성 지정
 app:
