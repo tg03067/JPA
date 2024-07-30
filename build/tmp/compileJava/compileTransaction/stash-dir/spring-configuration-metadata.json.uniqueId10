@@ -1,0 +1,84 @@
+{
+  "groups": [
+    {
+      "name": "app",
+      "type": "com.green.greengram.common.AppProperties",
+      "sourceType": "com.green.greengram.common.AppProperties"
+    },
+    {
+      "name": "app.jwt",
+      "type": "com.green.greengram.common.AppProperties$Jwt",
+      "sourceType": "com.green.greengram.common.AppProperties",
+      "sourceMethod": "getJwt()"
+    },
+    {
+      "name": "app.oauth2",
+      "type": "com.green.greengram.common.AppProperties$Oauth2",
+      "sourceType": "com.green.greengram.common.AppProperties",
+      "sourceMethod": "getOauth2()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "app.jwt.access-token-expiry",
+      "type": "java.lang.Long",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.header-schema-name",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.refresh-token-cookie-max-age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.refresh-token-cookie-name",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.refresh-token-expiry",
+      "type": "java.lang.Long",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.jwt.token-type",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Jwt"
+    },
+    {
+      "name": "app.oauth2.authorization-request-cookie-name",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    },
+    {
+      "name": "app.oauth2.authorized-redirect-uris",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    },
+    {
+      "name": "app.oauth2.base-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    },
+    {
+      "name": "app.oauth2.cookie-expiry-second",
+      "type": "java.lang.Integer",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    },
+    {
+      "name": "app.oauth2.redirect-uri-param-cookie-name",
+      "type": "java.lang.String",
+      "sourceType": "com.green.greengram.common.AppProperties$Oauth2"
+    }
+  ],
+  "hints": []
+}

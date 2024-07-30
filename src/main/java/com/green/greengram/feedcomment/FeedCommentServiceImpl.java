@@ -15,6 +15,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -41,8 +42,8 @@ public class FeedCommentServiceImpl implements FeedCommentService {
 
         FeedComment feedComment = new FeedComment() ;
         feedComment.setComment(p.getComment()) ;
-        feedComment.setFeedId(feed) ;
-        feedComment.setUserId(user) ;
+        feedComment.setFeed(feed) ;
+        feedComment.setUser(user) ;
 
         commentRepository.save(feedComment) ;
 
@@ -55,21 +56,35 @@ public class FeedCommentServiceImpl implements FeedCommentService {
 //        commentRepository.delete(feedComment) ;
 //        return 1 ;
 //    }
-
-        @Override
-        public int delFeedComment(FeedCommentDeleteReq p){
+    @Override
+    public int delFeedComment(FeedCommentDeleteReq p){
             FeedComment fc = commentRepository.getReferenceById(p.getFeedCommentId()) ;
-            fc.getUserId().getUserId() ; // 그래프 탐색이라 호칭
-            if(fc.getUserId().getUserId() != authenticationFacade.getLoginUserId()){
+            fc.getUser().getUserId() ; // 그래프 탐색이라 호칭
+            if(fc.getUser().getUserId() != authenticationFacade.getLoginUserId()){
                 throw new CustomException(MemberErrorCode.UNAUTHORIZED) ;
             }
             commentRepository.delete(fc) ;
 
             return 1 ;
         }
-
     @Override
     public List<FeedCommentGetRes> getFeedComment(Long feedId){
-        return mapper.selFeedComment(feedId) ;
+        Feed feed = new Feed() ;
+        feed.setFeedId(feedId) ;
+        List<FeedComment> list = commentRepository.findAllByFeedOrderByFeedCommentId(feed) ;
+
+        List<FeedCommentGetRes> result = new ArrayList<>() ;
+        for(FeedComment fc : list){
+            FeedCommentGetRes item = new FeedCommentGetRes() ;
+            result.add(item) ;
+
+            item.setFeedCommentId(fc.getFeedCommentId()) ;
+            item.setComment(fc.getComment()) ;
+            item.setCreatedAt(fc.getCreatedAt().toString()) ;
+            item.setWriterId(fc.getUser().getUserId()) ;
+            item.setWriterNm(fc.getUser().getNm()) ;
+            item.setWriterPic(fc.getUser().getPic()) ;
+        }
+        return result ;
     }
 }

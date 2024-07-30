@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface FeedCommentRepository extends JpaRepository<FeedComment, Long> {
-    FeedComment findFeedCommentByUserIdAndFeedCommentId(User userId, Long commentId) ;
+    // FeedComment findFeedCommentByUserIdAndFeedCommentId(User userId, Long commentId) ;
 
-    List<FeedComment> findAllByFeedId(Feed feedId);
+    List<FeedComment> findAllByFeedOrderByFeedCommentId(Feed feedId) ;
 
     /*
     INSERT INTO feed_comment

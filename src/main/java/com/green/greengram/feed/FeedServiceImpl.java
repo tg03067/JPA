@@ -18,9 +18,11 @@ import java.util.List;
 @Slf4j
 @RequiredArgsConstructor
 public class FeedServiceImpl implements FeedService {
-    private final FeedMapper mapper;
+    private final FeedMapper mapper ;
     private final CustomFileUtils customFileUtils ;
-    private final AuthenticationFacade authenticationFacade;
+    private final AuthenticationFacade authenticationFacade ;
+    private final FeedRepository repository ;
+
     @Override @Transactional
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){ //feed pk 값 리턴.
         p.setUserId(authenticationFacade.getLoginUserId());
