@@ -24,26 +24,30 @@ public class OAuth2AuthenticationCheckRedirectUriFilter extends OncePerRequestFi
                                     , HttpServletResponse response // 응답할 수 있는 객체
                                     , FilterChain filterChain // 다음 필터로 req, res 를 전달할 때 사용
     ) throws ServletException, IOException {
+        try {
         /*
             호스트값 제외한 uri 를 리턴
             예 ) http://localhost:8080/aaa/bbb
             "/aaa/bbb"를 리턴
          */
-        String requestUri = request.getRequestURI();
-        log.info("Request URI: {}", requestUri);
+            String requestUri = request.getRequestURI();
+            log.info("Request URI: {}", requestUri);
 
-        if(requestUri.startsWith(appProperties.getOauth2().getBaseUri())) {
-            String redirectUriParam = request.getParameter("redirect_uri") ;
-            if(redirectUriParam != null && !hasAuthorizedRedirectUri(redirectUriParam)) { // 허용하지 않은 URI 라면
-                String errRedirectUrl = UriComponentsBuilder.fromUriString("/err_message")
-                        .queryParam("message", "유효한 Redirect URL이 아닙니다.").encode()
-                        .toUriString() ;
-                //  "/err_message?message=유효한 Redirect URL이 아닙니다." ;
-                response.sendRedirect(errRedirectUrl) ;
-                return ;
+            if (requestUri.startsWith(appProperties.getOauth2().getBaseUri())) {
+                String redirectUriParam = request.getParameter("redirect_uri");
+                if (redirectUriParam != null && !hasAuthorizedRedirectUri(redirectUriParam)) { // 허용하지 않은 URI 라면
+                    String errRedirectUrl = UriComponentsBuilder.fromUriString("/err_message")
+                            .queryParam("message", "유효한 Redirect URL이 아닙니다.").encode()
+                            .toUriString();
+                    //  "/err_message?message=유효한 Redirect URL이 아닙니다." ;
+                    response.sendRedirect(errRedirectUrl);
+                    return;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+            filterChain.doFilter(request, response);
         }
-        filterChain.doFilter(request, response) ;
     }
     public boolean hasAuthorizedRedirectUri(String uri) { // 우리가 설정한 redirect-uri 인지 체크
         URI cliectRedirectUri = URI.create(uri) ; // uri 객체 좋은 점 : 쿼리스트링 뺴내기 좋음

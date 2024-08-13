@@ -2,7 +2,6 @@ package com.green.greengram.common;
 
 import com.green.greengram.user.model.UserInfo;
 import com.green.greengram.user.model.UserInfoRoles;
-
 import java.util.ArrayList;
 import java.util.List;
 
